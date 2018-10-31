@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- cambio idioma español:es -->
+<html lang="ca">
+
+<head>
+    <script type="text/javascript">
+      window.onload = function () {
+    
+        var ln = x = window.navigator.language || navigator.browserLanguage;
+    
+            if (ln == 'es') {
+                            window.location.href = 'index_es.html'; //si esta en inglés va a ingles
+    
+            }
+      }
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- SEO -->
+    <!-- HTML Meta Tags -->
+    <title>Flight with Mati</title>
+    <meta name="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <!--  la descripcion de arriba se puede repetir en otros SEO  -->
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Flight with Mati">
+    <meta itemprop="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <meta itemprop="image" content="http://www.flightwithmati.es">
+    <!-- las imagenes no son obligatorias, pero se recomienda poner una foto que representa el negocio -->
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="http://www.flightwithmati.es">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Flight with Mati">
+    <meta property="og:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <meta property="og:image" content="http://www.flightwithmati.es">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Flight with Mati">
+    <meta name="twitter:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <meta name="twitter:image" content="http://www.flightwithmati.es">
+
+    <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    
+    <!-- nuestros estilos de CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- <link rel="stylesheet" href="css/guiadeestilos.css"> -->
+
+</head>
+
+<body>
+
+   <head class="menu">
+       
+      <div class="menu__fondo">
+        
+           <nav>
+              
+            <a href="index.html" class="menu__fondo__logo"> 
+                
+                <img src="icons/HTML5_1Color_Black.svg" alt="LlorençBisquerra"> 
+                <span>
+                    Llorenç Bisquerra
+                </span>
+            
+            </a>
+            
+              <!-- Menú movil -->
+            
+               <input id=activar type='checkbox'> <!-- En CSS hay que ponerle display:none -->
+                   <label class='inputlabel' for='activar'> <!-- Esta unido al chechkbox a través del for que tiene que tener el nombre del id del input  -->
+                       <i class='menu__icono fas fa-bars'></i> <!-- Zona del icono. s donde haré click para que el menu se despliegue. Hay uno puesto.  -->
+                   </label>
+               <div class='desplegable'> <!-- En CSS hay que ponerle display:none. Es lo que contiene el menu en si. Para que se abra en el CSS hay que ponerle que cuando apretemos en label, se convierta en display: block; -->
+                   
+                    <a href='sobremi_ca.html'>
+                      Sobre mí
+                    </a>
+                    <a href='servicios_ca.html'>
+                      Servicios
+                    </a>   
+                    <a href='formulario_ca.html'>
+                      Contactar
+                    </a> 
+                       
+               </div>
+           </nav>
+        </div>
+   </head>
+        
+</body>
+
+</html>

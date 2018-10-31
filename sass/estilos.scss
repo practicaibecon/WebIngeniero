@@ -1,0 +1,39 @@
+/*=============================================
+=            $SASS           =
+=============================================*/
+
+
+/*----------  RESET  ----------*/
+@import "base/reset/reset";
+//si estamos utilizando IE tambien tenemos que meter el normalize
+//    @import "base/reset/normalize";
+
+/*----------  VARIABLES  ----------*/
+@import "lib/variables"; //Importamos el contenido del archivo, por eso solo ponemos en nombre. 
+
+/*----------  TIPOGRAFIA  ----------*/
+@import "base/tipografia";  
+
+/*----------  LIB  ----------*/
+@import "lib/mixins";  
+@import "lib/placeholders";  
+
+/*----------  LINKS  ----------*/
+
+@import "base/links/botones";
+@import "base/links/enlaces";
+@import "base/links/menu";
+
+/*----------  Formularios  ----------*/
+
+@import "base/formularios";
+
+/*----------  LAYOUTS  ----------*/
+
+@import "layout/banner";
+@import "layout/grids";
+@import "layout/layouts";
+
+/*----------  Imágenes  ----------*/
+
+@import "base/imagenes";

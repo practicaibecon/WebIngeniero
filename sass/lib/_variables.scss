@@ -1,0 +1,107 @@
+/*=============================================
+=            $VARIABLES           =
+=============================================*/
+
+/*
+db    db  .d8b.  d8888b. d888888b  .d8b.  d8888b. db      d88888b .d8888.
+88    88 d8' `8b 88  `8D   `88'   d8' `8b 88  `8D 88      88'     88'  YP
+Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
+`8b  d8' 88~~~88 88`8b      88    88~~~88 88~~~b. 88      88~~~~~   `Y8b.
+ `8bd8'  88   88 88 `88.   .88.   88   88 88   8D 88booo. 88.     db   8D
+   YP    YP   YP 88   YD Y888888P YP   YP Y8888P' Y88888P Y88888P `8888Y'
+
+
+*/
+
+/*=============================================
+=            TIPOLOGIA            =
+=============================================*/
+
+
+$hremm: 16px; // /para movil. Letra estandar.
+$hreme: 18px; // /para movil. Letra estandar.
+     
+$hs: (
+
+    h1m: 16px, //para movil. Solo el nombre del logotipo
+    h1e: 30px, //para escritorio. Solo el nombre del logotipo
+    h2m: 21px,  //los h2 para movil. Los títulos que van con las imágenes y los textos
+    h2e: 18px, //para el ordenador
+    h3m: 18px, //para el movil. Los títulos de la página de inicio.
+    h3e: 28px, //para el movil. Los títulos de la página de inicio.
+
+    //Finaliza SEO
+    h4m: 18px, // para escritorio. Los enlaces del header.
+    h4e: 26px, //para escritorio. Los enlaces del header y del footer.
+    h5m: 14px, //para movil. Términos, condiciones, etc.
+    h5e: 18px //para escritorio. Términos, condiciones, redes sociales, etc.
+
+);
+
+@font-face {
+    font-family: 'MontserratRegular';
+    src: local('MontserratRegular'),
+        url(../fonts/MonserratRegular.woff) format(woff);
+};
+
+@font-face {
+    font-family: 'MontserratBold';
+    src: local('MontserratBold'),
+        url(../fonts/MonserratBold.woff) format(woff);
+};
+
+/*=====  Fin de Tipología  ======*/
+
+/*=============================================
+=            Colores de Marca            =
+=============================================*/
+
+$color: (
+
+basicos: (
+
+    Blanco: #fafafa, //Color de fondo del Body
+    GrisOscuro: #444444, //Titulos, fondo header y fondo footer, letras encima del body
+    GrisClaro: #ebebeb, //letras sobre fondo oscuro, iconos
+    Naranja: #e1a605 //Para poner en los hoover. 
+)
+);
+
+/*=====  Fin de Colores de Marca  ======*/
+
+html {
+    font-family: 'MonserratRegular', sans-serif;
+    font-size: $hremm;
+     @media screen and (min-width: 768px){
+        font-size: $hreme;
+     }
+    color: map-get(map-get($color, basicos), GrisOscuro);
+
+};
+
+body{
+    background-color: map-get(map-get($color, basicos), blanco);
+};
+
+header{
+    font-family: 'MonserratBold', sans-serif;
+};
+
+footer{
+    font-family: 'MonserratBold', sans-serif;  
+};
+
+a{
+    text-decoration: none;
+    color: map-get(map-get($color, basicos), GrisClaro);
+};
+
+i{
+    color: map-get(map-get($color, basicos), GrisClaro);
+    font-size: 2rem;
+      @media screen and (min-width: 768px){
+        font-size: $hreme;
+        }
+}
+
+

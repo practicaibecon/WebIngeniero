@@ -1,0 +1,105 @@
+/*=============================================
+=            $MIXINS         =
+=============================================*/
+
+/*
+.88b  d88. d888888b db    db d888888b d8b   db
+88'YbdP`88   `88'   `8b  d8'   `88'   888o  88
+88  88  88    88     `8bd8'     88    88V8o 88
+88  88  88    88     .dPYb.     88    88 V8o88
+88  88  88   .88.   .8P  Y8.   .88.   88  V888
+YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
+
+
+*/
+/*=============================================
+=           Para los fontface            =
+=============================================*/
+
+
+
+     
+@mixin fontface ($archivo){
+
+    @font-face {
+        font-family: '#{$archivo}';
+        src: local('#{$archivo}'),
+        url('../fonts/#{$archivo}.woff') format('woff');
+        
+    }
+
+}
+@mixin fontfaceregular ($archivo, $negrita: normal, $estilo:normal){
+
+    @font-face {
+        font-family: "#{$archivo}";
+        font-weight: $negrita; 
+        font-style: $estilo; 
+        //si ponemos este mixin es porque quiero ahorrar peso a la pagina web y forzar lso estilos con el font-weight y el font-style 
+        src: local('#{$archivo}'), url('../fonts/#{$archivo}.woff') format('woff');
+    }
+}
+
+/*=============================================
+=            MEDIAS para MOVILES            =
+=============================================*/
+
+
+//Variables para el tamaño de los medias
+$breakpoint-movil: 320px; //m
+$breakpoint-tablet: 768px; //t
+$breakpoint-desktop: 1366px; //e
+
+//mixin medias 
+
+@mixin media($media) { //así gracias a esta variable solo tenemos que poner las letritas al llamarla y no todas las variables 
+    @if $media==m {
+        @media only screen and (min-width: $breakpoint-movil){
+           @content; //gracias a esto dentro le podemos poner código al llamarlo con el include.
+        }
+    }
+    @else if $media==t {
+        @media only screen and (min-width: $breakpoint-tablet){
+               @content;
+        }
+    }
+    @else if $media==e {
+        @media only screen and (min-width: $breakpoint-desktop){
+           @content;
+        }
+    
+    }
+};
+
+/*=============================================
+=            PIXEL RATIO            =
+=============================================*/
+
+div{
+
+    width: 400px;
+    height: 400px;
+    //Pixel Ratio 1
+    background-image: url('img/tablet/motos.jpg');
+
+    //hago un media query para retocar el codigo que le he puesto al div para tablets
+
+    @media screen and (min-width: 768px){
+        width: 600px;
+        height: 600px;
+    }
+    //cuando acabo de tocar el código pongo los cambios de foto del background.
+    
+    //Pixel Ratio 2
+
+    @media only screen and (pixel-ratio: 2){
+        background-image: url('img/tablet/motos@2x.jpg');
+    }
+
+    //Pixel Ratio 3
+    @media only screen and (pixel-ratio: 3){
+        background-image: url('img/tablet/motos@3x.jpg');
+    }
+}
+     
+
