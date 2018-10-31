@@ -1,0 +1,16 @@
+.menu{
+
+    &__fondo{
+        height: 215px;
+
+        @media screen and (min-width: 768px){
+            height: 700px;
+            };
+        
+            &__encabezado{
+                background-color: map-get(map-get($color, basicos), GrisOscuro);
+            }
+
+    }
+
+}

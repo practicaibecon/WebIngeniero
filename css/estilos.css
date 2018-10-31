@@ -12,28 +12,23 @@
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 img {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -42,28 +37,23 @@ img {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
+  box-sizing: inherit; }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
   padding: 0;
-  font-weight: normal;
-}
+  font-weight: normal; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 img {
   max-width: 100%;
-  height: auto;
-}
+  height: auto; }
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -83,37 +73,30 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 ol, ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /*----------  VARIABLES  ----------*/
 /*=============================================
@@ -134,13 +117,11 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 @font-face {
   font-family: 'MontserratRegular';
-  src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff);
-}
+  src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff); }
 
 @font-face {
   font-family: 'MontserratBold';
-  src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff);
-}
+  src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff); }
 
 /*=====  Fin de Tipología  ======*/
 /*=============================================
@@ -150,38 +131,27 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 html {
   font-family: 'MonserratRegular', sans-serif;
   font-size: 16px;
-  color: #444444;
-}
-
-@media screen and (min-width: 768px) {
-  html {
-    font-size: 18px;
-  }
-}
+  color: #444444; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 18px; } }
 
 header {
-  font-family: 'MonserratBold', sans-serif;
-}
+  font-family: 'MonserratBold', sans-serif; }
 
 footer {
-  font-family: 'MonserratBold', sans-serif;
-}
+  font-family: 'MonserratBold', sans-serif; }
 
 a {
   text-decoration: none;
-  color: #ebebeb;
-}
+  color: #ebebeb; }
 
 i {
   color: #ebebeb;
-  font-size: 2rem;
-}
-
-@media screen and (min-width: 768px) {
-  i {
-    font-size: 18px;
-  }
-}
+  font-size: 2rem; }
+  @media screen and (min-width: 768px) {
+    i {
+      font-size: 18px; } }
 
 /*----------  TIPOGRAFIA  ----------*/
 /*=============================================
@@ -213,27 +183,17 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 div {
   width: 400px;
   height: 400px;
-  background-image: url("img/tablet/motos.jpg");
-}
-
-@media screen and (min-width: 768px) {
-  div {
-    width: 600px;
-    height: 600px;
-  }
-}
-
-@media only screen and (pixel-ratio: 2) {
-  div {
-    background-image: url("img/tablet/motos@2x.jpg");
-  }
-}
-
-@media only screen and (pixel-ratio: 3) {
-  div {
-    background-image: url("img/tablet/motos@3x.jpg");
-  }
-}
+  background-image: url("img/tablet/motos.jpg"); }
+  @media screen and (min-width: 768px) {
+    div {
+      width: 600px;
+      height: 600px; } }
+  @media only screen and (pixel-ratio: 2) {
+    div {
+      background-image: url("img/tablet/motos@2x.jpg"); } }
+  @media only screen and (pixel-ratio: 3) {
+    div {
+      background-image: url("img/tablet/motos@3x.jpg"); } }
 
 /*=============================================
 =            $PLACEHOLDERS        =
@@ -242,6 +202,14 @@ div {
 /*=============================================
 =            $ENLACES           =
 =============================================*/
+.menu__fondo {
+  height: 215px; }
+  @media screen and (min-width: 768px) {
+    .menu__fondo {
+      height: 700px; } }
+  .menu__fondo__encabezado {
+    background-color: #444444; }
+
 /*----------  Formularios  ----------*/
 /*=============================================
 =            $FORMULARIOS           =
