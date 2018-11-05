@@ -10,12 +10,10 @@
 /* MINIMAL CSS RESET */
 /* -------------------- */
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px; }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -35,12 +33,10 @@ img {
    License: none (public domain)
 */
 html {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px; }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -118,11 +114,9 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 @font-face {
   font-family: 'MontserratRegular';
   src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff); }
-
 @font-face {
   font-family: 'MontserratBold';
   src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff); }
-
 /*=====  Fin de Tipología  ======*/
 /*=============================================
 =            Colores de Marca            =
@@ -214,6 +208,57 @@ div {
 /*=============================================
 =            $FORMULARIOS           =
 =============================================*/
+.contactform {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 10px; }
+
+.nombre,
+.email,
+.telefono {
+  grid-column: 1 / 4; }
+
+.particular {
+  grid-column: 1 / 2;
+  grid-row: 5;
+  justify-self: center; }
+
+.empresa {
+  grid-column: 3 / 4;
+  grid-row: 5;
+  justify-self: center; }
+
+.comentarios {
+  grid-column: 1/ 4;
+  grid-row: 6; }
+
+.servicios {
+  grid-column: 1/ 4;
+  grid-row: 4; }
+
+.botonconfirmar {
+  grid-column: 2 / 3;
+  grid-row: 7;
+  background-color: #ebebeb;
+  border-color: black;
+  border-radius: 14px;
+  cursor: pointer;
+  height: 20px;
+  background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat scroll 1 2 transparent;
+  height: 30px;
+  padding-bottom: 2px;
+  width: 175px; }
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #0e0e0e;
+  border-radius: 0px;
+  box-sizing: border-box;
+  resize: vertical; }
+
 /*----------  LAYOUTS  ----------*/
 /*=============================================
 =            $BANNER          =
@@ -225,3 +270,5 @@ div {
 =            $LAYOUTS         =
 =============================================*/
 /*----------  Imágenes  ----------*/
+
+/*# sourceMappingURL=estilos.css.map */
