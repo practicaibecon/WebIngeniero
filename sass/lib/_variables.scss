@@ -59,13 +59,13 @@ $hs: (
 $color: (
 
 basicos: (
-
     Blanco: #fafafa, //Color de fondo del Body
     GrisOscuro: #444444, //Titulos, fondo header y fondo footer, letras encima del body
     GrisClaro: #ebebeb, //letras sobre fondo oscuro, iconos
-    Naranja: #e1a605 //Para poner en los hoover. 
-)
-);
+    Naranja: #e1a605 , //Para poner en los hoover. 
+    Negro : #0e0e0e // Bordes para los input 
+
+));
 
 /*=====  Fin de Colores de Marca  ======*/
 

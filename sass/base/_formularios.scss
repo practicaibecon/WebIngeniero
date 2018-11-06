@@ -2,16 +2,19 @@
 =            $FORMULARIOS           =
 =============================================*/
 
-
-.contactform {
+.contactform 
+{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 10px;
+    padding: 4%;
 }
 
 .nombre,
 .email,
-.telefono {
+.telefono ,
+.servicios
+{
     grid-column: 1 / 4;
 }
 
@@ -32,25 +35,55 @@
     grid-row: 6;
 }
 
-.servicios {
-    grid-column: 1/ 4;
-    grid-row: 4;
+.txtcomentarios
+{
+    color: map-get(map-get($color, basicos), GrisOscuro);
+
+    border: 1px solid;
 }
+
+
+.servicios 
+{
+    height: 29px;
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid #0e0e0e;
+    grid-row: 4;
+    color: map-get(map-get($color, basicos), Negro);
+
+}
+
+.servicios select {
+    background: transparent;
+    border: map-get(map-get($color, basicos), Negro);
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    width: 100%;
+    color: map-get(map-get($color, basicos), Negro);
+
+}
+
+
+.servicios.black 
+{
+    height: 34px;
+    width: 100%;
+}
+
 
 .botonconfirmar {
     grid-column: 2 / 3;
     grid-row: 7;
-    background-color: #ebebeb;
-    border-color: black;
-    border-radius: 14px;
+    background-color: map-get(map-get($color, basicos), GrisClaro);
+    border-color:  map-get(map-get($color, basicos), GrisOscuro);
+    border-radius: 4px;
     cursor: pointer;
-    height: 20px;
-    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat scroll 1 2 transparent;
-    height: 30px;
     padding-bottom: 2px;
+    height: 40px;
     width: 175px;
-
-
+    font-weight: bold;
 
 }
 
@@ -63,4 +96,12 @@ textarea {
     border-radius: 0px;
     box-sizing: border-box;
     resize: vertical;
+    color: map-get(map-get($color, basicos), Blanco);
+}
+
+
+.iconoEmail
+{
+        color: map-get(map-get($color, basicos), Negro);
+
 }
