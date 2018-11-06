@@ -212,39 +212,34 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 10px;
-  padding: 4%; }
+  padding: 4%;
+  font-family: 'MonserratBold',sans-serif; }
 
 .nombre,
 .email,
 .telefono,
 .servicios {
-  font-family: 'MonserratBold',sans-serif;
   grid-column: 1 / 4; }
 
 .particular {
-  font-family: 'MonserratBold', sans-serif;
   grid-column: 1 / 2;
   grid-row: 5;
   justify-self: center; }
 
 .empresa {
-  font-family: 'MonserratBold', sans-serif;
   grid-column: 3 / 4;
   grid-row: 5;
   justify-self: center; }
 
 .comentarios {
-  font-family: 'MonserratBold', sans-serif;
   grid-column: 1/ 4;
   grid-row: 6; }
 
 .txtcomentarios {
-  font-family: 'MonserratBold', sans-serif;
   color: #444444;
   border: 1px solid; }
 
 .servicios {
-  font-family: 'MonserratBold', sans-serif;
   height: 29px;
   overflow: hidden;
   width: 100%;
@@ -276,7 +271,6 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   height: 40px;
   width: 175px;
   font-weight: bold;
-  font-family: 'MonserratBold',sans-serif;
   font-size: 18px; }
 
 input[type=text],
