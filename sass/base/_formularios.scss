@@ -38,7 +38,6 @@
 .txtcomentarios
 {
     color: map-get(map-get($color, basicos), GrisOscuro);
-
     border: 1px solid;
 }
 
@@ -48,7 +47,7 @@
     height: 29px;
     overflow: hidden;
     width: 100%;
-    border: 1px solid #0e0e0e;
+    border: 1px solid map-get(map-get($color, basicos), Negro);
     grid-row: 4;
     color: map-get(map-get($color, basicos), Negro);
 
@@ -89,19 +88,18 @@
 
 input[type=text],
 select,
-textarea {
+textarea 
+{
     width: 100%;
     padding: 12px;
-    border: 1px solid #0e0e0e;
+    border: 1px solid map-get(map-get($color, basicos), Negro);
     border-radius: 0px;
     box-sizing: border-box;
     resize: vertical;
     color: map-get(map-get($color, basicos), Blanco);
 }
 
-
 .iconoEmail
 {
-        color: map-get(map-get($color, basicos), Negro);
-
+  color: map-get(map-get($color, basicos), Negro);
 }
