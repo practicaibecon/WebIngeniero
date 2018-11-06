@@ -2,6 +2,14 @@
 =            $FORMULARIOS           =
 =============================================*/
 
+.h2form
+{
+    font-family: 'MonserratBold',sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+
+}
 .contactform 
 {
     display: grid;
@@ -86,8 +94,6 @@
     width: 175px;
     font-weight: bold;
     font-size: 18px;
-
-
 }
 
 input[type=text],
