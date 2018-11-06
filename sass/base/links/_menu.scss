@@ -1,14 +1,84 @@
 .menu{
+    
+    height: 250px;
+
 
     &__fondo{
-        height: 215px;
-
-        @media screen and (min-width: 768px){
+        width: 100%;
+        height: 100%;
+        background-image: url('../img/smartphone/@2x/banner@2x.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;		
+          
+            /* Fondo para Pixel Ratio 3.   */
+            @media only screen and (pixel-ratio:3) {
+                        background-image: url('../img/smartphone/@3x/banner@3x.jpg');
+                            
+            }
+                
+        
+        @media screen and (min-width: 1200px){
             height: 700px;
-            };
+
+            @media only screen and (pixel-ratio:2) {
+                background-image: url('img/desktop/@2x/banner@2x.jpg');
+                    
+            }
+        }
         
             &__encabezado{
                 background-color: map-get(map-get($color, basicos), GrisOscuro);
+                height: 65px;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 20px 0 5px;
+                
+                align-items: center;
+
+                &__logo {
+                 
+                  @include flex-box;
+                                    
+                    img{
+                        width: 65px;
+                        height: 65px;
+                    }
+                    span{
+                        font-size: map-get($hs, h1m);
+                        flex-grow: 1;
+                    
+                    }
+                }
+
+                #activar {
+                display: none;
+                }
+                .desplegable{
+                display: none;
+                position: absolute;
+                top: 65px;
+                right: 20px;
+
+                }
+                #activar:checked ~ .desplegable{
+                 display: flex;
+                 flex-direction: column;
+                 background-color: map-get(map-get($color, basicos), GrisClaroOp);
+                 height: 144px;
+                 width: 40%;
+                 
+                 & a{
+                    color: map-get(map-get($color, basicos), GrisOscuro);
+                    text-align: center;
+                    padding: 15px 10px;
+                    border: 1px map-get(map-get($color, basicos), GrisOscuro) solid;
+                    font-family: 'MonserratBold', sans-serif;
+
+                 }
+                 
+                 
+                }
             }
 
     }

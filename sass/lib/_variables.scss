@@ -23,7 +23,7 @@ $hreme: 18px; // /para movil. Letra estandar.
      
 $hs: (
 
-    h1m: 16px, //para movil. Solo el nombre del logotipo
+    h1m: 20px, //para movil. Solo el nombre del logotipo
     h1e: 30px, //para escritorio. Solo el nombre del logotipo
     h2m: 21px,  //los h2 para movil. Los títulos que van con las imágenes y los textos
     h2e: 18px, //para el ordenador
@@ -61,8 +61,10 @@ $color: (
 basicos: (
 
     Blanco: #fafafa, //Color de fondo del Body
-    GrisOscuro: #444444, //Titulos, fondo header y fondo footer, letras encima del body
+    GrisOscuro: #444444,//Titulos, fondo header y fondo footer, letras encima del body
+    GrisOscuroOp: #444444cb, //Fondo Header Inicio
     GrisClaro: #ebebeb, //letras sobre fondo oscuro, iconos
+    GrisClaroOp: #ebebebdc, //menu movil
     Naranja: #e1a605 //Para poner en los hoover. 
 )
 );
@@ -98,7 +100,7 @@ a{
 
 i{
     color: map-get(map-get($color, basicos), GrisClaro);
-    font-size: 2rem;
+    font-size: 3rem;
       @media screen and (min-width: 768px){
         font-size: $hreme;
         }
