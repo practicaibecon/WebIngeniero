@@ -15,28 +15,38 @@
 .telefono ,
 .servicios
 {
+    font-family: 'MonserratBold',sans-serif;
+
     grid-column: 1 / 4;
 }
 
 .particular {
+    font-family: 'MonserratBold',
+    sans-serif;
     grid-column: 1 / 2;
     grid-row: 5;
     justify-self: center;
 }
 
 .empresa {
+    font-family: 'MonserratBold',
+    sans-serif;
     grid-column: 3 / 4;
     grid-row: 5;
     justify-self: center;
 }
 
 .comentarios {
+    font-family: 'MonserratBold',
+    sans-serif;
     grid-column: 1/ 4;
     grid-row: 6;
 }
 
 .txtcomentarios
 {
+    font-family: 'MonserratBold',
+    sans-serif;
     color: map-get(map-get($color, basicos), GrisOscuro);
     border: 1px solid;
 }
@@ -44,6 +54,8 @@
 
 .servicios 
 {
+    font-family: 'MonserratBold',
+    sans-serif;
     height: 29px;
     overflow: hidden;
     width: 100%;
@@ -83,6 +95,9 @@
     height: 40px;
     width: 175px;
     font-weight: bold;
+    font-family: 'MonserratBold',sans-serif;
+    font-size: 18px;
+
 
 }
 
