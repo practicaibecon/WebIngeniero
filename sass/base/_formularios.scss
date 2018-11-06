@@ -49,20 +49,20 @@
     height: 29px;
     overflow: hidden;
     width: 100%;
-    border: 1px solid map-get(map-get($color, basicos), Negro);
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
     grid-row: 4;
-    color: map-get(map-get($color, basicos), Negro);
+    color: map-get(map-get($color, basicos), GrisOscuro);
 
 }
 
 .servicios select {
     background: transparent;
-    border: map-get(map-get($color, basicos), Negro);
+    border: map-get(map-get($color, basicos), GrisOscuro);
     font-size: 14px;
     height: 29px;
     padding: 5px;
     width: 100%;
-    color: map-get(map-get($color, basicos), Negro);
+    color: map-get(map-get($color, basicos), GrisOscuro);
 
 }
 
@@ -96,7 +96,7 @@ textarea
 {
     width: 100%;
     padding: 12px;
-    border: 1px solid map-get(map-get($color, basicos), Negro);
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
     border-radius: 0px;
     box-sizing: border-box;
     resize: vertical;
@@ -105,5 +105,5 @@ textarea
 
 .iconoEmail
 {
-  color: map-get(map-get($color, basicos), Negro);
+  color: map-get(map-get($color, basicos), GrisOscuro);
 }
