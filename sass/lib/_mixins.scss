@@ -73,6 +73,11 @@ $breakpoint-desktop: 1366px; //e
 
 // MIXIN PARA FLEX BOX
 
+/*=============================================
+=            PIXEL RATIO            =
+=============================================*/
+
+
 @mixin flex-box ($jc:space-between, $ai:center, $fd: row){
     display: flex;
     justify-content: $jc;

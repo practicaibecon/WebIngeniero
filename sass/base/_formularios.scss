@@ -1,3 +1,66 @@
 /*=============================================
 =            $FORMULARIOS           =
 =============================================*/
+
+
+.contactform {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+}
+
+.nombre,
+.email,
+.telefono {
+    grid-column: 1 / 4;
+}
+
+.particular {
+    grid-column: 1 / 2;
+    grid-row: 5;
+    justify-self: center;
+}
+
+.empresa {
+    grid-column: 3 / 4;
+    grid-row: 5;
+    justify-self: center;
+}
+
+.comentarios {
+    grid-column: 1/ 4;
+    grid-row: 6;
+}
+
+.servicios {
+    grid-column: 1/ 4;
+    grid-row: 4;
+}
+
+.botonconfirmar {
+    grid-column: 2 / 3;
+    grid-row: 7;
+    background-color: #ebebeb;
+    border-color: black;
+    border-radius: 14px;
+    cursor: pointer;
+    height: 20px;
+    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat scroll 1 2 transparent;
+    height: 30px;
+    padding-bottom: 2px;
+    width: 175px;
+
+
+
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #0e0e0e;
+    border-radius: 0px;
+    box-sizing: border-box;
+    resize: vertical;
+}
