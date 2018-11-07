@@ -53,31 +53,38 @@
 </head>
 
 <body>
-  <section>
-<h2 class="h2form">SOLICITA TU PRESUPUESTO</h2>
-<form class="contactform">
+<section class="form_escritorio">
+
+  <form class="contactform">
+<div class="h2form">
+  <h2>SOLICITA TU PRESUPUESTO</h2>
+</div>
+<div class="nombre">
   <input name="nombre" type="text" placeholder="* Nombre" class="nombre">
+</div>
+<div class="email">
   <input name="email" type="text" placeholder="* Email" class="email">
-  <input name="telefono" type="text" placeholder="Teléfono" class="telefono">
-
-  <div class="particular">
-    <input type="radio" name="condicion" value="particular" checked>Particular
-  </div>
-  <div class="empresa">
-    <input type="radio" name="condicion" value="empresa">Empresa
-  </div>
-  <div class="servicios black">
-      <select>
-        <option>Selecciona consulta</option>
-        <option>Presupuesto</option>
-        <option>Otros</option>
-      </select>
-  </div>
-  <div class="comentarios">
-    <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escribe tu consulta"></textarea>
-  </div>
-  <button class="botonconfirmar"><i class="iconoEmail fas fa-envelope"></i>&nbsp;Enviar</button>
-</form>
-
-  </section>
+</div>
+<div class="telefono">
+  <input name="telefono" type="text" placeholder="Teléfono">
+</div>
+    <div class="particular">
+      <input type="radio" name="condicion" value="particular" checked>Particular
+    </div>
+    <div class="empresa">
+      <input type="radio" name="condicion" value="empresa">Empresa
+    </div>
+    <div class="servicios black">
+        <select>
+          <option>Selecciona consulta</option>
+          <option>Presupuesto</option>
+          <option>Otros</option>
+        </select>
+    </div>
+    <div class="comentarios">
+      <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escribe tu consulta"></textarea>
+    </div>
+    <button class="botonconfirmar">&nbsp;Enviar</button>
+  </form>
+</section>
 </body>

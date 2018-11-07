@@ -208,50 +208,61 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 /*=============================================
 =            $FORMULARIOS           =
 =============================================*/
-.h2form {
-  font-family: 'MonserratBold',sans-serif;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center; }
-
 .contactform {
+  grid-row: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 20px;
   padding: 3%;
-  font-family: 'MonserratBold',sans-serif; }
+  font-family: 'MonserratBold',sans-serif;
+  color: #444444; }
 
-.nombre,
-.email,
-.telefono,
-.servicios {
+.h2form {
+  font-family: 'MonserratBold', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  grid-row: 1;
   grid-column: 1 / 4; }
 
-.particular {
-  grid-column: 1 / 2;
-  grid-row: 5;
-  justify-self: center; }
+.nombre {
+  grid-column: 1 / 4;
+  grid-row: 2; }
 
-.empresa {
-  grid-column: 3 / 4;
-  grid-row: 5;
-  justify-self: center; }
+.email {
+  grid-column: 1 / 4;
+  grid-row: 3; }
 
-.comentarios {
-  grid-column: 1/ 4;
-  grid-row: 6; }
-
-.txtcomentarios {
-  color: #444444;
-  border: 1px solid #444444; }
+.telefono {
+  grid-column: 1 / 4;
+  grid-row: 4; }
 
 .servicios {
   height: 29px;
   overflow: hidden;
   border: 1px solid #444444;
-  grid-row: 4;
+  grid-row: 5;
   color: #444444;
-  border-radius: 4px; }
+  border-radius: 4px;
+  grid-column: 1 / 4; }
+
+.particular {
+  grid-column: 1 / 2;
+  grid-row: 6;
+  justify-self: center; }
+
+.empresa {
+  grid-column: 3 / 4;
+  grid-row: 6;
+  justify-self: center; }
+
+.comentarios {
+  grid-column: 1/ 4;
+  grid-row: 7; }
+
+.txtcomentarios {
+  color: #444444;
+  border: 1px solid #444444; }
 
 .servicios select {
   background: transparent;
@@ -267,7 +278,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 
 .botonconfirmar {
   grid-column: 2 / 3;
-  grid-row: 7;
+  grid-row: 8;
   background-color: #ebebeb;
   border-color: #444444;
   border-radius: 4px;
@@ -287,9 +298,17 @@ textarea {
   border-radius: 0px;
   box-sizing: border-box;
   resize: vertical;
-  color: #fafafa; }
+  color: #444444; }
 
 .iconoEmail {
+  color: #444444; }
+
+.form_escritorio {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 20px;
+  padding: 10%;
+  font-family: 'MonserratBold', sans-serif;
   color: #444444; }
 
 /*----------  LAYOUTS  ----------*/
