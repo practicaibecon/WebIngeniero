@@ -1,3 +1,39 @@
 /*=============================================
 =            $LAYOUTS         =
 =============================================*/
+
+.pie{
+    //@include flexBox(center, center, row);
+    @include pad-centrar();
+    background: map-get(map-get($color, basicos), GrisOscuro);
+    color: map-get(map-get($color, basicos), GrisClaro);
+
+    height: 250px;
+
+    display: grid;
+    @include layout_padre;
+    grid-template-rows: repeat(150,50,50);
+    grid-template-columns: repeat(2, 150px);
+
+    &__social{
+        @include flex-box(center, center, row);
+    }
+/*
+    &__icons{
+        @include flexBox(center, center, column);
+    }
+
+    &__terminos{        
+        @include flexBox(center, center, column);
+    }
+
+    &__contacto{
+
+    }
+
+
+    &__copy{
+
+    }
+   */ 
+}
