@@ -57,15 +57,14 @@ $hs: (
 =============================================*/
 
 $color: (
-
-basicos: (
-    Blanco: #fafafa, //Color de fondo del Body
-    GrisOscuro: #444444,//Titulos, fondo header y fondo footer, letras encima del body
-    GrisOscuroOp: #444444cb, //Fondo Header Inicio
-    GrisClaro: #ebebeb, //letras sobre fondo oscuro, iconos
-    GrisClaroOp: #ebebebdc, //menu movil
-    Naranja: #e1a605 //Para poner en los hoover. 
-)
+    basicos: (
+        Blanco: #fafafa, //Color de fondo del Body
+        GrisOscuro: #444444,//Titulos, fondo header y fondo footer, letras encima del body
+        GrisOscuroOp: #444444cb, //Fondo Header Inicio
+        GrisClaro: #ebebeb, //letras sobre fondo oscuro, iconos
+        GrisClaroOp: #ebebebdc, //menu movil
+        Naranja: #e1a605 //Para poner en los hoover. 
+    )
 );
 
 /*=====  Fin de Colores de Marca  ======*/
