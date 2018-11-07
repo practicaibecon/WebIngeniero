@@ -53,33 +53,44 @@
     <!-- <link rel="stylesheet" href="css/guiadeestilos.css"> -->
 
 </head>
-
 <body>
-<h2>SOLICITA TU PRESUPUESTO</h2>
-<form class="contactform">
-  <input name="nombre" type="text" placeholder="Nombre" class="nombre">
-  <input name="email" type="text" placeholder="Email" class="email">
-  <input name="telefono" type="text" placeholder="Teléfono" class="telefono">
 
-  <div class="particular">
-    <input type="radio" name="condicion" value="particular" checked>Particular
-  </div>
-  <div class="empresa">
-    <input type="radio" name="condicion" value="empresa" class="d1">Empresa
-  </div>
-  <div class="servicios">
+<div class="formulario">
+
+<h2>SOL.LICITA EL TEU PRESSUPOST</h2>
+
+<form class="formulario__solicita">
+  <input name="nombre" type="text" placeholder="*Nom" class="nombre">
+  <input name="email" type="text" placeholder="*E-mail" class="email">
+  <input name="telefono" type="text" placeholder="Telèfon" class="telefono">
+
+
+  <div class="formulario__servicios">
     <div>
+      <input name="servicio" type="text" placeholder="Servicis" class="servicios">
       <select>
-        <option>Selecciona consulta</option>
-        <option>Presupuesto</option>
-        <option>Otros</option>
+      <option>Selecciona la teua consulta</option>
+      <option>Pressupost</option>
+      <option>Altres</option>
       </select>
     </div>
-  </div>
-  <div class="comentarios">
-    <textarea name="comments" id="comments" maxlength="500"></textarea>
+
+  <div class="formulario__pointcheck">
+      <input type="radio" name="condicion" value="particular" checked>Particular
+      </div>
+      <div class="empresa">
+      <input type="radio" name="condicion" value="empresa" class="d1">Empresa
+      </div>
+
+
+</div>
+  <div class="formulario__comentarios">
+  <textarea name="comments" id="comments" maxlength="500">Escriu alguna cosa ...</textarea>
   </div>
   <button class="botonconfirmar">Enviar</button>
 </form>
+
+</div>
+
 
 </body>

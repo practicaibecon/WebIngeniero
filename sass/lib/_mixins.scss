@@ -35,7 +35,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
         font-family: "#{$archivo}";
         font-weight: $negrita; 
         font-style: $estilo; 
-        //si ponemos este mixin es porque quiero ahorrar peso a la pagina web y forzar lso estilos con el font-weight y el font-style 
+        //si ponemos este mixin es porque quiero ahorrar peso a la pagina web y forzar los estilos con el font-weight y el font-style 
         src: local('#{$archivo}'), url('../fonts/#{$archivo}.woff') format('woff');
     }
 }

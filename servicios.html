@@ -3,6 +3,17 @@
 <html lang="ca">
 
 <head>
+        <script type="text/javascript">
+            window.onload = function () {
+          
+              var ln = x = window.navigator.language || navigator.browserLanguage;
+          
+                  if (ln == 'es') {
+                                  window.location.href = 'sobremi_es.html'; //si esta en inglés va a ingles
+          
+                  }
+            }
+          </script>
  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -68,31 +79,28 @@
 
         <figure><figcaption>
 
-            <img class="tecnicos__photo" src="img/smartphone/*.jpg" alt="tecnicos">
+                <picture class="tecnicos__photo">
+                        <!-- Por defecto, baja resolución de imagen para Smartphone -->
+                        <source srcset='img/smartphone/ 1x,img/smartphone/ 2x' media='(min-width:0px) and (max-width:767px)'>
+                        
+                        <!-- Alta resolución para Escritorio -->
+                        <source srcset='img/desktop/ 1x,img/desktop/ 2x' media='(min-width:1366px)'>      
+                        
+                        <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+                        <img src='img/smartphone/' alt='tecnicos'>
+                        
+                </picture>
+            <h2>ESTUDIS TÈCNICS</h2>
 
-            <h2>Estudios Técnicos</h2>
+            <p class="tecnicos__lorem">Elaboració d'estudis tècnics, des d'estudis hidrològics fins a estudis estructurals, 
+                estudis urbanístics, taxacions, peritatges, etc. Treballs consistents en l'anàlisi, gestió, càlcul i 
+                redacció d'estudis tècnics per a permetre la legalització d'edificacions i infraestructures de qualsevol tipus. 
+                Inclou l'elaboració dels estudis tècnics i els seus corresponents tràmits i seguiments administratius.</p>
 
-            <p class="tecnicos__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales, vel imperdiet ex varius. Sed sit amet convallis ante, sed efficitur lacus. Morbi commodo neque mollis dolor fermentum commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
-
-            <button class="tecnicos__boton">Presupuesto</button>
+            <button class="tecnicos__boton">SOL•LICITA EL TEU PRESSUPOST</button>
 
         </figcaption></figure>
-
-         <!-- Por si insertamos alguna img en RWD -->
-    <picture>
-            <!-- Por defecto, baja resolución de imagen para Smartphone -->
-            <source srcset='img/smartphone/ 1x,img/smartphone/ 2x' media='(min-width:0px) and (max-width:767px)'>
-            
-            <!-- Media resolución para Tablets -->
-            <source srcset='img/tablet/ 1x,img/tablet/ 2x' media='(min-width:768px) and (max-width:1365px)'>
-            
-            <!-- Alta resolución para Escritorio -->
-            <source srcset='img/desktop/ 1x,img/desktop/ 2x' media='(min-width:1366px)'>
-                        
-            
-            <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
-            <img src='img/smartphone/' alt=''>
-            
+    
     </picture>
 </section>
 
@@ -101,18 +109,28 @@
 
         <figure><figcaption>
 
-            <img class="presupuestos__photo" src="img/smartphone/*.jpg" alt="presupuestos">
+                <picture class="presupuestos__photo">
+                        <!-- Por defecto, baja resolución de imagen para Smartphone -->
+                        <source srcset='img/smartphone/ 1x,img/smartphone/ 2x' media='(min-width:0px) and (max-width:767px)'>
+                        
+                        <!-- Alta resolución para Escritorio -->
+                        <source srcset='img/desktop/ 1x,img/desktop/ 2x' media='(min-width:1366px)'>      
+                        
+                        <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+                        <img src='img/smartphone/' alt='presupuestos'>
+                        
+                </picture>
 
-            <h2>Presupuestos</h2>
+            <h2>PRESSUPOSTS</h2>
 
-            <p class="presupuestos__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales, 
-                vel imperdiet ex varius. Sed sit amet convallis ante, sed efficitur lacus. 
-                Morbi commodo neque mollis dolor fermentum commodo. 
-                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
+            <p class="presupuestos__lorem">Elaboració de pressuposts d'edificació o obra civil per a l'Administració Pública, 
+                empreses contractistes, subcontractistes, particulars, etc. Inclou l'estudi de les partides requerides per als 
+                treballs a valorar, així com els amidaments necessaris per a la seva correcta execució i finalització, 
+                i la justificació dels preus presentats. Els pressuposts realitzats serviran per tenir una noció del cost real dels 
+                treballs sol•licitats, per a la previsió i/o reserva de pressupost per part de l'Administració o per a la seva posterior 
+                execució de manera directa en el cas d'empreses contractistes i particulars.</p>
 
-                <button class="presupuestos__boton">Presupuesto</button>
+                <button class="presupuestos__boton">SOL•LICITA EL TEU PRESSUPOST</button>
 
         </figcaption></figure>
     </section>
@@ -122,9 +140,19 @@
 
         <figure><figcaption>
 
-            <img class="proyectos__photo" src="img/smartphone/*.jpg" alt="proyectos">
+                <picture class="proyectos__photo">
+                        <!-- Por defecto, baja resolución de imagen para Smartphone -->
+                        <source srcset='img/smartphone/ 1x,img/smartphone/ 2x' media='(min-width:0px) and (max-width:767px)'>
+                        
+                        <!-- Alta resolución para Escritorio -->
+                        <source srcset='img/desktop/ 1x,img/desktop/ 2x' media='(min-width:1366px)'>      
+                        
+                        <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+                        <img src='img/smartphone/' alt='proyectos'>
+                        
+                </picture>
 
-            <h2>Proyectos</h2>
+            <h2>PROJECTES</h2>
 
             <p class="proyectos__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales, 
@@ -133,7 +161,7 @@
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
                 Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
 
-                <button class="proyectos__boton">Presupuesto</button>
+                <button class="proyectos__boton">SOL•LICITA EL TEU PRESSUPOST</button>
 
         </figcaption></figure>
     </section>
@@ -144,9 +172,19 @@
 
         <figure><figcaption>
 
-            <img class="direccion__photo" src="img/smartphone/*.jpg" alt="direccion">
+                <picture class="direccion__photo">
+                        <!-- Por defecto, baja resolución de imagen para Smartphone -->
+                        <source srcset='img/smartphone/ 1x,img/smartphone/ 2x' media='(min-width:0px) and (max-width:767px)'>
+                        
+                        <!-- Alta resolución para Escritorio -->
+                        <source srcset='img/desktop/ 1x,img/desktop/ 2x' media='(min-width:1366px)'>      
+                        
+                        <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+                        <img src='img/smartphone/' alt='direccion'>
+                        
+                </picture>
 
-            <h2>Direccion de obra</h2>
+            <h2>DIRECCIÓ D´OBRA</h2>
 
             <p class="direccion__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales, 
@@ -155,7 +193,7 @@
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
                 Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
 
-                <button class="direccion__boton">Presupuesto</button>
+                <button class="direccion__boton">SOL•LICITA EL TEU PRESSUPOST</button>
 
         </figcaption></figure>
     </section>
@@ -167,9 +205,19 @@
 
         <figure><figcaption>
 
-            <img class="coordinacion__photo" src="img/smartphone/*.jpg" alt="coordinacion">
+                <picture class="coordinacion__photo">
+                        <!-- Por defecto, baja resolución de imagen para Smartphone -->
+                        <source srcset='img/smartphone/ 1x,img/smartphone/ 2x' media='(min-width:0px) and (max-width:767px)'>
+                        
+                        <!-- Alta resolución para Escritorio -->
+                        <source srcset='img/desktop/ 1x,img/desktop/ 2x' media='(min-width:1366px)'>      
+                        
+                        <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+                        <img src='img/smartphone/' alt='tecnicos'>
+                        
+                </picture>
 
-            <h2>Coordinación y Seguridad</h2>
+            <h2>COORDINACIÓ I SEGURETAT</h2>
 
             <p class="coordinacion__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                 Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales, 
@@ -178,7 +226,7 @@
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
                 Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
 
-                <button class="coordinacion__boton">Presupuesto</button>
+                <button class="coordinacion__boton">SOL•LICITA EL TEU PRESSUPOST</button>
 
         </figcaption></figure>
     </section>
@@ -219,9 +267,9 @@
 
 <div class="derechos__footer">
 
-    <a href="">Términos</a>
+    <a href="">Térmes</a>
     <a href="">Cookies</a>
-    <a href="">Privacidad</a>
+    <a href="">Privacitat</a>
     <a href="">...</a>
 
 </div>    
@@ -240,10 +288,9 @@
 
 
 </footer>
-</container>
-</body>
 
+</body>
+</container>
 </html>
 
 
-</head>
