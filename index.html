@@ -4,17 +4,17 @@
 
 <head>
     <script type="text/javascript">
-      window.onload = function () {
-    
-        var ln = x = window.navigator.language || navigator.browserLanguage;
-    
+        window.onload = function () {
+
+            var ln = x = window.navigator.language || navigator.browserLanguage;
+
             if (ln == 'es') {
-                            window.location.href = 'index_es.html'; //si esta en inglés va a ingles
-    
+                window.location.href = 'index_es.html'; //si esta en inglés va a ingles
+
             }
-      }
+        }
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -44,9 +44,10 @@
     <meta name="twitter:image" content="http://www.flightwithmati.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
-    
+
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -57,51 +58,75 @@
 <body>
 
     <header class="menu">
-       
-        <div class="menu__fondo">
-          
-             <nav class="menu__fondo__encabezado">
-                
-                <a href="index.html" class="menu__fondo__encabezado__logo"> 
-                    
-                    <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra"> 
-                    <span>
-                        Llorenç Bisquerra
-                    </span>
-                
-                </a>
-              
-                <!-- Menú movil -->
-              
-                <input id=activar type='checkbox'> 
-                <label class='menu__fondo__encabezado__inputlabel' for='activar'> 
-                    <i class='menu__icono fas fa-bars'></i> 
-                </label>
-                <div class='menu__fondo__encabezado__desplegable'> 
-                     
-                      <a class='menu__fondo__encabezado__desplegable__a' href='sobremi.html'>
-                        Sobre mí
-                      </a>
-                      <a class='menu__fondo__encabezado__desplegable__a' href='servicios.html'>
-                        Servicios
-                      </a>   
-                      <a class='menu__fondo__encabezado__desplegable__a' href='contacto.html'>
-                        Contactar
-                      </a> 
-                       <div class='menu__fondo__encabezado__desplegable__banderas' href="#">
-                        <a class= 'menu__fondo__encabezado__desplegable__banderas__a' href='#'>
-                            <img src="icons/cat.svg" alt="cat">
-                        </a>
-                        <a class= 'menu__fondo__encabezado__desplegable__banderas__a' href='#'>
-                            <img src="icons/esp.svg" alt="esp">
-                        </a>
 
-                    </div> 
+        <nav class="menu__encabezado">
+
+            <a href="index.html" class="menu__encabezado__logo">
+
+                <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+                <span>
+                    Llorenç Bisquerra
+                </span>
+
+            </a>
+
+            <!-- Menú movil -->
+
+            <input id=activar type='checkbox'>
+            <label class='menu__encabezado__inputlabel' for='activar'>
+                <i class='menu__icono fas fa-bars'></i>
+            </label>
+            <div class='menu__encabezado__desplegable'>
+
+                <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
+                    Sobre mí
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='servicios.html'>
+                    Servicios
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='contacto.html'>
+                    Contactar
+                </a>
+                <div class='menu__encabezado__desplegable__banderas' href="#">
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/cat.svg" alt="cat">
+                    </a>
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/esp.svg" alt="esp">
+                    </a>
+
                 </div>
-             </nav>
-          </div>
-     </header>
-        
+            </div>
+        </nav>
+
+    </header>
+    <section>
+
+        <!-- &__fondo {
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/smartphone/@2x/banner@2x.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+    
+            /* Fondo para Pixel Ratio 3.   */
+            @media only screen and (pixel-ratio: 3) {
+                background-image: url('../img/smartphone/@3x/banner@3x.jpg');
+    
+            }
+    
+    
+            @media screen and (min-width: 1200px) {
+                height: 700px;
+    
+                @media only screen and (pixel-ratio: 2) {
+                    background-image: url('img/desktop/@2x/banner@2x.jpg');
+    
+                }
+            } -->
+
+    </SEction>
 </body>
 
 </html>

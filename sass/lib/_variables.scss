@@ -100,7 +100,7 @@ a{
 i{
     color: map-get(map-get($color, basicos), GrisClaro);
     font-size: 3rem;
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 1200px){
         font-size: $hreme;
         }
 }
