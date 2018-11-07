@@ -1,12 +1,16 @@
 .menu {
 
     height: 65px;
-
+    @media screen and (min-width: 1200px) {
+        height: 100px;
+    }
+    
     &__encabezado {
         background-color: map-get(map-get($color, basicos), GrisOscuro);
         height: 100%;
         display: flex;
-        // justify-content: space-between;
+        flex-grow: row;
+        justify-content: space-between;
         padding: 0 20px 0 5px;
         align-items: center;
 
@@ -14,20 +18,32 @@
 
             @include flex-box;
 
+            @media screen and (min-width: 1200px){
+                padding: 0 0 0 20px;
+            }
+
             img {
                 width: 65px;
                 height: 65px;
+
+                @media screen and (min-width: 1200px) {
+                    width: 90px;
+                    height: 90px;
+                    
+                }
             }
 
             span {
                 font-size: map-get($hs, h1m);
-                flex-grow: 1;
                 color: map-get(map-get($color, basicos), GrisClaro);
+                padding-left: 3px;
 
                 @media screen and (min-width: 1200px) {
-                    flex-grow: 0;
+                    font-size: map-get($hs, h1e);
+                    padding-left: 10px;
                 }
             }
+
         }
 
         #activar {
@@ -37,6 +53,8 @@
         &__inputlabel {
             @media screen and (min-width: 1200px) {
                 display: none;
+                height: 0px;
+                width: 0px;
             }
         }
 
@@ -48,6 +66,12 @@
 
             @media screen and (min-width: 1200px) {
                 display: flex;
+                top: 0;
+                right: 0;
+                align-items: center;
+                // flex-grow: 1;
+                position: static;
+                padding: 0 25px;
 
             }
             
@@ -62,6 +86,13 @@
                         color: map-get(map-get($color, basicos), GrisClaro);
                         border: 0px;
                         padding: 0;
+                        padding: 0 50px 0 0;
+                        font-size: map-get($hs, h4e);
+
+                        &:hover{
+                            color: map-get(map-get($color, basicos), Naranja);
+                        }
+
                     }
             }        
 
@@ -72,13 +103,23 @@
                 align-items: center;
                 border: 1px map-get(map-get($color, basicos), GrisOscuro) solid;
                 height: 65px;
+                                           
+                @media screen and (min-width: 1200px){
+                    border: 0px;
+                    flex-direction: column;
+                    height: 80px; 
+                }
 
                 &__a img {
                     height: 40px;
                     width: 50px;
-                        }
-                }
 
+                    @media screen and (min-width: 1200px){
+                        height: 25px;
+                         width: 35px;
+                     }
+                }
+            }
             }
 
             #activar:checked ~ .menu__encabezado__desplegable {
@@ -89,10 +130,7 @@
                 width: 170px;
                 flex-shrink: 3;
 
-                @media screen and (min-width: 1200px) {
-                    display: none;
-                }
-
+              
             }
 
         }

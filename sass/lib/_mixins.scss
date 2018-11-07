@@ -92,5 +92,12 @@ $breakpoint-desktop: 1366px; //e
     margin: 0 auto;
     
 }
+
+// Para grid padre
+@mixin layout_padre($js:center,$as:center) {
+    display: grid;     
+    justify-content: $js;
+    align-content: $as;
+}
      
 

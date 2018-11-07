@@ -221,12 +221,24 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   height: 65px;
 }
 
+@media screen and (min-width: 1200px) {
+  .menu {
+    height: 100px;
+  }
+}
+
 .menu__encabezado {
   background-color: #444444;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: row;
+  -ms-flex-positive: row;
+  flex-grow: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 0 20px 0 5px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -249,24 +261,34 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   flex-direction: row;
 }
 
+@media screen and (min-width: 1200px) {
+  .menu__encabezado__logo {
+    padding: 0 0 0 20px;
+  }
+}
+
 .menu__encabezado__logo img {
   width: 65px;
   height: 65px;
 }
 
+@media screen and (min-width: 1200px) {
+  .menu__encabezado__logo img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 .menu__encabezado__logo span {
   font-size: 20px;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
   color: #ebebeb;
+  padding-left: 3px;
 }
 
 @media screen and (min-width: 1200px) {
   .menu__encabezado__logo span {
-    -webkit-box-flex: 0;
-    -ms-flex-positive: 0;
-    flex-grow: 0;
+    font-size: 30px;
+    padding-left: 10px;
   }
 }
 
@@ -277,6 +299,8 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 @media screen and (min-width: 1200px) {
   .menu__encabezado__inputlabel {
     display: none;
+    height: 0px;
+    width: 0px;
   }
 }
 
@@ -292,6 +316,13 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 0;
+    right: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: static;
+    padding: 0 25px;
   }
 }
 
@@ -307,6 +338,11 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
     color: #ebebeb;
     border: 0px;
     padding: 0;
+    padding: 0 50px 0 0;
+    font-size: 22px;
+  }
+  .menu__encabezado__desplegable__a:hover {
+    color: #e1a605;
   }
 }
 
@@ -327,9 +363,27 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   height: 65px;
 }
 
+@media screen and (min-width: 1200px) {
+  .menu__encabezado__desplegable__banderas {
+    border: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 80px;
+  }
+}
+
 .menu__encabezado__desplegable__banderas__a img {
   height: 40px;
   width: 50px;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__encabezado__desplegable__banderas__a img {
+    height: 25px;
+    width: 35px;
+  }
 }
 
 .menu__encabezado #activar:checked ~ .menu__encabezado__desplegable {
@@ -345,12 +399,6 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   width: 170px;
   -ms-flex-negative: 3;
   flex-shrink: 3;
-}
-
-@media screen and (min-width: 1200px) {
-  .menu__encabezado #activar:checked ~ .menu__encabezado__desplegable {
-    display: none;
-  }
 }
 
 /*----------  Formularios  ----------*/
@@ -465,4 +513,55 @@ textarea {
 /*=============================================
 =            $LAYOUTS         =
 =============================================*/
+.pie {
+  max-width: 90%;
+  margin: 0 auto;
+  background: #444444;
+  color: #ebebeb;
+  height: 250px;
+  display: grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  grid-template-rows: repeat(150, 50, 50);
+  grid-template-columns: repeat(2, 150px);
+  /*
+    &__icons{
+        @include flexBox(center, center, column);
+    }
+
+    &__terminos{        
+        @include flexBox(center, center, column);
+    }
+
+    &__contacto{
+
+    }
+
+
+    &__copy{
+
+    }
+   */
+}
+
+.pie__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
 /*----------  Imágenes  ----------*/
