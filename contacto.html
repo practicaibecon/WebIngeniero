@@ -44,17 +44,16 @@
     <meta name="twitter:image" content="http://www.flightwithmati.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+  crossorigin="anonymous">
     
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
-    <!-- <link rel="stylesheet" href="css/guiadeestilos.css"> -->
-
 </head>
 
 <body>
+  <section>
 <h2>SOLICITA TU PRESUPUESTO</h2>
 <form class="contactform">
   <input name="nombre" type="text" placeholder="Nombre" class="nombre">
@@ -65,21 +64,20 @@
     <input type="radio" name="condicion" value="particular" checked>Particular
   </div>
   <div class="empresa">
-    <input type="radio" name="condicion" value="empresa" class="d1">Empresa
+    <input type="radio" name="condicion" value="empresa">Empresa
   </div>
-  <div class="servicios">
-    <div>
+  <div class="servicios black">
       <select>
         <option>Selecciona consulta</option>
         <option>Presupuesto</option>
         <option>Otros</option>
       </select>
-    </div>
   </div>
   <div class="comentarios">
-    <textarea name="comments" id="comments" maxlength="500"></textarea>
+    <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escribe tu consulta"></textarea>
   </div>
-  <button class="botonconfirmar">Enviar</button>
+  <button class="botonconfirmar"><i class="iconoEmail fas fa-envelope"></i>&nbsp;Enviar</button>
 </form>
 
+  </section>
 </body>

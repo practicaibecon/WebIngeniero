@@ -10,18 +10,15 @@
 /* MINIMAL CSS RESET */
 /* -------------------- */
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 *, *:before, *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-=======
-  box-sizing: inherit; }
->>>>>>> f2e737d297110c0a91384cfeb7a561b949c7a12d
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
@@ -43,18 +40,15 @@ img {
    License: none (public domain)
 */
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 16px;
 }
 
 *, *:before, *:after {
-<<<<<<< HEAD
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
-=======
-  box-sizing: inherit; }
->>>>>>> f2e737d297110c0a91384cfeb7a561b949c7a12d
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin: 0;
@@ -140,7 +134,6 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 @font-face {
   font-family: 'MontserratRegular';
-<<<<<<< HEAD
   src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff);
 }
 
@@ -149,12 +142,6 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
   src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff);
 }
 
-=======
-  src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff); }
-@font-face {
-  font-family: 'MontserratBold';
-  src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff); }
->>>>>>> f2e737d297110c0a91384cfeb7a561b949c7a12d
 /*=====  Fin de Tipología  ======*/
 /*=============================================
 =            Colores de Marca            =
@@ -221,27 +208,9 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 =            MEDIAS para MOVILES            =
 =============================================*/
 /*=============================================
-<<<<<<< HEAD
-=======
 =            PIXEL RATIO            =
 =============================================*/
-.media {
-  width: 400px;
-  height: 400px;
-  background-image: url("img/tablet/motos.jpg"); }
-  @media screen and (min-width: 768px) {
-    .media {
-      width: 600px;
-      height: 600px; } }
-  @media only screen and (pixel-ratio: 2) {
-    .media {
-      background-image: url("img/tablet/motos@2x.jpg"); } }
-  @media only screen and (pixel-ratio: 3) {
-    .media {
-      background-image: url("img/tablet/motos@3x.jpg"); } }
-
 /*=============================================
->>>>>>> f2e737d297110c0a91384cfeb7a561b949c7a12d
 =            $PLACEHOLDERS        =
 =============================================*/
 /*----------  LINKS  ----------*/
@@ -321,20 +290,76 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
+  color: #ebebeb;
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__fondo__encabezado__logo span {
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+  }
 }
 
 .menu__fondo__encabezado #activar {
   display: none;
 }
 
-.menu__fondo__encabezado .desplegable {
+@media screen and (min-width: 1200px) {
+  .menu__fondo__encabezado__inputlabel {
+    display: none;
+  }
+}
+
+.menu__fondo__encabezado__desplegable {
   display: none;
   position: absolute;
   top: 65px;
   right: 20px;
 }
 
-.menu__fondo__encabezado #activar:checked ~ .desplegable {
+@media screen and (min-width: 1200px) {
+  .menu__fondo__encabezado__desplegable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__fondo__encabezado__desplegable__a {
+    color: #444444;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px #444444 solid;
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-width: 1200px) {
+  .menu__fondo__encabezado__desplegable__a {
+    color: #ebebeb;
+    border: 0px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu__fondo__encabezado__desplegable__a__banderas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .menu__fondo__encabezado__desplegable__a__banderas__a img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.menu__fondo__encabezado__desplegable #activar:checked ~ .menu__fondo__encabezado__desplegable {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,16 +368,14 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #ebebebdc;
-  height: 144px;
+  height: 200px;
   width: 40%;
 }
 
-.menu__fondo__encabezado #activar:checked ~ .desplegable a {
-  color: #444444;
-  text-align: center;
-  padding: 15px 10px;
-  border: 1px #444444 solid;
-  font-family: 'MonserratBold', sans-serif;
+@media screen and (min-width: 1200px) {
+  .menu__fondo__encabezado__desplegable #activar:checked ~ .menu__fondo__encabezado__desplegable {
+    display: none;
+  }
 }
 
 /*----------  Formularios  ----------*/
@@ -362,53 +385,87 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 .contactform {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 10px; }
+  grid-row-gap: 10px;
+  padding: 4%;
+  font-family: 'MonserratBold',sans-serif;
+}
 
 .nombre,
 .email,
-.telefono {
-  grid-column: 1 / 4; }
+.telefono,
+.servicios {
+  grid-column: 1 / 4;
+}
 
 .particular {
   grid-column: 1 / 2;
   grid-row: 5;
-  justify-self: center; }
+  justify-self: center;
+}
 
 .empresa {
   grid-column: 3 / 4;
   grid-row: 5;
-  justify-self: center; }
+  justify-self: center;
+}
 
 .comentarios {
   grid-column: 1/ 4;
-  grid-row: 6; }
+  grid-row: 6;
+}
+
+.txtcomentarios {
+  color: #444444;
+  border: 1px solid;
+}
 
 .servicios {
-  grid-column: 1/ 4;
-  grid-row: 4; }
+  height: 29px;
+  overflow: hidden;
+  width: 100%;
+  border: 1px solid;
+  grid-row: 4;
+}
+
+.servicios select {
+  background: transparent;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px;
+  width: 100%;
+}
+
+.servicios.black {
+  height: 34px;
+  width: 100%;
+}
 
 .botonconfirmar {
   grid-column: 2 / 3;
   grid-row: 7;
   background-color: #ebebeb;
-  border-color: black;
-  border-radius: 14px;
+  border-color: #444444;
+  border-radius: 4px;
   cursor: pointer;
-  height: 20px;
-  background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat scroll 1 2 transparent;
-  height: 30px;
   padding-bottom: 2px;
-  width: 175px; }
+  height: 40px;
+  width: 175px;
+  font-weight: bold;
+  font-size: 18px;
+}
 
 input[type=text],
 select,
 textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #0e0e0e;
+  border: 1px solid;
   border-radius: 0px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  resize: vertical; }
+  resize: vertical;
+  color: #fafafa;
+}
 
 /*----------  LAYOUTS  ----------*/
 /*=============================================
@@ -421,5 +478,3 @@ textarea {
 =            $LAYOUTS         =
 =============================================*/
 /*----------  Imágenes  ----------*/
-
-/*# sourceMappingURL=estilos.css.map */

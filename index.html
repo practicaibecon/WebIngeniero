@@ -62,34 +62,42 @@
           
              <nav class="menu__fondo__encabezado">
                 
-              <a href="index.html" class="menu__fondo__encabezado__logo"> 
-                  
-                  <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra"> 
-                  <span>
-                      Llorenç Bisquerra
-                  </span>
-              
-              </a>
+                <a href="index.html" class="menu__fondo__encabezado__logo"> 
+                    
+                    <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra"> 
+                    <span>
+                        Llorenç Bisquerra
+                    </span>
+                
+                </a>
               
                 <!-- Menú movil -->
               
-                 <input id=activar type='checkbox'> <!-- En CSS hay que ponerle display:none -->
-                     <label class='inputlabel' for='activar'> <!-- Esta unido al chechkbox a través del for que tiene que tener el nombre del id del input  -->
-                         <i class='menu__icono fas fa-bars'></i> <!-- Zona del icono. s donde haré click para que el menu se despliegue. Hay uno puesto.  -->
-                     </label>
-                 <div class='desplegable'> <!-- En CSS hay que ponerle display:none. Es lo que contiene el menu en si. Para que se abra en el CSS hay que ponerle que cuando apretemos en label, se convierta en display: block; -->
+                <input id=activar type='checkbox'> 
+                <label class='menu__fondo__encabezado__inputlabel' for='activar'> 
+                    <i class='menu__icono fas fa-bars'></i> 
+                </label>
+                <div class='menu__fondo__encabezado__desplegable'> 
                      
-                      <a href='sobremi_ca.html'>
+                      <a class='menu__fondo__encabezado__desplegable__a' href='sobremi.html'>
                         Sobre mí
                       </a>
-                      <a href='servicios_ca.html'>
+                      <a class='menu__fondo__encabezado__desplegable__a' href='servicios.html'>
                         Servicios
                       </a>   
-                      <a href='formulario_ca.html'>
+                      <a class='menu__fondo__encabezado__desplegable__a' href='contacto.html'>
                         Contactar
                       </a> 
-                         
-                 </div>
+                       <div class='menu__fondo__encabezado__desplegable__banderas' href="#">
+                        <a class= 'menu__fondo__encabezado__desplegable__banderas__a' href='#'>
+                            <img src="icons/cat.svg" alt="cat">
+                        </a>
+                        <a class= 'menu__fondo__encabezado__desplegable__banderas__a' href='#'>
+                            <img src="icons/esp.svg" alt="esp">
+                        </a>
+
+                    </div> 
+                </div>
              </nav>
           </div>
      </header>
