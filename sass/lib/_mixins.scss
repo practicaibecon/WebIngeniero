@@ -71,35 +71,26 @@ $breakpoint-desktop: 1366px; //e
     }
 };
 
+// MIXIN PARA FLEX BOX
+
 /*=============================================
 =            PIXEL RATIO            =
 =============================================*/
 
-.media{
 
-    width: 400px;
-    height: 400px;
-    //Pixel Ratio 1
-    background-image: url('img/tablet/motos.jpg');
+@mixin flex-box ($jc:space-between, $ai:center, $fd: row){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
 
-    //hago un media query para retocar el codigo que le he puesto al div para tablets
+// MIXIN PARA CENTRAR CONTENIDO
 
-    @media screen and (min-width: 768px){
-        width: 600px;
-        height: 600px;
-    }
-    //cuando acabo de tocar el código pongo los cambios de foto del background.
+@mixin pad-centrar($wt:90%){
+    max-width: $wt;
+    margin: 0 auto;
     
-    //Pixel Ratio 2
-
-    @media only screen and (pixel-ratio: 2){
-        background-image: url('img/tablet/motos@2x.jpg');
-    }
-
-    //Pixel Ratio 3
-    @media only screen and (pixel-ratio: 3){
-        background-image: url('img/tablet/motos@3x.jpg');
-    }
 }
      
 
