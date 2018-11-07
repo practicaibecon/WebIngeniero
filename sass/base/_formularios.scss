@@ -2,12 +2,20 @@
 =            $FORMULARIOS           =
 =============================================*/
 
+.h2form
+{
+    font-family: 'MonserratBold',sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+
+}
 .contactform 
 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 10px;
-    padding: 4%;
+    grid-row-gap: 20px;
+    padding: 3%;
     font-family: 'MonserratBold',sans-serif;
 
 }
@@ -40,7 +48,7 @@
 .txtcomentarios
 {
     color: map-get(map-get($color, basicos), GrisOscuro);
-    border: 1px solid;
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
 }
 
 
@@ -48,21 +56,21 @@
 {
     height: 29px;
     overflow: hidden;
-    width: 100%;
-    border: 1px solid map-get(map-get($color, basicos), Negro);
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
     grid-row: 4;
-    color: map-get(map-get($color, basicos), Negro);
+    color: map-get(map-get($color, basicos), GrisOscuro);
+    border-radius: 4px;
 
 }
 
 .servicios select {
     background: transparent;
-    border: map-get(map-get($color, basicos), Negro);
+    border: map-get(map-get($color, basicos), GrisOscuro);
     font-size: 14px;
     height: 29px;
     padding: 5px;
-    width: 100%;
-    color: map-get(map-get($color, basicos), Negro);
+    color: map-get(map-get($color, basicos), GrisOscuro);
+    border-radius: 4px;
 
 }
 
@@ -70,7 +78,6 @@
 .servicios.black 
 {
     height: 34px;
-    width: 100%;
 }
 
 
@@ -82,12 +89,10 @@
     border-radius: 4px;
     cursor: pointer;
     padding-bottom: 2px;
-    height: 40px;
-    width: 175px;
+    height: 45px;
+    width: 155px;
     font-weight: bold;
     font-size: 18px;
-
-
 }
 
 input[type=text],
@@ -96,7 +101,7 @@ textarea
 {
     width: 100%;
     padding: 12px;
-    border: 1px solid map-get(map-get($color, basicos), Negro);
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
     border-radius: 0px;
     box-sizing: border-box;
     resize: vertical;
@@ -105,5 +110,5 @@ textarea
 
 .iconoEmail
 {
-  color: map-get(map-get($color, basicos), Negro);
+  color: map-get(map-get($color, basicos), GrisOscuro);
 }
