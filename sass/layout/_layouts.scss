@@ -27,6 +27,7 @@
         &__icons{
             @include flex-box(center, center, column);
             flex-wrap: wrap;
+            
         }
 
         &__terms{
@@ -38,6 +39,9 @@
         grid-column-start: 1;
         grid-column-end: 3;
         @include flex-box(space-around, center, row);
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+        height: 50px;
     }
 
     &__copy{

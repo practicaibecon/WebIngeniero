@@ -587,6 +587,9 @@ textarea {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  height: 50px;
 }
 
 .pie__copy {
