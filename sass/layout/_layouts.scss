@@ -13,37 +13,36 @@
     display: grid;
     @include layout_padre;
     grid-template-rows: repeat(150,50,50);
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 160px);
 
     &__social{
         // @include flex-box(center, center, row);
         grid-column-start: 1;
         grid-column-end: 3;
+        
+        display: grid;
+        grid-template-rows: 100px;
+        grid-template-columns: repeat(2, 160px);
 
         &__icons{
-            
+            @include flex-box(center, center, column);
+            flex-wrap: wrap;
         }
 
         &__terms{
-
+            @include flex-box(space-between, center, column);
         }
-    }
-/*
-    &__icons{
-        @include flexBox(center, center, column);
-    }
-
-    &__terminos{        
-        @include flexBox(center, center, column);
     }
 
     &__contacto{
-
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @include flex-box(space-around, center, row);
     }
-
 
     &__copy{
-
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @include flex-box(center, center, row);
     }
-   */ 
 }
