@@ -578,7 +578,7 @@ textarea {
 =            $LAYOUTS         =
 =============================================*/
 .pie {
-  max-width: 90%;
+  max-width: 100;
   margin: 0 auto;
   background: #444444;
   color: #ebebeb;
@@ -591,28 +591,74 @@ textarea {
   -ms-flex-line-pack: center;
   align-content: center;
   grid-template-rows: repeat(150, 50, 50);
-  grid-template-columns: repeat(2, 150px);
-  /*
-    &__icons{
-        @include flexBox(center, center, column);
-    }
-
-    &__terminos{        
-        @include flexBox(center, center, column);
-    }
-
-    &__contacto{
-
-    }
-
-
-    &__copy{
-
-    }
-   */
+  grid-template-columns: repeat(2, 160px);
 }
 
 .pie__social {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: repeat(2, 160px);
+}
+
+.pie__social__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.pie__social__terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.pie__contacto {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+  height: 50px;
+}
+
+.pie__copy {
+  grid-column-start: 1;
+  grid-column-end: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -629,3 +675,9 @@ textarea {
 }
 
 /*----------  Imágenes  ----------*/
+/*=============================================
+=            $Imagenes                       =
+=============================================*/
+.formacion img {
+  border-radius: 50%;
+}
