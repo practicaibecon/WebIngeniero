@@ -514,7 +514,7 @@ textarea {
 =            $LAYOUTS         =
 =============================================*/
 .pie {
-  max-width: 90%;
+  max-width: 100;
   margin: 0 auto;
   background: #444444;
   color: #ebebeb;
@@ -549,19 +549,14 @@ textarea {
 }
 
 .pie__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 /*----------  Imágenes  ----------*/
+/*=============================================
+=            $Imagenes                       =
+=============================================*/
+.formacion img {
+  border-radius: 50%;
+}

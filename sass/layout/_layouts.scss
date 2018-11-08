@@ -4,7 +4,7 @@
 
 .pie{
     //@include flexBox(center, center, row);
-    @include pad-centrar();
+    @include pad-centrar(100);
     background: map-get(map-get($color, basicos), GrisOscuro);
     color: map-get(map-get($color, basicos), GrisClaro);
 
@@ -16,7 +16,17 @@
     grid-template-columns: repeat(2, 150px);
 
     &__social{
-        @include flex-box(center, center, row);
+        // @include flex-box(center, center, row);
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+        &__icons{
+            
+        }
+
+        &__terms{
+
+        }
     }
 /*
     &__icons{
