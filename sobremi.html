@@ -57,31 +57,84 @@
     <!-- 
         Bloque Header
     -->
-     <header>
-        <nav class="menu">
+    <header class="menu">
 
-        </nav>
-     </header>
+            <nav class="menu__encabezado">
+    
+                <a href="index.html" class="menu__encabezado__logo">
+    
+                    <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+                    <span>
+                        Llorenç Bisquerra
+                    </span>
+    
+                </a>
+    
+                <!-- Menú movil -->
+    
+                <input id=activar type='checkbox'>
+                <label class='menu__encabezado__inputlabel' for='activar'>
+                    <i class='menu__icono fas fa-bars'></i>
+                </label>
+                <div class='menu__encabezado__desplegable'>
+    
+                    <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
+                        Sobre mí
+                    </a>
+                    <a class='menu__encabezado__desplegable__a' href='servicios.html'>
+                        Servicios
+                    </a>
+                    <a class='menu__encabezado__desplegable__a' href='contacto.html'>
+                        Contactar
+                    </a>
+                    <div class='menu__encabezado__desplegable__banderas' href="#">
+                        <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                            <img src="icons/cat.svg" alt="cat">
+                        </a>
+                        <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                            <img src="icons/esp.svg" alt="esp">
+                        </a>
+    
+                    </div>
+                </div>
+            </nav>
+    
+        </header>
 
     <!-- 
         Bloque Contenido
     -->
       <section class="sect">
-
+        <figure class="formacion">
+            <img src="img/desktop/@1x/llorençbisquerra.jpg" alt="llorenç bisquerra">
+            <h3>Formacion Academica</h3>
+            <figcaption>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            </figcaption>
+        </figure>
+        <figure class="experiencia">
+            <img src="img/desktop/@1x/llorençbisquerra.jpg" alt="llorenç bisquerra">
+            <h4>Experiencia Profesional</h4>
+            <figcaption>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            </figcaption>
+        </figure>
       </section>
 
     <!-- 
         Bloque Footer         
     -->
        <footer class="pie">
-           <div class="pie__social">
-                <div class="pie__icons">
+            <div class="pie__social">
+                <div class="pie__social__icons">
                     <i class="fab fa-twitter-square"></i>
                     <i class="fab fa-facebook-square"></i>
                     <i class="fab fa-linkedin"></i>
                     <i class="fab fa-instagram"></i>               
                 </div>
-                <div class="pie__terminos">
+                <div class="pie__social__terms">
                     <h4>Terminos</h4>
                     <h4>Cookies</h4>
                     <h4>Privacidad</h4>            

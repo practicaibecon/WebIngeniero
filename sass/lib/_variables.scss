@@ -31,8 +31,8 @@ $hs: (
     h3e: 28px, //para el movil. Los títulos de la página de inicio.
 
     //Finaliza SEO
-    h4m: 18px, // para escritorio. Los enlaces del header.
-    h4e: 26px, //para escritorio. Los enlaces del header y del footer.
+    h4m: 18px, // para movil. Los enlaces del header.
+    h4e: 22px, //para escritorio. Los enlaces del header y del footer.
     h5m: 14px, //para movil. Términos, condiciones, etc.
     h5e: 18px //para escritorio. Términos, condiciones, redes sociales, etc.
 
@@ -99,7 +99,7 @@ a{
 i{
     color: map-get(map-get($color, basicos), GrisClaro);
     font-size: 3rem;
-      @media screen and (min-width: 768px){
+      @media screen and (min-width: 1200px){
         font-size: $hreme;
         }
 }

@@ -4,17 +4,17 @@
 
 <head>
     <script type="text/javascript">
-      window.onload = function () {
-    
-        var ln = x = window.navigator.language || navigator.browserLanguage;
-    
+        window.onload = function () {
+
+            var ln = x = window.navigator.language || navigator.browserLanguage;
+
             if (ln == 'es') {
-                            window.location.href = 'index_es.html'; //si esta en inglés va a ingles
-    
+                window.location.href = 'index_es.html'; //si esta en inglés va a ingles
+
             }
-      }
+        }
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -44,9 +44,10 @@
     <meta name="twitter:image" content="http://www.flightwithmati.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
-    
+
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -57,51 +58,76 @@
 <body>
 
     <header class="menu">
-       
-        <div class="menu__fondo">
-          
-             <nav class="menu__fondo__encabezado">
-                
-                <a href="index.html" class="menu__fondo__encabezado__logo"> 
-                    
-                    <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra"> 
-                    <span>
-                        Llorenç Bisquerra
-                    </span>
-                
-                </a>
-              
-                <!-- Menú movil -->
-              
-                <input id=activar type='checkbox'> 
-                <label class='menu__fondo__encabezado__inputlabel' for='activar'> 
-                    <i class='menu__icono fas fa-bars'></i> 
-                </label>
-                <div class='menu__fondo__encabezado__desplegable'> 
-                     
-                      <a class='menu__fondo__encabezado__desplegable__a' href='sobremi.html'>
-                        Sobre mí
-                      </a>
-                      <a class='menu__fondo__encabezado__desplegable__a' href='servicios.html'>
-                        Servicios
-                      </a>   
-                      <a class='menu__fondo__encabezado__desplegable__a' href='contacto.html'>
-                        Contactar
-                      </a> 
-                       <div class='menu__fondo__encabezado__desplegable__banderas' href="#">
-                        <a class= 'menu__fondo__encabezado__desplegable__banderas__a' href='#'>
-                            <img src="icons/cat.svg" alt="cat">
-                        </a>
-                        <a class= 'menu__fondo__encabezado__desplegable__banderas__a' href='#'>
-                            <img src="icons/esp.svg" alt="esp">
-                        </a>
 
-                    </div> 
+        <nav class="menu__encabezado">
+
+            <a href="index.html" class="menu__encabezado__logo">
+
+                <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+                <span>
+                    Llorenç Bisquerra
+                </span>
+
+            </a>
+
+            <!-- Menú movil -->
+
+            <input id=activar type='checkbox'>
+            <label class='menu__encabezado__inputlabel' for='activar'>
+                <i class='menu__icono fas fa-bars'></i>
+            </label>
+            <div class='menu__encabezado__desplegable'>
+
+                <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
+                    Sobre mí
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='servicios.html'>
+                    Servicios
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='contacto.html'>
+                    Contactar
+                </a>
+                <div class='menu__encabezado__desplegable__banderas' href="#">
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/cat.svg" alt="cat">
+                    </a>
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/esp.svg" alt="esp">
+                    </a>
+
                 </div>
-             </nav>
-          </div>
-     </header>
+            </div>
+        </nav>
+
+    </header>
+    <section class="section">
         
+        <div class="section__fondo">
+
+        </div>
+         
+        <p class="section__parrafo1">
+                <span class="section__parrafo1__li">PROJECTES, CONSTRUCCIONS I ASSESSORIA TÈCNICA (PROCAT),</span> és un despatx professional d'enginyeria civil i consultoria tècnica d'obres, tant civils com d'edificació, el qual acumula més de 10 anys d'experiència per l'activitat dels seus socis en sectors relacionats amb la construcció, indústria, energia i consultoria.
+                <br>
+                <br>
+                Els principals valors de la nostra empresa són el compromís, l'eficiència i la transparència: Compromís amb els nostres clients, tant privats com públics, per donar una resposta a les necessitats que es plantegen. Eficiència, per aconseguir arribar a la perfecta solució a cada problema en el menor temps possible, aconseguida a partir del nostre coneixement, experiència i èxit amb un treball en equip. I finalment, transparència amb els clients, actuant sempre honradament i mantenint informats a tots ells amb els avanços que es realitzin de manera instantània.
+        </p>
+            <br>
+            <br>
+            <p class="section__parrafo2">
+                    <span class="section__parrafo2__li">PROJECTES, CONSTRUCCIONS I ASSESSORIA TÈCNICA (PROCAT),</span> ofereix diversos i nombrosos serveis destinats a l'assessorament, disseny, càlcul, gestió, anàlisi i control de tot tipus d'obres, tant a clients particulars com a l'Administració Pública i a empreses amb alguna activitat dins el món de la construcció, ja sigui d'edificació o d'obra civil. Tots els clients podran rebre informació i assessorament per a la realització de projectes, estudis, direcció d'obres, coordinacions de seguretat i salut i fins i tot per a l'execució de les pròpies obres.
+                    <br>
+                    <br>
+                    La missió fonamental és la de poder servir d'enllaç entre els problemes tècnics que sorgeixin a qualsevol particular o empresa i la millor solució per a cada problema, sempre pensant en millorar la qualitat de la infraestructura i mantenint un correcte equilibri tècnic-econòmic per aconseguir, a la vegada, la millor solució econòmica per a cada cas
+            </p>
+                <br>
+                <br>
+        <p class="section__parrafo2">
+                <span class="section__parrafo2__li">PROJECTES, CONSTRUCCIONS I ASSESSORIA TÈCNICA (PROCAT),</span> és una empresa compromesa amb la societat i el desenvolupament, la qual aplica sempre criteris i polítiques que afavoreixen la conservació del nostre medi ambient, que reafirmen i incrementen els nostres estàndards de qualitat i afavoreixen la millora contínua de les condicions de seguretat i comoditat de totes les obres en que es participa.
+        </p>
+   
+
+    </section>
 </body>
 
 </html>

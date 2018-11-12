@@ -4,7 +4,7 @@
 
 .pie{
     //@include flexBox(center, center, row);
-    @include pad-centrar();
+    @include pad-centrar(100);
     background: map-get(map-get($color, basicos), GrisOscuro);
     color: map-get(map-get($color, basicos), GrisClaro);
 
@@ -13,27 +13,40 @@
     display: grid;
     @include layout_padre;
     grid-template-rows: repeat(150,50,50);
-    grid-template-columns: repeat(2, 150px);
+    grid-template-columns: repeat(2, 160px);
 
     &__social{
-        @include flex-box(center, center, row);
-    }
-/*
-    &__icons{
-        @include flexBox(center, center, column);
-    }
+        // @include flex-box(center, center, row);
+        grid-column-start: 1;
+        grid-column-end: 3;
+        
+        display: grid;
+        grid-template-rows: 100px;
+        grid-template-columns: repeat(2, 160px);
 
-    &__terminos{        
-        @include flexBox(center, center, column);
+        &__icons{
+            @include flex-box(center, center, column);
+            flex-wrap: wrap;
+            
+        }
+
+        &__terms{
+            @include flex-box(space-between, center, column);
+        }
     }
 
     &__contacto{
-
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @include flex-box(space-around, center, row);
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+        height: 50px;
     }
-
 
     &__copy{
-
+        grid-column-start: 1;
+        grid-column-end: 3;
+        @include flex-box(center, center, row);
     }
-   */ 
 }
