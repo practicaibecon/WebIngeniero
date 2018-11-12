@@ -8,7 +8,7 @@
     font-size: 24px;
     font-weight: bold;
     text-align: center;
-
+    color: map-get(map-get($color, basicos), GrisOscuro);
 }
 .contactform 
 {
@@ -17,9 +17,11 @@
     grid-row-gap: 20px;
     padding: 3%;
     font-family: 'MonserratBold',sans-serif;
+    color : map-get(map-get($color, basicos), GrisOscuro);
 
 }
 
+.h2form ,
 .nombre,
 .email,
 .telefono ,
@@ -30,19 +32,19 @@
 
 .particular {
     grid-column: 1 / 2;
-    grid-row: 5;
+    grid-row: 6;
     justify-self: center;
 }
 
 .empresa {
     grid-column: 3 / 4;
-    grid-row: 5;
+    grid-row: 6;
     justify-self: center;
 }
 
 .comentarios {
     grid-column: 1/ 4;
-    grid-row: 6;
+    grid-row: 7;
 }
 
 .txtcomentarios
@@ -83,7 +85,7 @@
 
 .botonconfirmar {
     grid-column: 2 / 3;
-    grid-row: 7;
+    grid-row: 8;
     background-color: map-get(map-get($color, basicos), GrisClaro);
     border-color:  map-get(map-get($color, basicos), GrisOscuro);
     border-radius: 4px;
