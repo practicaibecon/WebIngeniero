@@ -454,6 +454,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   font-size: 24px;
   font-weight: bold;
   text-align: center;
+  color: #444444;
 }
 
 .contactform {
@@ -462,8 +463,10 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   grid-row-gap: 20px;
   padding: 3%;
   font-family: 'MonserratBold',sans-serif;
+  color: #444444;
 }
 
+.h2form,
 .nombre,
 .email,
 .telefono,
@@ -473,19 +476,19 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 
 .particular {
   grid-column: 1 / 2;
-  grid-row: 5;
+  grid-row: 6;
   justify-self: center;
 }
 
 .empresa {
   grid-column: 3 / 4;
-  grid-row: 5;
+  grid-row: 6;
   justify-self: center;
 }
 
 .comentarios {
   grid-column: 1/ 4;
-  grid-row: 6;
+  grid-row: 7;
 }
 
 .txtcomentarios {
@@ -518,7 +521,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 
 .botonconfirmar {
   grid-column: 2 / 3;
-  grid-row: 7;
+  grid-row: 8;
   background-color: #ebebeb;
   border-color: #444444;
   border-radius: 4px;
