@@ -150,6 +150,7 @@
         &__parrafo1 {
             text-align: justify;
             padding-top: 30px;
+            line-height: 20px;
 
             @media screen and (min-width: 700px) {
                 padding-top: 50px;
@@ -164,6 +165,7 @@
         &__parrafo2 {
             display: none;
             text-align: justify;
+            line-height: 20px;
            
             @media screen and (min-width: 700px) {
                 display: block;
