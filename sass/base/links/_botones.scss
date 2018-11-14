@@ -5,40 +5,18 @@
 
 /* HEADER */
 
-.header{}
-.icono{}
-.caja{}
-.lineas{}
-
 
 /* CONTENIDO */
 
+    
+.estudios__figcaption--b, .presupuestos__figcaption--b, .proyectos__figcaption--b,
+ .direcciones__figcaption--b, .coordinacion__figcaption--b{
 
-.tecnicos__boton{}
-
-
-
-.presupuestos__boton{}
-
-
-
-.proyectos__boton{}
-
-
-
-.direccion__boton{}
-
-
-
-.coordinacion__boton{}
+    border-radius: 1.5em;
+    float:right;
+    
+  }
 
 
 /* FOOTER */
 
-.social__networks{}
-.redes{}
-.item01, .item02, .item03, .item04{}
-
-
-.derechos__footer{}
-.datos__footer{}

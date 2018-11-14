@@ -1,3 +1,124 @@
 /*=============================================
-=            $LAYOUTS         =
+=            $LAYOUTS=
 =============================================*/
+
+// Propiedades del contenedor class (servicios)
+
+.servicios{
+
+   display: flex;
+   justify-content: left calc(50% - 136px);
+   align-items: center;
+
+   min-width: 20em;
+   max-height: 127em;
+
+
+
+
+
+// Propiedad de los <figure> en orden "impar" por su justificación de imagen a la izquierda
+// en el momento desktop bajo propiedad flex-wrap
+  
+  .estudios, .proyectos, .coordinacion,{
+
+    
+
+    background-color:tomato;
+    padding: .3em 1em;
+
+  }
+
+// Propiedad de los <figure> en orden "par" por su justificación de imagen a la derecha
+// en el momento desktop
+  
+  .presupuestos, .direccion{
+  
+    background-color:grey;
+    padding: 5px,
+
+  }
+  
+  
+ 
+  
+
+
+
+ ///////////////////////////////////////////////////////////////////////////////////////////// 
+  
+//   TIPOGRAFIA GENERAL
+//General para el cuerpo de contenido//
+
+.estudios, .presupuestos, .proyectos, .direcciones, .coordinacion{
+
+    font-family:"MontserratRegular",sans-serif;
+    text-align: center;
+    
+  }
+  
+  
+//Específico para los títulos h2m //
+  
+  .estudios__figcaption--t, .presupuestos__figcaption--t, .proyectos__figcaption--t, 
+  .direcciones__figcaption--t, .coordinacion__figcaption--t{
+  
+  
+   font-size: 1.313em;
+   padding: .5em 1em;
+   text-align: center;
+  
+  }
+  
+  
+  //Específico para los párrafos: Lorem//
+    
+  .estudios__figcaption--p, .presupuestos__figcaption--p, .proyectos__figcaption--p, 
+  .direcciones__figcaption--p, .coordinacion__figcaption--p{
+  
+   font-size: .5em;
+   padding: .3em 1em;
+   text-align: justify;
+  }
+  
+  
+  // Específico para los botones//
+  
+  .estudios__figcaption--b, .presupuestos__figcaption--b, .proyectos__figcaption--b, 
+  .direcciones__figcaption--b, .coordinacion__figcaption--b {
+  
+   font-size: 1em;
+   padding: .3em 1em;
+   text-align: center;
+  
+  }
+  
+ ////////////////////////////////////////////////////////////////////////////////////////////// 
+  
+  
+
+  
+  /* Media Queries */
+  
+  @media screen and (min-width: 320px){
+  
+      #servicios {
+          background-color: lightseagreen;
+      }
+  }
+  
+  
+  @media screen and (min-width: 640px){
+      #servicios {
+          background-color: lightblue;
+      }
+  }
+  
+  @media screen and (min-width: 960px){
+      #servicios {
+          background-color: lightyellow;
+          font-style: normal;
+          font-weight: bold;
+      }
+  }
+

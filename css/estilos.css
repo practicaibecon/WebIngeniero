@@ -266,6 +266,21 @@ textarea {
 /*=============================================
 =            $GRIDS         =
 =============================================*/
+
+.servicios{
+  
+display: grid;
+
+grid-template-rows: [estudios] 410px [presupuestos] 410px [proyectos] 410px [direccion] 410px [coordinacion];
+
+grid-template-columns:[inicio] 1fr [medio] 1fr [final];
+
+}
+
+
+
+
+
 /*=============================================
 =            $LAYOUTS         =
 =============================================*/
