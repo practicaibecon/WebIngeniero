@@ -18,7 +18,7 @@
 
     @media screen and (min-width: 800px) {
         grid-column-gap: 50px;
-        grid-row-gap: 80px;
+        grid-row-gap: 60px;
     }
         @media screen and (min-width: 702px) {
         padding-top: 50px;
@@ -38,12 +38,14 @@
                 color: map-get(map-get($color, basicos), GrisOscuro);
                 font-size: map-get($hs, h3m);
                 text-align: center;
-                font-weight: 550;
+                font-family: 'MontserratBold';
+                padding: 10px 0;
             @media screen and (max-width: 402px){
                     font-size: 15px;
             }
-            @media screen and (min-width: 1200px){
+            @media screen and (min-width: 800px){
                 font-size: map-get($hs, h3e);
+                padding: 15px 0;
             }
 
             }
@@ -111,11 +113,16 @@
                 color: map-get(map-get($color, basicos), GrisOscuro);
                 font-size: map-get($hs, h3m);
                 text-align: center;
-                font-weight: 550;
-
-                @media screen and (min-width: 1200px){
-                    font-size: map-get($hs, h3e);
-                }
+                font-family: 'MontserratBold';
+                padding: 10px 0 50px 0;
+                
+            @media screen and (max-width: 402px){
+                    font-size: 15px;
+            }
+            @media screen and (min-width: 800px){
+                font-size: map-get($hs, h3e);
+                padding: 1px 0 70px 0;
+            }
                                
             }
         

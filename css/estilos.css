@@ -134,12 +134,12 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 @font-face {
   font-family: 'MontserratRegular';
-  src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff);
+  src: url(../fonts/MontserratRegular.woff);
 }
 
 @font-face {
   font-family: 'MontserratBold';
-  src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff);
+  src: url(../fonts/MontserratBold.woff);
 }
 
 /*=====  Fin de Tipología  ======*/
@@ -148,23 +148,36 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 /*=====  Fin de Colores de Marca  ======*/
 html {
-  font-family: 'MonserratRegular', sans-serif;
+  font-family: 'MontserratRegular';
   font-size: 16px;
   color: #444444;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   html {
     font-size: 18px;
   }
 }
 
+::after {
+  font-size: 18px;
+  font-family: 'MontserratRegular';
+  padding-left: 12px;
+}
+
 header {
-  font-family: 'MonserratBold', sans-serif;
+  font-family: 'MontserratBold';
 }
 
 footer {
-  font-family: 'MonserratBold', sans-serif;
+  font-family: 'MontserratBold';
+  font-size: 16px;
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -174,12 +187,12 @@ a {
 
 i {
   color: #ebebeb;
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   i {
-    font-size: 18px;
+    font-size: 2.4rem;
   }
 }
 
@@ -593,17 +606,17 @@ textarea {
 .pie {
   background: #444444;
   color: #ebebeb;
-  height: 250px;
+  height: 270px;
   display: grid;
-  grid-template-rows: 150px 50px 50px;
+  grid-template-rows: 150px 70px 50px;
   grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 800px) {
   .pie {
-    grid-template-rows: 100px 200px 50px 50px;
+    grid-template-rows: 100px 200px 60px 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 400px;
+    height: 410px;
   }
 }
 
@@ -629,6 +642,9 @@ textarea {
     width: 90px;
     height: 90px;
   }
+  .pie__logo span {
+    font-size: 30px;
+  }
 }
 
 .pie__menu {
@@ -651,10 +667,11 @@ textarea {
     justify-content: space-around;
     grid-row: 2/3;
     grid-column: 1/2;
+    border-right: 1px #ebebeb solid;
   }
   .pie__menu__banderas img {
-    width: 50px;
-    height: 40px;
+    width: 35px;
+    height: 25px;
   }
 }
 
@@ -662,7 +679,7 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 130px;
   height: 90%;
   margin: auto;
   -webkit-box-orient: vertical;
@@ -671,6 +688,12 @@ textarea {
   flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 800px) {
+  .pie__social {
+    width: 70%;
+  }
 }
 
 .pie__social__icons1 {
@@ -690,9 +713,34 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .pie__social__icons1 .twitter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .pie__social__icons1 .twitter::after {
+    content: "Twitter ";
+  }
+  .pie__social__icons1 .facebook {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .pie__social__icons1 .facebook::after {
+    content: "Facebook ";
   }
 }
 
@@ -713,9 +761,34 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .pie__social__icons2 .linkedin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+  .pie__social__icons2 .linkedin::after {
+    content: "Linkedin ";
+  }
+  .pie__social__icons2 .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .pie__social__icons2 .instagram::after {
+    content: "Instagram ";
   }
 }
 
@@ -730,12 +803,32 @@ textarea {
   width: 50%;
   height: 90%;
   margin: auto;
-  flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: space-around;
   -ms-flex-align: space-around;
   align-items: space-around;
+}
+
+@media screen and (min-width: 800px) {
+  .pie__terms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    border: 1px #ebebeb solid;
+    width: 100%;
+  }
 }
 
 .pie__contacto {
@@ -757,10 +850,6 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -768,7 +857,23 @@ textarea {
     justify-content: space-around;
     grid-row: 2/3;
     grid-column: 2/3;
+    border: 0px;
+    border-right: 1px #ebebeb solid;
   }
+}
+
+.pie__contacto span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.pie__contacto i {
+  padding-right: 8px;
+  font-size: 2rem;
 }
 
 .pie__copy {
@@ -782,6 +887,13 @@ textarea {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .pie__copy {
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
 }
 
 /*----------  Imágenes  ----------*/
@@ -802,7 +914,7 @@ textarea {
 @media screen and (min-width: 800px) {
   .section__centrado__fotos {
     grid-column-gap: 50px;
-    grid-row-gap: 80px;
+    grid-row-gap: 60px;
   }
 }
 
@@ -820,7 +932,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -829,9 +942,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__estudiosTecnicos__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -843,7 +957,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -852,9 +967,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__presupuesto__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -866,7 +982,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -875,9 +992,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__proyectos__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -889,7 +1007,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -898,9 +1017,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__DireccionDeObras__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -956,11 +1076,19 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0 50px 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 402px) {
+  .section__centrado__fotos__coordincionYSeguridad__texto {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 800px) {
   .section__centrado__fotos__coordincionYSeguridad__texto {
     font-size: 28px;
+    padding: 1px 0 70px 0;
   }
 }
