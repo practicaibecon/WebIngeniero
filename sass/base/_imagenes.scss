@@ -1,6 +1,103 @@
 /*=============================================
-=            $Imagenes                       =
+=            $IMAGENES           =
 =============================================*/
+
+
+
+
+// <!-- Por defecto, baja resolución de imagen para Smartphone -->
+// <source srcset='img/smartphone/@1x/proyectos.jpg, img/smartphone/@2x/proyectos@2x.jpg' media='(min-width:0px) and (max-width:767px)'>
+
+// <!-- Alta resolución para Escritorio -->
+// <source srcset='img/desktop/@1x/proyectos.jpg, img/desktop/@2x/proyectos@2x.jpg' media='(min-width:1366px)'>      
+
+// <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+// <img src='img/smartphone/@1x/proyectos.jpg' alt='proyectos'>
+
+
+
+// Según este orden:
+
+// 1.-estudios tecnicos
+// 2.-presupuestos
+// 3.-proyectos
+// 4.-direccion de obra
+// 5.-coordinacion y seguridad
+
+// He agrupado en (impares):
+
+// 1.-estudios tecnicos
+// 3.-proyectos
+// 5.-coordinacion y seguridad
+
+// He agrupado y (pares):
+
+// 2.-presupuestos
+// 4.-direccion de obra
+
+
+
+
+
+
+
+
+
+.estudios__img,.proyectos__img,.coordinacion__img{
+   
+    position:relative;
+    float:left;
+   
+   //Titulos, fondo header y fondo footer, letras encima del body
+    background-color:#444444;
+
+
+    padding:1em;
+    
+ }
+ 
+ 
+ .presupuestos__img,.direcciones__img,{
+    
+    position:relative;
+    float:right;
+   
+    background-color:grayscale($color: #444444);
+  
+ 
+    padding:1em;
+    
+ }
+
+ 
+
+
+/* Media Queries */
+
+@media screen and (min-width: 320px){
+
+    #servicios {
+        background-color: lightseagreen;
+    }
+}
+
+
+@media screen and (min-width: 640px){
+    #servicios {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (min-width: 960px){
+    #servicios {
+        background-color: lightyellow;
+        font-style: normal;
+        font-weight: bold;
+    }
+}
+
+
+
 
 .formacion {
     img {

@@ -196,6 +196,14 @@ i {
   }
 }
 
+/* HEADER */
+/* CONTENIDO */
+.estudios, .presupuestos, .proyectos, .direcciones, .coordinacion {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* FOOTER */
 /*----------  TIPOGRAFIA  ----------*/
 /*=============================================
 =            $Tipografia            =
@@ -227,9 +235,27 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 =            $PLACEHOLDERS        =
 =============================================*/
 /*----------  LINKS  ----------*/
-/*=============================================
-=            $ENLACES           =
-=============================================*/
+/* ----------------------------------- */
+/* $BOTONES */
+/* ----------------------------------- */
+/* HEADER */
+/* CONTENIDO */
+.estudios__figcaption--b, .presupuestos__figcaption--b, .proyectos__figcaption--b,
+.direcciones__figcaption--b, .coordinacion__figcaption--b {
+  border-radius: 1.5em;
+  float: right;
+}
+
+/* FOOTER */
+/* ----------------------------------- */
+/* $ENLACES */
+/* ----------------------------------- */
+/* HEADER */
+/* CONTENIDO */
+/* FOOTER */
+/* ----------------------------------- */
+/* $MENUS SCSS */
+/* ----------------------------------- */
 .menu {
   height: 65px;
 }
@@ -601,9 +627,81 @@ textarea {
 =            $GRIDS         =
 =============================================*/
 /*=============================================
-=            $LAYOUTS         =
+<<<<<<< HEAD
+=            $LAYOUTS=
 =============================================*/
-.pie {
+.servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left calc(50% - 136px);
+  -ms-flex-pack: left calc(50% - 136px);
+  justify-content: left calc(50% - 136px);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 20em;
+  max-height: 127em;
+  /* Media Queries */
+}
+
+.servicios .estudios, .servicios .proyectos, .servicios .coordinacion {
+  background-color: tomato;
+  padding: .3em 1em;
+}
+
+.servicios .presupuestos, .servicios .direccion {
+  background-color: grey;
+  padding: 5px;
+}
+
+.servicios .estudios, .servicios .presupuestos, .servicios .proyectos, .servicios .direcciones, .servicios .coordinacion {
+  font-family: "MontserratRegular",sans-serif;
+  text-align: center;
+}
+
+.servicios .estudios__figcaption--t, .servicios .presupuestos__figcaption--t, .servicios .proyectos__figcaption--t,
+.servicios .direcciones__figcaption--t, .servicios .coordinacion__figcaption--t {
+  font-size: 1.313em;
+  padding: .5em 1em;
+  text-align: center;
+}
+
+.servicios .estudios__figcaption--p, .servicios .presupuestos__figcaption--p, .servicios .proyectos__figcaption--p,
+.servicios .direcciones__figcaption--p, .servicios .coordinacion__figcaption--p {
+  font-size: .5em;
+  padding: .3em 1em;
+  text-align: justify;
+}
+
+.servicios .estudios__figcaption--b, .servicios .presupuestos__figcaption--b, .servicios .proyectos__figcaption--b,
+.servicios .direcciones__figcaption--b, .servicios .coordinacion__figcaption--b {
+  font-size: 1em;
+  padding: .3em 1em;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .servicios #servicios {
+    background-color: lightseagreen;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .servicios #servicios {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .servicios #servicios {
+    background-color: lightyellow;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
+.servicios .pie {
   background: #444444;
   color: #ebebeb;
   height: 270px;
@@ -613,19 +711,19 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie {
+  .servicios .pie {
     grid-template-rows: 100px 200px 60px 50px;
     grid-template-columns: 1fr 1fr 1fr;
     height: 410px;
   }
 }
 
-.pie__logo {
+.servicios .pie__logo {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  .pie__logo {
+  .servicios .pie__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -638,21 +736,21 @@ textarea {
     grid-row: 1/2;
     grid-column: 1/4;
   }
-  .pie__logo img {
+  .servicios .pie__logo img {
     width: 90px;
     height: 90px;
   }
-  .pie__logo span {
+  .servicios .pie__logo span {
     font-size: 30px;
   }
 }
 
-.pie__menu {
+.servicios .pie__menu {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  .pie__menu {
+  .servicios .pie__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -669,13 +767,13 @@ textarea {
     grid-column: 1/2;
     border-right: 1px #ebebeb solid;
   }
-  .pie__menu__banderas img {
+  .servicios .pie__menu__banderas img {
     width: 35px;
     height: 25px;
   }
 }
 
-.pie__social {
+.servicios .pie__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,12 +789,12 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__social {
+  .servicios .pie__social {
     width: 70%;
   }
 }
 
-.pie__social__icons1 {
+.servicios .pie__social__icons1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,7 +803,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__social__icons1 {
+  .servicios .pie__social__icons1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -720,7 +818,7 @@ textarea {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .pie__social__icons1 .twitter {
+  .servicios .pie__social__icons1 .twitter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -728,10 +826,10 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
   }
-  .pie__social__icons1 .twitter::after {
+  .servicios .pie__social__icons1 .twitter::after {
     content: "Twitter ";
   }
-  .pie__social__icons1 .facebook {
+  .servicios .pie__social__icons1 .facebook {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -739,12 +837,12 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
   }
-  .pie__social__icons1 .facebook::after {
+  .servicios .pie__social__icons1 .facebook::after {
     content: "Facebook ";
   }
 }
 
-.pie__social__icons2 {
+.servicios .pie__social__icons2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -753,7 +851,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__social__icons2 {
+  .servicios .pie__social__icons2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -768,7 +866,7 @@ textarea {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .pie__social__icons2 .linkedin {
+  .servicios .pie__social__icons2 .linkedin {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -776,10 +874,10 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
   }
-  .pie__social__icons2 .linkedin::after {
+  .servicios .pie__social__icons2 .linkedin::after {
     content: "Linkedin ";
   }
-  .pie__social__icons2 .instagram {
+  .servicios .pie__social__icons2 .instagram {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -787,12 +885,12 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
   }
-  .pie__social__icons2 .instagram::after {
+  .servicios .pie__social__icons2 .instagram::after {
     content: "Instagram ";
   }
 }
 
-.pie__terms {
+.servicios .pie__terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -811,7 +909,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__terms {
+  .servicios .pie__terms {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -831,7 +929,7 @@ textarea {
   }
 }
 
-.pie__contacto {
+.servicios .pie__contacto {
   grid-row: 2/3;
   grid-column: 1/3;
   display: -webkit-box;
@@ -846,7 +944,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__contacto {
+  .servicios .pie__contacto {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -862,7 +960,7 @@ textarea {
   }
 }
 
-.pie__contacto span {
+.servicios .pie__contacto span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -871,12 +969,12 @@ textarea {
   align-items: center;
 }
 
-.pie__contacto i {
+.servicios .pie__contacto i {
   padding-right: 8px;
   font-size: 2rem;
 }
 
-.pie__copy {
+.servicios .pie__copy {
   grid-row: 3/4;
   grid-column: 1/3;
   display: -webkit-box;
@@ -890,7 +988,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__copy {
+  .servicios .pie__copy {
     grid-row: 4/5;
     grid-column: 1/4;
   }
@@ -898,8 +996,43 @@ textarea {
 
 /*----------  Imágenes  ----------*/
 /*=============================================
-=            $Imagenes                       =
+=            $IMAGENES           =
 =============================================*/
+.estudios__img, .proyectos__img, .coordinacion__img {
+  position: relative;
+  float: left;
+  background-color: #444444;
+  padding: 1em;
+}
+
+.presupuestos__img, .direcciones__img {
+  position: relative;
+  float: right;
+  background-color: #444444;
+  padding: 1em;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) {
+  #servicios {
+    background-color: lightseagreen;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #servicios {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #servicios {
+    background-color: lightyellow;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
 .formacion img {
   border-radius: 50%;
 }
