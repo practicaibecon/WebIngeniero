@@ -23,7 +23,7 @@ $hreme: 18px; // /para movil. Letra estandar.
      
 $hs: (
 
-    h1m: 16px, //para movil. Solo el nombre del logotipo
+    h1m: 20px, //para movil. Solo el nombre del logotipo
     h1e: 30px, //para escritorio. Solo el nombre del logotipo
     h2m: 21px,  //los h2 para movil. Los títulos que van con las imágenes y los textos
     h2e: 18px, //para el ordenador
@@ -31,8 +31,8 @@ $hs: (
     h3e: 28px, //para el movil. Los títulos de la página de inicio.
 
     //Finaliza SEO
-    h4m: 18px, // para escritorio. Los enlaces del header.
-    h4e: 26px, //para escritorio. Los enlaces del header y del footer.
+    h4m: 18px, // para movil. Los enlaces del header.
+    h4e: 22px, //para escritorio. Los enlaces del header y del footer.
     h5m: 14px, //para movil. Términos, condiciones, etc.
     h5e: 18px //para escritorio. Términos, condiciones, redes sociales, etc.
 
@@ -57,14 +57,14 @@ $hs: (
 =============================================*/
 
 $color: (
-
-basicos: (
-
-    Blanco: #fafafa, //Color de fondo del Body
-    GrisOscuro: #444444, //Titulos, fondo header y fondo footer, letras encima del body
-    GrisClaro: #ebebeb, //letras sobre fondo oscuro, iconos
-    Naranja: #e1a605 //Para poner en los hoover. 
-)
+    basicos: (
+        Blanco: #fafafa, //Color de fondo del Body
+        GrisOscuro: #444444,//Titulos, fondo header y fondo footer, letras encima del body
+        GrisOscuroOp: #444444cb, //Fondo Header Inicio
+        GrisClaro: #ebebeb, //letras sobre fondo oscuro, iconos
+        GrisClaroOp: #ebebebdc, //menu movil
+        Naranja: #e1a605 //Para poner en los hoover. 
+    )
 );
 
 /*=====  Fin de Colores de Marca  ======*/
@@ -98,8 +98,8 @@ a{
 
 i{
     color: map-get(map-get($color, basicos), GrisClaro);
-    font-size: 2rem;
-      @media screen and (min-width: 768px){
+    font-size: 3rem;
+      @media screen and (min-width: 1200px){
         font-size: $hreme;
         }
 }

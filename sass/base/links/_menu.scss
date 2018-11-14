@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ----------------------------------- */
 /* $MENUS SCSS */
 /* ----------------------------------- */
@@ -7,18 +8,186 @@
 
 
 .menu{
+=======
+.menu {
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
 
-    &__fondo{
-        height: 215px;
+    height: 65px;
 
-        @media screen and (min-width: 768px){
-            height: 700px;
-            };
-        
-            &__encabezado{
-                background-color: map-get(map-get($color, basicos), GrisOscuro);
-            }
-
+    @media screen and (min-width: 1200px) {
+        height: 100px;
     }
 
+
+    &__encabezado {
+        background-color: map-get(map-get($color, basicos), GrisOscuro);
+        height: 100%;
+        display: flex;
+        flex-grow: row;
+        justify-content: space-between;
+        padding: 0 20px 0 5px;
+        align-items: center;
+
+        &__logo {
+
+            @include flex-box;
+
+            @media screen and (min-width: 1200px) {
+                padding: 0 0 0 20px;
+            }
+
+            img {
+                width: 65px;
+                height: 65px;
+
+                @media screen and (min-width: 1200px) {
+                    width: 90px;
+                    height: 90px;
+
+                }
+            }
+
+            span {
+                font-size: map-get($hs, h1m);
+                color: map-get(map-get($color, basicos), GrisClaro);
+                padding-left: 3px;
+
+                @media screen and (min-width: 1200px) {
+                    font-size: map-get($hs, h1e);
+                    padding-left: 10px;
+                }
+            }
+
+        }
+
+        #activar {
+            display: none;
+        }
+
+        &__inputlabel {
+            @media screen and (min-width: 1200px) {
+                display: none;
+                height: 0px;
+                width: 0px;
+            }
+        }
+
+        &__desplegable {
+            display: none;
+            position: absolute;
+            top: 65px;
+            right: 20px;
+
+            @media screen and (min-width: 1200px) {
+                display: flex;
+                top: 0;
+                right: 0;
+                align-items: center;
+                // flex-grow: 1;
+                position: static;
+                padding: 0 25px;
+
+            }
+
+            &__a {
+                color: map-get(map-get($color, basicos), GrisOscuro);
+                text-align: center;
+                padding: 15px 10px;
+                border: 1px map-get(map-get($color, basicos), GrisOscuro) solid;
+
+
+                @media screen and (min-width: 1200px) {
+                    color: map-get(map-get($color, basicos), GrisClaro);
+                    border: 0px;
+                    padding: 0;
+                    padding: 0 50px 0 0;
+                    font-size: map-get($hs, h4e);
+
+                    &:hover {
+                        color: map-get(map-get($color, basicos), Naranja);
+                    }
+
+                }
+            }
+
+            &__banderas {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                border: 1px map-get(map-get($color, basicos), GrisOscuro) solid;
+                height: 65px;
+
+                @media screen and (min-width: 1200px) {
+                    border: 0px;
+                    flex-direction: column;
+                    height: 80px;
+                }
+
+                &__a img {
+                    height: 40px;
+                    width: 50px;
+
+                    @media screen and (min-width: 1200px) {
+                        height: 25px;
+                        width: 35px;
+                    }
+                }
+            }
+        }
+
+        #activar:checked~.menu__encabezado__desplegable {
+            display: flex;
+            flex-direction: column;
+            background-color: map-get(map-get($color, basicos), GrisClaroOp);
+            height: 202px;
+            width: 170px;
+            flex-shrink: 3;
+
+
+        }
+
+    }
+}
+
+;
+
+.section {
+    &__centrado {
+        @include pad-centrar(85%);
+        @media screen and (min-width: 700px){
+            @include pad-centrar(80%);
+        }
+
+        &__parrafo1 {
+            text-align: justify;
+            padding-top: 30px;
+            line-height: 20px;
+
+            @media screen and (min-width: 700px) {
+                padding-top: 50px;
+            }
+
+            &__li {
+                color: map-get(map-get($color, basicos), Naranja);
+                font-weight: 550;
+            }
+        }
+
+        &__parrafo2 {
+            display: none;
+            text-align: justify;
+            line-height: 20px;
+           
+            @media screen and (min-width: 700px) {
+                display: block;
+            }
+
+
+            &__li {
+                color: map-get(map-get($color, basicos), Naranja);
+                font-weight: 550;
+            }
+        }
+    }
 }

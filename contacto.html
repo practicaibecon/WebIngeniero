@@ -44,16 +44,15 @@
     <meta name="twitter:image" content="http://www.flightwithmati.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+  crossorigin="anonymous">
     
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
-    <!-- <link rel="stylesheet" href="css/guiadeestilos.css"> -->
-
 </head>
 <body>
+<<<<<<< HEAD
 
 <div class="formulario">
 
@@ -86,11 +85,90 @@
 </div>
   <div class="formulario__comentarios">
   <textarea name="comments" id="comments" maxlength="500">Escriu alguna cosa ...</textarea>
+=======
+    <header class="menu">
+
+        <nav class="menu__encabezado">
+
+            <a href="index.html" class="menu__encabezado__logo">
+
+                <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+                <span>
+                    Llorenç Bisquerra
+                </span>
+
+            </a>
+
+            <!-- Menú movil -->
+
+            <input id=activar type='checkbox'>
+            <label class='menu__encabezado__inputlabel' for='activar'>
+                <i class='menu__icono fas fa-bars'></i>
+            </label>
+            <div class='menu__encabezado__desplegable'>
+
+                <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
+                    Sobre mí
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='servicios.html'>
+                    Serveis
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='contacto.html'>
+                    Contactar
+                </a>
+                <div class='menu__encabezado__desplegable__banderas' href="#">
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/cat.svg" alt="cat">
+                    </a>
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/esp.svg" alt="esp">
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
+  </header>
+  <section>
+    <form class="contactform">
+      <div class="h2form">
+        <h2 class="h2form">SOLICITA TU PRESUPUESTO</h2>
+      </div>
+<div class="nombre">
+    <input name="nombre" type="text" placeholder="* Nombre">
   </div>
-  <button class="botonconfirmar">Enviar</button>
+  <div class="email">
+    <input name="email" type="text" placeholder="* Email" >
+  </div>
+  <div class="telefono">
+    <input name="telefono" type="text" placeholder="Teléfono">
+  </div>
+
+  <div class="particular">
+    <input type="radio" name="condicion" value="particular" checked>Particular
+  </div>
+  <div class="empresa">
+    <input type="radio" name="condicion" value="empresa">Empresa
+  </div>
+  <div class="servicios black">
+      <select>
+        <option>Selecciona consulta</option>
+        <option>Presupuesto</option>
+        <option>Otros</option>
+      </select>
+  </div>
+  <div class="comentarios">
+    <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escribe tu consulta"></textarea>
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
+  </div>
+  <button class="botonconfirmar"><i class="iconoEmail fas fa-envelope"></i>&nbsp;Enviar</button>
 </form>
 
+<<<<<<< HEAD
 </div>
 
 
+=======
+  </section>
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
 </body>

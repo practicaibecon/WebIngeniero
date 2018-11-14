@@ -3,6 +3,7 @@
 <html lang="ca">
 
 <head>
+<<<<<<< HEAD
         <script type="text/javascript">
             window.onload = function () {
           
@@ -15,6 +16,9 @@
             }
           </script>
  
+=======
+
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -44,9 +48,10 @@
     <meta name="twitter:image" content="http://www.flightwithmati.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
-    
+
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -56,22 +61,70 @@
 
 
 <body>
-<container>
-<!-- HEADER -->
-<!-- Composited by: Nav with [(a)Logo + (div)Burger] -->
-<nav class="header">
-        <a href="index.html">
-                <img src="img/Logo.svg" 
-                alt="logotipo Empresa" width="40px">
-        </a>
-        <div class="icono">
+    <header class="menu">
+
+        <nav class="menu__encabezado">
+
+            <a href="index.html" class="menu__encabezado__logo">
+
+                <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+                <span>
+                    Llorenç Bisquerra
+                </span>
+
+            </a>
+
+            <!-- Menú movil -->
+
+            <input id=activar type='checkbox'>
+            <label class='menu__encabezado__inputlabel' for='activar'>
+                <i class='menu__icono fas fa-bars'></i>
+            </label>
+            <div class='menu__encabezado__desplegable'>
+
+                <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
+                    Sobre mí
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='servicios.html'>
+                    Serveis
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='contacto.html'>
+                    Contactar
+                </a>
+                <div class='menu__encabezado__desplegable__banderas' href="#">
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/cat.svg" alt="cat">
+                    </a>
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/esp.svg" alt="esp">
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <container>
+        <!-- HEADER -->
+        <!-- Composited by: Nav with [(a)Logo + (div)Burger] -->
+        <nav class="header">
+            <a href="index.html">
+                <img src="img/Logo.svg" alt="logotipo Empresa" width="40px">
+            </a>
+            <div class="icono">
                 <div class="caja">
                     <div class="lineas"></div>
                 </div>
             </div>
-</nav>    
-<!-- FIN DEL HEADER -->
+        </nav>
+        <!-- FIN DEL HEADER -->
 
+        <!-- INICIO DEL CUERPO DE CONTENIDO -->
+        <!-- article: Estudios Técnicos -->
+
+        <section class="tecnicos">
+
+<<<<<<< HEAD
 <!-- INICIO DEL CUERPO DE CONTENIDO -->
 <!-- article: Estudis Técnics -->
 
@@ -189,61 +242,214 @@
                         <button class="coordinacion__figcaption--b">SOL.LICITA EL TEU PRESSUPOST</button>
                 </figcaption>
         </figure>
+=======
+            <figure>
+                <figcaption>
+
+                    <img class="tecnicos__photo" src="img/smartphone/*.jpg" alt="tecnicos">
+
+                    <h2>Estudios Técnicos</h2>
+
+                    <p class="tecnicos__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vel metus
+                        id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales, vel imperdiet ex
+                        varius. Sed sit amet convallis ante, sed efficitur lacus. Morbi commodo neque mollis dolor
+                        fermentum commodo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos. Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut
+                        sagittis urna.</p>
+
+                    <button class="tecnicos__boton">Presupuesto</button>
+
+                </figcaption>
+            </figure>
+
+            <!-- Por si insertamos alguna img en RWD -->
+            <picture>
+                <!-- Por defecto, baja resolución de imagen para Smartphone -->
+                <source srcset='img/smartphone/ 1x,img/smartphone/ 2x' media='(min-width:0px) and (max-width:767px)'>
+
+                <!-- Media resolución para Tablets -->
+                <source srcset='img/tablet/ 1x,img/tablet/ 2x' media='(min-width:768px) and (max-width:1365px)'>
+
+                <!-- Alta resolución para Escritorio -->
+                <source srcset='img/desktop/ 1x,img/desktop/ 2x' media='(min-width:1366px)'>
+
+
+                <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
+                <img src='img/smartphone/' alt=''>
+
+            </picture>
+        </section>
+
+        <!-- article: Presupuestos -->
+        <section class="presupuestos">
+
+            <figure>
+                <figcaption>
+
+                    <img class="presupuestos__photo" src="img/smartphone/*.jpg" alt="presupuestos">
+
+                    <h2>Presupuestos</h2>
+
+                    <p class="presupuestos__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales,
+                        vel imperdiet ex varius. Sed sit amet convallis ante, sed efficitur lacus.
+                        Morbi commodo neque mollis dolor fermentum commodo.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
+
+                    <button class="presupuestos__boton">Presupuesto</button>
+
+                </figcaption>
+            </figure>
+        </section>
+
+        <!-- article: Proyectos -->
+        <section class="proyectos">
+
+            <figure>
+                <figcaption>
+
+                    <img class="proyectos__photo" src="img/smartphone/*.jpg" alt="proyectos">
+
+                    <h2>Proyectos</h2>
+
+                    <p class="proyectos__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales,
+                        vel imperdiet ex varius. Sed sit amet convallis ante, sed efficitur lacus.
+                        Morbi commodo neque mollis dolor fermentum commodo.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
+
+                    <button class="proyectos__boton">Presupuesto</button>
+
+                </figcaption>
+            </figure>
+        </section>
+
+
+        <!-- article: Dirección de Obras -->
+        <section class="direccion">
+
+            <figure>
+                <figcaption>
+
+                    <img class="direccion__photo" src="img/smartphone/*.jpg" alt="direccion">
+
+                    <h2>Direccion de obra</h2>
+
+                    <p class="direccion__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales,
+                        vel imperdiet ex varius. Sed sit amet convallis ante, sed efficitur lacus.
+                        Morbi commodo neque mollis dolor fermentum commodo.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
+
+                    <button class="direccion__boton">Presupuesto</button>
+
+                </figcaption>
+            </figure>
+        </section>
+
+
+
+        <!-- article: Coordinación y Seguridad -->
+        <section class="coordinacion">
+
+            <figure>
+                <figcaption>
+
+                    <img class="coordinacion__photo" src="img/smartphone/*.jpg" alt="coordinacion">
+
+                    <h2>Coordinación y Seguridad</h2>
+
+                    <p class="coordinacion__lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam vel metus id ligula dignissim dictum a ac turpis. Proin varius quam nec odio sodales,
+                        vel imperdiet ex varius. Sed sit amet convallis ante, sed efficitur lacus.
+                        Morbi commodo neque mollis dolor fermentum commodo.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Etiam pretium rhoncus quam, ut interdum ex consectetur sed. Nullam ut sagittis urna.</p>
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
+
+                    <button class="coordinacion__boton">Presupuesto</button>
+
+                </figcaption>
+            </figure>
+        </section>
 
 
 
 
-</section>
-
-
+<<<<<<< HEAD
 <!-- FIN DEL CUERPO DE CONTENIDO -->
+=======
 
-<footer>
+        </section>
 
-<!-- Redes Sociales + Derechos -->
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
 
-<div class="social__networks">
-        <ul class="redes">
-        <li class="item05" href="#">
-            <i class="fa fa-linkedin"></i>
-            </li>
-        <li class="item01" href="#">
-            <i class="fa fa-facebook"></i>
-            </li>   
-        <li class="item02" href="#">
-            <i class="fa fa-instagram"></i>
-            </li>
-        <li class="item04" href="#">
-            <i class="fa fa-twitter"></i>
-            </li>     
-        </ul>
-    </div>
 
-<!-- Linea vertical de separacion --> 
 
-<div class="derechos__footer">
+        <!-- FIN DEL CUERPO DE CONTENIDO -->
 
+        <footer>
+
+            <!-- Redes Sociales + Derechos -->
+
+            <div class="social__networks">
+                <ul class="redes">
+                    <li class="item05" href="#">
+                        <i class="fa fa-linkedin"></i>
+                    </li>
+                    <li class="item01" href="#">
+                        <i class="fa fa-facebook"></i>
+                    </li>
+                    <li class="item02" href="#">
+                        <i class="fa fa-instagram"></i>
+                    </li>
+                    <li class="item04" href="#">
+                        <i class="fa fa-twitter"></i>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Linea vertical de separacion -->
+
+            <div class="derechos__footer">
+
+                <a href="">Términos</a>
+                <a href="">Cookies</a>
+                <a href="">Privacidad</a>
+                <a href="">...</a>
+
+            </div>
+
+<<<<<<< HEAD
     <a href=""></a>
     <a href=""></a>
     <a href=""></a>
     <a href="">...</a>
-
-</div>    
-    
-
-
-<!-- Nav del footer con datos de contacto -->
-
-<nav class="datos__footer">
-
-    <a href="name">Llorenc-Bisquerra</a>
-    <a href="e-mail">llorencbisquerra@gmail.com</a>
-    <a href="tel">649 480 452</a>
-    
-</nav>
+=======
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
 
 
+            <!-- Nav del footer con datos de contacto -->
+
+            <nav class="datos__footer">
+
+                <a href="name">Llorenc-Bisquerra</a>
+                <a href="e-mail">llorencbisquerra@gmail.com</a>
+                <a href="tel">649 480 452</a>
+
+            </nav>
+
+
+<<<<<<< HEAD
 </footer>
+=======
+        </footer>
+    </container>
+</body>
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
 
 </body>
 </container>

@@ -2,67 +2,121 @@
 =            $FORMULARIOS           =
 =============================================*/
 
-
-.contactform {
+.h2form
+{
+    font-family: 'MonserratBold',sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: map-get(map-get($color, basicos), GrisOscuro);
+}
+.contactform 
+{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 10px;
+    grid-row-gap: 20px;
+    padding: 3%;
+    font-family: 'MonserratBold',sans-serif;
+    color : map-get(map-get($color, basicos), GrisOscuro);
+
 }
 
+.h2form ,
 .nombre,
 .email,
-.telefono {
+.telefono ,
+.servicios
+{
     grid-column: 1 / 4;
 }
 
 .particular {
     grid-column: 1 / 2;
-    grid-row: 5;
+    grid-row: 6;
     justify-self: center;
 }
 
 .empresa {
     grid-column: 3 / 4;
-    grid-row: 5;
+    grid-row: 6;
     justify-self: center;
 }
 
 .comentarios {
     grid-column: 1/ 4;
-    grid-row: 6;
+    grid-row: 7;
 }
 
-.servicios {
-    grid-column: 1/ 4;
-    grid-row: 4;
+.txtcomentarios
+{
+    color: map-get(map-get($color, basicos), GrisOscuro);
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
 }
+
+
+.servicios 
+{
+    height: 29px;
+    overflow: hidden;
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
+    grid-row: 4;
+    color: map-get(map-get($color, basicos), GrisOscuro);
+    border-radius: 4px;
+
+}
+
+.servicios select {
+    background: transparent;
+    border: map-get(map-get($color, basicos), GrisOscuro);
+    font-size: 14px;
+    height: 29px;
+    padding: 5px;
+    color: map-get(map-get($color, basicos), GrisOscuro);
+    border-radius: 4px;
+
+}
+
+
+.servicios.black 
+{
+    height: 34px;
+}
+
 
 .botonconfirmar {
     grid-column: 2 / 3;
-    grid-row: 7;
-    background-color: #ebebeb;
-    border-color: black;
-    border-radius: 14px;
+    grid-row: 8;
+    background-color: map-get(map-get($color, basicos), GrisClaro);
+    border-color:  map-get(map-get($color, basicos), GrisOscuro);
+    border-radius: 4px;
     cursor: pointer;
-    height: 20px;
-    background: url(http://i62.tinypic.com/2e3ybe1.jpg) no-repeat scroll 1 2 transparent;
-    height: 30px;
     padding-bottom: 2px;
-    width: 175px;
-
-
-
+    height: 45px;
+    width: 155px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 input[type=text],
 select,
-textarea {
+textarea 
+{
     width: 100%;
     padding: 12px;
-    border: 1px solid #0e0e0e;
+    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
     border-radius: 0px;
     box-sizing: border-box;
     resize: vertical;
+<<<<<<< HEAD
 }
 
 
+=======
+    color: map-get(map-get($color, basicos), Blanco);
+}
+
+.iconoEmail
+{
+  color: map-get(map-get($color, basicos), GrisOscuro);
+}
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425

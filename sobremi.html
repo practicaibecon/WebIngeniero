@@ -5,67 +5,108 @@
 <head>
     <script type="text/javascript">
         window.onload = function () {
-      
-          var ln = x = window.navigator.language || navigator.browserLanguage;
-      
-              if (ln == 'es') {
-                              window.location.href = 'sobremi_es.html'; //si esta en inglés va a ingles
-      
-              }
+
+            var ln = x = window.navigator.language || navigator.browserLanguage;
+
+            if (ln == 'es') {
+                window.location.href = 'sobremi_es.html'; //si esta en inglés va a ingles
+
+            }
         }
-      </script>
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
     <!-- HTML Meta Tags -->
-    <title>Flight with Mati</title>
+    <title>Sobre Mi</title>
     <meta name="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
     <!--  la descripcion de arriba se puede repetir en otros SEO  -->
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Flight with Mati">
+    <meta itemprop="name" content="Sobre Mi">
     <meta itemprop="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
-    <meta itemprop="image" content="http://www.flightwithmati.es">
+    <meta itemprop="image" content="http://www.sobreMi.es">
     <!-- las imagenes no son obligatorias, pero se recomienda poner una foto que representa el negocio -->
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="http://www.flightwithmati.es">
+    <meta property="og:url" content="http://www.sobreMi.es">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Flight with Mati">
+    <meta property="og:title" content="Sobre Mi">
     <meta property="og:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
-    <meta property="og:image" content="http://www.flightwithmati.es">
+    <meta property="og:image" content="http://www.sobreMi.es">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Flight with Mati">
+    <meta name="twitter:title" content="Sobre Mi">
     <meta name="twitter:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
-    <meta name="twitter:image" content="http://www.flightwithmati.es">
+    <meta name="twitter:image" content="http://www.sobreMi.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
-    
+
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
     <!-- <link rel="stylesheet" href="css/guiadeestilos.css"> -->
 
 </head>
+
 <body>
 
     <!-- 
         Bloque Header
     -->
-     <header>
-        <nav class="menu">
+    <header class="menu">
 
+        <nav class="menu__encabezado">
+
+            <a href="index.html" class="menu__encabezado__logo">
+
+                <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+                <span>
+                    Llorenç Bisquerra
+                </span>
+
+            </a>
+
+            <!-- Menú movil -->
+
+            <input id=activar type='checkbox'>
+            <label class='menu__encabezado__inputlabel' for='activar'>
+                <i class='menu__icono fas fa-bars'></i>
+            </label>
+            <div class='menu__encabezado__desplegable'>
+
+                <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
+                    Sobre mí
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='servicios.html'>
+                    Servicios
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='contacto.html'>
+                    Contactar
+                </a>
+                <div class='menu__encabezado__desplegable__banderas' href="#">
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/cat.svg" alt="cat">
+                    </a>
+                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                        <img src="icons/esp.svg" alt="esp">
+                    </a>
+
+                </div>
+            </div>
         </nav>
-     </header>
+
+    </header>
 
     <!-- 
         Bloque Contenido
     -->
+<<<<<<< HEAD
 
 
             <section class="section__academy">
@@ -130,13 +171,86 @@
 
 
       </section>
+=======
+    <section class="sect">
+        <figure class="formacion">
+            <img src="img/desktop/@1x/llorençbisquerra.jpg" alt="llorenç bisquerra">
+            <h3>Formacion Academica</h3>
+            <figcaption>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </figcaption>
+        </figure>
+        <figure class="experiencia">
+            <img src="img/desktop/@1x/llorençbisquerra.jpg" alt="llorenç bisquerra">
+            <h4>Experiencia Profesional</h4>
+            <figcaption>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            </figcaption>
+        </figure>
+    </section>
+>>>>>>> 2c97aa37e482d479e776c356de25340919c2d425
 
     <!-- 
         Bloque Footer         
     -->
-       <footer class="pie">
-            <a href="#" class="pie__enlace">More</a>
-       </footer>
+    <footer class="pie">
+        <a href="index.html" class="pie__logo">
+            <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+            <span>
+                Llorenç Bisquerra
+            </span>
+
+        </a>
+        <div class="pie__menu">
+            <a class='pie__menu__a' href='sobremi.html'>
+                Sobre mí
+            </a>
+            <a class='pie__menu__a' href='servicios.html'>
+                Serveis
+            </a>
+            <a class='pie__menu__a' href='contacto.html'>
+                Contactar
+            </a>
+            <div class='pie__menu__banderas' href="#">
+                <a class='pie__menu__banderas__a' href='#'>
+                    <img src="icons/cat.svg" alt="cat">
+                </a>
+                <a class='pie__menu__banderas__a' href='#'>
+                    <img src="icons/esp.svg" alt="esp">
+                </a>
+
+            </div>
+        </div>
+        
+
+        <div class="pie__social">
+            <!-- <div class="pie__social__icons"> -->
+            <div class="pie__social__icons1">
+                <i class="fab fa-twitter-square"></i>
+                <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="pie__social__icons2">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="pie__terms">
+            <h4>Terminos</h4>
+            <h4>Cookies</h4>
+            <h4>Privacidad</h4>
+        </div>
+        </div>
+        <div class="pie__contacto">
+            <h4>E-mail</h4>
+            <h4>Telefono</h4>
+        </div>
+        <h4 class="pie__copy">Copyright 2018</h4>
+    </footer>
 
 </body>
+
 </html>
