@@ -1,9 +1,27 @@
 <!DOCTYPE html>
 <!-- cambio idioma español:es -->
-<html lang="es">
+<html lang="ca">
 
 <head>
- 
+    <script type="text/javascript">
+        window.onload = function () {
+
+            var ln = x = window.navigator.language || navigator.browserLanguage;
+
+           // alert (ln);
+            console.log(ln);
+            if (ln == 'es-ES')
+            {
+                break;
+            }
+            else
+            {
+                window.location.href = 'contacto_es.html'; //si esta en inglés va a ingles
+            }
+
+        }
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -33,122 +51,153 @@
     <meta name="twitter:image" content="http://www.flightwithmati.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+          crossorigin="anonymous">
 
-    
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
-    <!-- <link rel="stylesheet" href="css/guiadeestilos.css"> -->
-
 </head>
-<Body>
-        <header class="menu">
 
-                <nav class="menu__encabezado">
-        
-                    <a href="index.html" class="menu__encabezado__logo">
-        
-                        <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
-                        <span>
-                            Llorenç Bisquerra
-                        </span>
-        
-                    </a>
-        
-                    <!-- Menú movil -->
-        
-                    <input id=activar type='checkbox'>
-                    <label class='menu__encabezado__inputlabel' for='activar'>
-                        <i class='menu__icono fas fa-bars'></i>
-                    </label>
-                    <div class='menu__encabezado__desplegable'>
-        
-                        <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
-                            Sobre mí
-                        </a>
-                        <a class='menu__encabezado__desplegable__a' href='servicios.html'>
-                            Servicios
-                        </a>
-                        <a class='menu__encabezado__desplegable__a' href='contacto.html'>
-                            Contactar
-                        </a>
-                        <div class='menu__encabezado__desplegable__banderas' href="#">
-                            <a class='menu__encabezado__desplegable__banderas__a' href='#'>
-                                <img src="icons/cat.svg" alt="cat">
-                            </a>
-                            <a class='menu__encabezado__desplegable__banderas__a' href='#'>
-                                <img src="icons/esp.svg" alt="esp">
-                            </a>
-        
-                        </div>
-                    </div>
-                </nav>
-        
-            </header>
+<body>
+<header class="menu">
 
-<!-- 
-        Bloque Footer         
-    -->
-    <footer class="pie">
-            <a href="index.html" class="pie__logo">
-                <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
-                <span>
+    <nav class="menu__encabezado">
+
+        <a href="index.html" class="menu__encabezado__logo">
+
+            <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+            <span>
                     Llorenç Bisquerra
                 </span>
-    
+
+        </a>
+
+        <!-- Menú movil -->
+
+        <input id=activar type='checkbox'>
+        <label class='menu__encabezado__inputlabel' for='activar'>
+            <i class='menu__icono fas fa-bars'></i>
+        </label>
+        <div class='menu__encabezado__desplegable'>
+
+            <a class='menu__encabezado__desplegable__a' href='sobremi.html'>
+                Sobre mí
             </a>
-            <div class="pie__menu">
-                <a class='pie__menu__a' href='sobremi.html'>
-                    Sobre mí
+            <a class='menu__encabezado__desplegable__a' href='servicios.html'>
+                Serveis
+            </a>
+            <a class='menu__encabezado__desplegable__a' href='contacto_es.html'>
+                Contactar
+            </a>
+            <div class='menu__encabezado__desplegable__banderas' href="#">
+                <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                    <img src="icons/cat.svg" alt="cat">
                 </a>
-                <a class='pie__menu__a' href='servicios.html'>
-                    Serveis
+                <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                    <img src="icons/esp.svg" alt="esp">
                 </a>
-                <a class='pie__menu__a' href='contacto.html'>
-                    Contactar
+
+            </div>
+        </div>
+    </nav>
+
+</header>
+<section>
+    <form class="contactform">
+        <div class="contactform__h2form">
+            <h2 class="contactform__h2form">SOLICITA TU PRESUPUESTO</h2>
+        </div>
+        <div class="contactform__nombre">
+            <input name="nombre" type="text" placeholder="* Nombre">
+        </div>
+        <div class="contactform__email">
+            <input name="email" type="email" placeholder="* Email" >
+        </div>
+        <div class="contactform__telefono">
+            <input name="telefono" type="tel" placeholder="Teléfono">
+        </div>
+
+        <div class="contactform__particular">
+            <input type="radio" name="condicion" value="particular" checked>Particular
+        </div>
+        <div class="contactform__empresa">
+            <input type="radio" name="condicion" value="empresa">Empresa
+        </div>
+        <div class="contactform__servicios black">
+            <select>
+                <option value ="selecciona" selected>Selecciona consulta</option>
+                <option value="presupuesto">Presupuesto</option>
+                <option value="otros">Otros</option>
+            </select>
+        </div>
+        <div class="contactform__comentarios">
+            <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escribe tu consulta"></textarea>
+        </div>
+        <button class="contactform__botonconfirmar">
+            <i class="contactform__iconoEmail fas fa-envelope fa-xs"></i>&nbsp;Enviar</button>
+    </form>
+    <!--
+            Bloque Footer
+        -->
+    <footer class="pie">
+        <a href="index.html" class="pie__logo">
+            <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+            <span>
+                    Llorenç Bisquerra
+                </span>
+
+        </a>
+        <div class="pie__menu">
+            <a class='pie__menu__a' href='sobremi.html'>
+                Sobre mí
+            </a>
+            <a class='pie__menu__a' href='servicios.html'>
+                Serveis
+            </a>
+            <a class='pie__menu__a' href='contacto.html'>
+                Contactar
+            </a>
+            <div class='pie__menu__banderas' href="#">
+                <a class='pie__menu__banderas__a' href='#'>
+                    <img src="icons/cat.svg" alt="cat">
                 </a>
-                <div class='pie__menu__banderas' href="#">
-                    <a class='pie__menu__banderas__a' href='#'>
-                        <img src="icons/cat.svg" alt="cat">
-                    </a>
-                    <a class='pie__menu__banderas__a' href='#'>
-                        <img src="icons/esp.svg" alt="esp">
-                    </a>
-    
-                </div>
+                <a class='pie__menu__banderas__a' href='#'>
+                    <img src="icons/esp.svg" alt="esp">
+                </a>
+
             </div>
-            
-    
-            <div class="pie__social">
-                <!-- <div class="pie__social__icons"> -->
-                <div class="pie__social__icons1">
-                    <a class="twitter" href=""> <i class="fab fa-twitter-square"></i></a>
-                   <a class="facebook" href=""><i class="fab fa-facebook-square"></i></a>
-                
-                </div>
-                <div class="pie__social__icons2">
-                    <a class="linkedin" href=""><i class="fab fa-linkedin"></i></a>
-                    <a class="instagram" href=""> <i class="fab fa-instagram"></i></a>
-                </div>
-                <!-- </div> -->
+        </div>
+
+
+        <div class="pie__social">
+            <!-- <div class="pie__social__icons"> -->
+            <div class="pie__social__icons1">
+                <a class="twitter" href=""> <i class="fab fa-twitter-square"></i></a>
+                <a class="facebook" href=""><i class="fab fa-facebook-square"></i></a>
+
             </div>
-    
-            <div class="pie__terms">
-                <a href=""><h4>Terminos</h4></a>
-                <a href=""><h4>Cookies</h4></a>
-                <a href=""><h4>Privacidad</h4></a>
-                     
+            <div class="pie__social__icons2">
+                <a class="linkedin" href=""><i class="fab fa-linkedin"></i></a>
+                <a class="instagram" href=""> <i class="fab fa-instagram"></i></a>
             </div>
-            </div>
-            <div class="pie__contacto">
+            <!-- </div> -->
+        </div>
+
+        <div class="pie__terms">
+            <a href=""><h4>Terminos</h4></a>
+            <a href=""><h4>Cookies</h4></a>
+            <a href=""><h4>Privacidad</h4></a>
+
+        </div>
+        </div>
+        <div class="pie__contacto">
                 <span> <i class="fas fa-envelope"></i>
                     E-mail</span>
-                <span> <i class="fab fa-whatsapp"></i> Telefono</span>
-            </div>
-            <h4 class="pie__copy">Copyright 2018</h4>
-        </footer>
-    
-</Body>
-
+            <span> <i class="fab fa-whatsapp"></i> Telefono</span>
+        </div>
+        <h4 class="pie__copy">Copyright 2018</h4>
+    </footer>
+</section>
+</body>
 </html>
