@@ -134,12 +134,12 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 @font-face {
   font-family: 'MontserratRegular';
-  src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff);
+  src: url(../fonts/MontserratRegular.woff);
 }
 
 @font-face {
   font-family: 'MontserratBold';
-  src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff);
+  src: url(../fonts/MontserratBold.woff);
 }
 
 /*=====  Fin de Tipología  ======*/
@@ -148,23 +148,36 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 /*=====  Fin de Colores de Marca  ======*/
 html {
-  font-family: 'MonserratRegular', sans-serif;
+  font-family: 'MontserratRegular', sans-serif;
   font-size: 16px;
   color: #444444;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   html {
     font-size: 18px;
   }
 }
 
+::after {
+  font-size: 18px;
+  font-family: 'MontserratRegular';
+  padding-left: 12px;
+}
+
 header {
-  font-family: 'MonserratBold', sans-serif;
+  font-family: 'MontserratBold', sans-serif;
 }
 
 footer {
-  font-family: 'MonserratBold', sans-serif;
+  font-family: 'MontserratBold', sans-serif;
+  font-size: 14px;
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -174,27 +187,15 @@ a {
 
 i {
   color: #ebebeb;
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   i {
-    font-size: 18px;
+    font-size: 2.4rem;
   }
 }
 
-/* HEADER */
-/* CONTENIDO */
-.estudios, .presupuestos, .proyectos, .direcciones, .coordinacion {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* FOOTER */
-/*----------  TIPOGRAFIA  ----------*/
-/*=============================================
-=            $Tipografia            =
-=============================================*/
 /*----------  LIB  ----------*/
 /*=============================================
 =            $MIXINS         =
@@ -221,6 +222,166 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 /*=============================================
 =            $PLACEHOLDERS        =
 =============================================*/
+/*----------  TIPOGRAFIA  ----------*/
+/*=============================================
+=            $Tipografia            =
+=============================================*/
+.sectSobreMi {
+  max-width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 1400px;
+}
+
+@media screen and (min-width: 500px) {
+  .sectSobreMi {
+    height: 1200px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .sectSobreMi {
+    height: 630px;
+  }
+}
+
+.sectSobreMi__formacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sectSobreMi__formacion figcaption {
+  line-height: 20px;
+  text-align: justify;
+}
+
+.sectSobreMi__formacion figcaption h2 {
+  text-align: center;
+  padding: 15px;
+  font-family: 'MontserratBold';
+  font-size: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .sectSobreMi__formacion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .sectSobreMi__formacion figcaption h2 {
+    text-align: center;
+    font-family: 'MontserratBold';
+    font-size: 18px;
+  }
+  .sectSobreMi__formacion figcaption h2:hover {
+    color: #e1a605;
+  }
+}
+
+.sectSobreMi__exp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.sectSobreMi__exp figcaption {
+  line-height: 20px;
+  text-align: justify;
+}
+
+.sectSobreMi__exp figcaption h2 {
+  text-align: center;
+  padding: 15px;
+  font-family: 'MontserratBold';
+  font-size: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .sectSobreMi__exp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .sectSobreMi__exp figcaption h2 {
+    text-align: center;
+    padding: 15px;
+    font-family: 'MontserratBold';
+    font-size: 18px;
+  }
+  .sectSobreMi__exp figcaption h2:hover {
+    color: #e1a605;
+  }
+  .sectSobreMi__exp picture {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+/* & figcaption{
+        & h2{
+            font-size: map-get($hs, h2m);
+    
+            @media screen and (min-width: 800px){
+                margin-bottom: 5%;
+                font-size: map-get($hs, h3e);
+            }
+        }
+        text-align: justify;
+    }
+}*/
 /*----------  LINKS  ----------*/
 /* ----------------------------------- */
 /* $BOTONES */
@@ -913,43 +1074,18 @@ textarea {
 /*=============================================
 =            $IMAGENES           =
 =============================================*/
-.estudios__img, .proyectos__img, .coordinacion__img {
-  position: relative;
-  float: left;
-  background-color: #444444;
-  padding: 1em;
-}
-
-.presupuestos__img, .direcciones__img {
-  position: relative;
-  float: right;
-  background-color: #444444;
-  padding: 1em;
-}
-
-/* Media Queries */
-@media screen and (min-width: 320px) {
-  #servicios {
-    background-color: lightseagreen;
+@media screen and (min-width: 800px) {
+  .sectSobreMi__formacion__fig__img img {
+    padding-right: 70px;
+    width: 150em;
   }
 }
 
-@media screen and (min-width: 640px) {
-  #servicios {
-    background-color: lightblue;
+@media screen and (min-width: 800px) {
+  .sectSobreMi__exp__fig__img img {
+    padding-left: 60px;
+    width: 150em;
   }
-}
-
-@media screen and (min-width: 960px) {
-  #servicios {
-    background-color: lightyellow;
-    font-style: normal;
-    font-weight: bold;
-  }
-}
-
-.formacion img {
-  border-radius: 50%;
 }
 
 .section__centrado__fotos {
@@ -980,7 +1116,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold', sans-serif;
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -989,7 +1126,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__estudiosTecnicos__fig__texto {
     font-size: 28px;
   }
@@ -1003,7 +1140,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold', sans-serif;
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -1012,7 +1150,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__presupuesto__fig__texto {
     font-size: 28px;
   }
@@ -1026,7 +1164,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold', sans-serif;
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -1035,7 +1174,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__proyectos__fig__texto {
     font-size: 28px;
   }
@@ -1049,7 +1188,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold', sans-serif;
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -1058,7 +1198,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__DireccionDeObras__fig__texto {
     font-size: 28px;
   }
@@ -1116,10 +1256,11 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold', sans-serif;
+  padding: 10px 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos__coordincionYSeguridad__texto {
     font-size: 28px;
   }

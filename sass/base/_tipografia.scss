@@ -1,3 +1,111 @@
 /*=============================================
 =            $Tipografia            =
 =============================================*/
+// Colocacion de la pag Sobre Mi  
+.sectSobreMi {
+
+    @include pad-centrar(80%);
+    @include flex-box(space-around, center, column);
+    height: 1400px;
+
+    @media screen and (min-width: 500px) {
+        height: 1200px;
+    };
+
+    @media screen and (min-width: 800px) {
+        height: 630px;
+    };
+
+
+    // Para la formacion
+    &__formacion {
+        @include flex-box(space-between, center, column);
+        // width: 100%;
+        & figcaption {
+            line-height: 20px;
+            text-align: justify;
+            
+
+            & h2 {
+                text-align: center;
+                padding: 15px;
+                font-family: 'MontserratBold';
+                font-size: map-get($hs, h2m);
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            @include flex-box(space-between, center, row);
+
+            & figcaption {
+                // width: 80%;
+                & h2 {
+                    text-align: center;
+                    // padding: 20px;
+                    font-family: 'MontserratBold';
+                    font-size: map-get($hs, h2e);
+                }
+
+                h2:hover {
+                    color: map-get(map-get($color, basicos), Naranja);
+                }
+            }
+
+           
+        }
+    }
+
+    // Para la experiencia
+    &__exp {
+        @include flex-box(center, center, column);
+       
+        & figcaption {
+
+            line-height: 20px;
+            text-align: justify;
+            
+
+            & h2 {
+                text-align: center;
+                padding: 15px;
+                font-family: 'MontserratBold';
+                font-size: map-get($hs, h2m);
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            @include flex-box(space-between, center, row);
+
+            & figcaption {
+                // width: 80%;
+                & h2 {
+                    text-align: center;
+                     padding: 15px;
+                    font-family: 'MontserratBold';
+                    font-size: map-get($hs, h2e);
+
+                    &:hover {
+                        color: map-get(map-get($color, basicos), Naranja);
+                    }
+                }
+            }
+
+            picture {
+                order: 1;
+                
+            }
+        }
+    }
+}
+    /* & figcaption{
+        & h2{
+            font-size: map-get($hs, h2m);
+    
+            @media screen and (min-width: 800px){
+                margin-bottom: 5%;
+                font-size: map-get($hs, h3e);
+            }
+        }
+        text-align: justify;
+    }
+}*/
