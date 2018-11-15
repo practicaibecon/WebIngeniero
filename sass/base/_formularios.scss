@@ -94,7 +94,7 @@
         justify-self: center;
       }
 
-      input[type=text],
+      input,
       select,
       textarea {
         width: 100%;
@@ -103,12 +103,21 @@
         border-radius: 0px;
         box-sizing: border-box;
         resize: vertical;
-        color: map-get(map-get($color, basicos), Blanco);
+        color: map-get(map-get($color, basicos), GrisOscuro);
       }
 
       &__iconoEmail {
         color: map-get(map-get($color, basicos), GrisOscuro);
       }
+
+  ::placeholder
+  {
+    color: solid map-get(map-get($color, basicos), GrisOscuro);
+  }
+
+  ::selection { background: black;
+  height: 30px;
+  }
 
 }
 
