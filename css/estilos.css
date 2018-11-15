@@ -699,8 +699,13 @@ textarea {
 
 @media screen and (min-width: 800px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   .servicios .pie {
     grid-template-rows: 100px 200px 60px 50px;
+=======
+  .pie {
+    grid-template-rows: 100px 200px 50px 50px;
+>>>>>>> parent of 094c922... Footer completo y index modificado
 =======
   .pie {
     grid-template-rows: 100px 200px 50px 50px;
@@ -733,9 +738,12 @@ textarea {
     height: 90px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .servicios .pie__logo span {
     font-size: 30px;
   }
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
 =======
 >>>>>>> parent of 094c922... Footer completo y index modificado
 }
@@ -762,9 +770,15 @@ textarea {
     grid-column: 1/2;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .servicios .pie__menu__banderas img {
     width: 35px;
     height: 25px;
+=======
+  .pie__menu__banderas img {
+    width: 50px;
+    height: 40px;
+>>>>>>> parent of 094c922... Footer completo y index modificado
 =======
   .pie__menu__banderas img {
     width: 50px;
@@ -789,6 +803,7 @@ textarea {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (min-width: 800px) {
   .servicios .pie__social {
     width: 70%;
@@ -797,6 +812,8 @@ textarea {
 
 .servicios .pie__social__icons1 {
 =======
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
 .pie__social__icons1 {
 >>>>>>> parent of 094c922... Footer completo y index modificado
   display: -webkit-box;
@@ -815,6 +832,7 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+<<<<<<< HEAD
 <<<<<<< HEAD
     -webkit-box-align: start;
     -ms-flex-align: start;
@@ -840,14 +858,19 @@ textarea {
     display: flex;
 =======
 >>>>>>> parent of 094c922... Footer completo y index modificado
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   .servicios .pie__social__icons1 .facebook::after {
     content: "Facebook ";
   }
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
 =======
 >>>>>>> parent of 094c922... Footer completo y index modificado
 }
@@ -870,6 +893,7 @@ textarea {
     -ms-flex-direction: column;
     flex-direction: column;
 <<<<<<< HEAD
+<<<<<<< HEAD
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -883,10 +907,13 @@ textarea {
     display: flex;
 =======
 >>>>>>> parent of 094c922... Footer completo y index modificado
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+<<<<<<< HEAD
 <<<<<<< HEAD
   .servicios .pie__social__icons2 .linkedin::after {
     content: "Linkedin ";
@@ -902,6 +929,8 @@ textarea {
   .servicios .pie__social__icons2 .instagram::after {
     content: "Instagram ";
   }
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
 =======
 >>>>>>> parent of 094c922... Footer completo y index modificado
 }
@@ -926,6 +955,7 @@ textarea {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (min-width: 800px) {
   .servicios .pie__terms {
     display: -webkit-box;
@@ -949,6 +979,8 @@ textarea {
 
 .servicios .pie__contacto {
 =======
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
 .pie__contacto {
 >>>>>>> parent of 094c922... Footer completo y index modificado
   grid-row: 2/3;
@@ -984,6 +1016,7 @@ textarea {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .servicios .pie__contacto span {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1000,6 +1033,8 @@ textarea {
 
 .servicios .pie__copy {
 =======
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
 .pie__copy {
 >>>>>>> parent of 094c922... Footer completo y index modificado
   grid-row: 3/4;
@@ -1015,6 +1050,7 @@ textarea {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media screen and (min-width: 800px) {
   .servicios .pie__copy {
     grid-row: 4/5;
@@ -1022,6 +1058,8 @@ textarea {
   }
 }
 
+=======
+>>>>>>> parent of 094c922... Footer completo y index modificado
 =======
 >>>>>>> parent of 094c922... Footer completo y index modificado
 /*----------  Imágenes  ----------*/
