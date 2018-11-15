@@ -8,7 +8,7 @@
     
         var ln = x = window.navigator.language || navigator.browserLanguage;
     
-            if (ln == 'es') {
+            if (ln == 'es-ESx') {
                             window.location.href = 'contacto_es.html'; //si esta en inglés va a ingles
     
             }
@@ -98,36 +98,37 @@
   </header>
   <section>
     <form class="contactform">
-      <div class="h2form">
-        <h2 class="h2form">SOLICITA TU PRESUPUESTO</h2>
+      <div class="contactform__h2form">
+        <h2 class="contactform__h2form">SOLICITA TU PRESUPUESTO</h2>
       </div>
-<div class="nombre">
+<div class="contactform__nombre">
     <input name="nombre" type="text" placeholder="* Nombre">
   </div>
-  <div class="email">
+  <div class="contactform__email">
     <input name="email" type="text" placeholder="* Email" >
   </div>
-  <div class="telefono">
+  <div class="contactform__telefono">
     <input name="telefono" type="text" placeholder="Teléfono">
   </div>
 
-  <div class="particular">
+  <div class="contactform__particular">
     <input type="radio" name="condicion" value="particular" checked>Particular
   </div>
-  <div class="empresa">
+  <div class="contactform__empresa">
     <input type="radio" name="condicion" value="empresa">Empresa
   </div>
-  <div class="servicios black">
+  <div class="contactform__servicios black">
       <select>
         <option>Selecciona consulta</option>
         <option>Presupuesto</option>
         <option>Otros</option>
       </select>
   </div>
-  <div class="comentarios">
+  <div class="contactform__comentarios">
     <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escribe tu consulta"></textarea>
   </div>
-  <button class="botonconfirmar"><i class="iconoEmail fas fa-envelope"></i>&nbsp;Enviar</button>
+  <button class="contactform__botonconfirmar">
+      <i class="contactform__iconoEmail fas fa-envelope fa-xs"></i>&nbsp;Enviar</button>
 </form>
 
   </section>
