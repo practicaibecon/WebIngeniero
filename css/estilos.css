@@ -614,113 +614,31 @@ textarea {
 =            $GRIDS         =
 =============================================*/
 /*=============================================
-<<<<<<< HEAD
-=            $LAYOUTS=
+=            $LAYOUTS         =
 =============================================*/
-.servicios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: left calc(50% - 136px);
-  -ms-flex-pack: left calc(50% - 136px);
-  justify-content: left calc(50% - 136px);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-width: 20em;
-  max-height: 127em;
-  /* Media Queries */
-}
-
-.servicios .estudios, .servicios .proyectos, .servicios .coordinacion {
-  background-color: tomato;
-  padding: .3em 1em;
-}
-
-.servicios .presupuestos, .servicios .direccion {
-  background-color: grey;
-  padding: 5px;
-}
-
-.servicios .estudios, .servicios .presupuestos, .servicios .proyectos, .servicios .direcciones, .servicios .coordinacion {
-  font-family: "MontserratRegular",sans-serif;
-  text-align: center;
-}
-
-.servicios .estudios__figcaption--t, .servicios .presupuestos__figcaption--t, .servicios .proyectos__figcaption--t,
-.servicios .direcciones__figcaption--t, .servicios .coordinacion__figcaption--t {
-  font-size: 1.313em;
-  padding: .5em 1em;
-  text-align: center;
-}
-
-.servicios .estudios__figcaption--p, .servicios .presupuestos__figcaption--p, .servicios .proyectos__figcaption--p,
-.servicios .direcciones__figcaption--p, .servicios .coordinacion__figcaption--p {
-  font-size: .5em;
-  padding: .3em 1em;
-  text-align: justify;
-}
-
-.servicios .estudios__figcaption--b, .servicios .presupuestos__figcaption--b, .servicios .proyectos__figcaption--b,
-.servicios .direcciones__figcaption--b, .servicios .coordinacion__figcaption--b {
-  font-size: 1em;
-  padding: .3em 1em;
-  text-align: center;
-}
-
-@media screen and (min-width: 320px) {
-  .servicios #servicios {
-    background-color: lightseagreen;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .servicios #servicios {
-    background-color: lightblue;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  .servicios #servicios {
-    background-color: lightyellow;
-    font-style: normal;
-    font-weight: bold;
-  }
-}
-
-.servicios .pie {
+.pie {
   background: #444444;
   color: #ebebeb;
-  height: 250px;
+  height: 270px;
   display: grid;
-  grid-template-rows: 150px 50px 50px;
+  grid-template-rows: 150px 70px 50px;
   grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 800px) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .servicios .pie {
+  .pie {
     grid-template-rows: 100px 200px 60px 50px;
-=======
-  .pie {
-    grid-template-rows: 100px 200px 50px 50px;
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
-  .pie {
-    grid-template-rows: 100px 200px 50px 50px;
->>>>>>> parent of 094c922... Footer completo y index modificado
     grid-template-columns: 1fr 1fr 1fr;
-    height: 400px;
+    height: 410px;
   }
 }
 
-.servicios .pie__logo {
+.pie__logo {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  .servicios .pie__logo {
+  .pie__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -733,27 +651,21 @@ textarea {
     grid-row: 1/2;
     grid-column: 1/4;
   }
-  .servicios .pie__logo img {
+  .pie__logo img {
     width: 90px;
     height: 90px;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .servicios .pie__logo span {
+  .pie__logo span {
     font-size: 30px;
   }
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
 }
 
-.servicios .pie__menu {
+.pie__menu {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  .servicios .pie__menu {
+  .pie__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -768,30 +680,19 @@ textarea {
     justify-content: space-around;
     grid-row: 2/3;
     grid-column: 1/2;
+    border-right: 1px #ebebeb solid;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .servicios .pie__menu__banderas img {
+  .pie__menu__banderas img {
     width: 35px;
     height: 25px;
-=======
-  .pie__menu__banderas img {
-    width: 50px;
-    height: 40px;
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
-  .pie__menu__banderas img {
-    width: 50px;
-    height: 40px;
->>>>>>> parent of 094c922... Footer completo y index modificado
   }
 }
 
-.servicios .pie__social {
+.pie__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 130px;
   height: 90%;
   margin: auto;
   -webkit-box-orient: vertical;
@@ -802,20 +703,13 @@ textarea {
   justify-content: space-around;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @media screen and (min-width: 800px) {
-  .servicios .pie__social {
+  .pie__social {
     width: 70%;
   }
 }
 
-.servicios .pie__social__icons1 {
-=======
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
 .pie__social__icons1 {
->>>>>>> parent of 094c922... Footer completo y index modificado
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -824,7 +718,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .servicios .pie__social__icons1 {
+  .pie__social__icons1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -832,8 +726,6 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -841,7 +733,7 @@ textarea {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .servicios .pie__social__icons1 .twitter {
+  .pie__social__icons1 .twitter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -849,33 +741,23 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
   }
-  .servicios .pie__social__icons1 .twitter::after {
+  .pie__social__icons1 .twitter::after {
     content: "Twitter ";
   }
-  .servicios .pie__social__icons1 .facebook {
+  .pie__social__icons1 .facebook {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .servicios .pie__social__icons1 .facebook::after {
+  .pie__social__icons1 .facebook::after {
     content: "Facebook ";
   }
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
 }
 
-.servicios .pie__social__icons2 {
+.pie__social__icons2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -884,7 +766,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .servicios .pie__social__icons2 {
+  .pie__social__icons2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -892,8 +774,6 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-<<<<<<< HEAD
-<<<<<<< HEAD
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -901,24 +781,18 @@ textarea {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .servicios .pie__social__icons2 .linkedin {
+  .pie__social__icons2 .linkedin {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-  .servicios .pie__social__icons2 .linkedin::after {
+  .pie__social__icons2 .linkedin::after {
     content: "Linkedin ";
   }
-  .servicios .pie__social__icons2 .instagram {
+  .pie__social__icons2 .instagram {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -926,16 +800,12 @@ textarea {
     -ms-flex-align: center;
     align-items: center;
   }
-  .servicios .pie__social__icons2 .instagram::after {
+  .pie__social__icons2 .instagram::after {
     content: "Instagram ";
   }
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
 }
 
-.servicios .pie__terms {
+.pie__terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -946,7 +816,6 @@ textarea {
   width: 50%;
   height: 90%;
   margin: auto;
-  flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: space-around;
@@ -954,10 +823,8 @@ textarea {
   align-items: space-around;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @media screen and (min-width: 800px) {
-  .servicios .pie__terms {
+  .pie__terms {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -977,12 +844,7 @@ textarea {
   }
 }
 
-.servicios .pie__contacto {
-=======
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
 .pie__contacto {
->>>>>>> parent of 094c922... Footer completo y index modificado
   grid-row: 2/3;
   grid-column: 1/3;
   display: -webkit-box;
@@ -997,14 +859,10 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .servicios .pie__contacto {
+  .pie__contacto {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1012,12 +870,12 @@ textarea {
     justify-content: space-around;
     grid-row: 2/3;
     grid-column: 2/3;
+    border: 0px;
+    border-right: 1px #ebebeb solid;
   }
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-.servicios .pie__contacto span {
+.pie__contacto span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1026,17 +884,12 @@ textarea {
   align-items: center;
 }
 
-.servicios .pie__contacto i {
+.pie__contacto i {
   padding-right: 8px;
   font-size: 2rem;
 }
 
-.servicios .pie__copy {
-=======
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
 .pie__copy {
->>>>>>> parent of 094c922... Footer completo y index modificado
   grid-row: 3/4;
   grid-column: 1/3;
   display: -webkit-box;
@@ -1049,19 +902,13 @@ textarea {
   align-items: center;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 @media screen and (min-width: 800px) {
-  .servicios .pie__copy {
+  .pie__copy {
     grid-row: 4/5;
     grid-column: 1/4;
   }
 }
 
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
-=======
->>>>>>> parent of 094c922... Footer completo y index modificado
 /*----------  Imágenes  ----------*/
 /*=============================================
 =            $IMAGENES           =
