@@ -33,21 +33,19 @@ $hs: (
     //Finaliza SEO
     h4m: 18px, // para movil. Los enlaces del header.
     h4e: 22px, //para escritorio. Los enlaces del header y del footer.
-    h5m: 14px, //para movil. Términos, condiciones, etc.
+    h5m: 16px, //para movil. Términos, condiciones, etc.
     h5e: 18px //para escritorio. Términos, condiciones, redes sociales, etc.
 
 );
 
 @font-face {
     font-family: 'MontserratRegular';
-    src: local('MontserratRegular'),
-        url(../fonts/MonserratRegular.woff) format(woff);
+    src: url(../fonts/MontserratRegular.woff);
 };
 
 @font-face {
     font-family: 'MontserratBold';
-    src: local('MontserratBold'),
-        url(../fonts/MonserratBold.woff) format(woff);
+    src: url(../fonts/MontserratBold.woff);
 };
 
 /*=====  Fin de Tipología  ======*/
@@ -70,25 +68,35 @@ $color: (
 /*=====  Fin de Colores de Marca  ======*/
 
 html {
-    font-family: 'MonserratRegular', sans-serif;
+    font-family: 'MontserratRegular';
     font-size: $hremm;
-     @media screen and (min-width: 768px){
+     @media screen and (min-width: 800px){
         font-size: $hreme;
      }
     color: map-get(map-get($color, basicos), GrisOscuro);
 
 };
+::after{
+    font-size: map-get($hs, h5e);
+    font-family: 'MontserratRegular';
+    padding-left: 12px;
+    
+}
 
 body{
     background-color: map-get(map-get($color, basicos), blanco);
 };
 
 header{
-    font-family: 'MonserratBold', sans-serif;
+    font-family: 'MontserratBold';
 };
 
 footer{
-    font-family: 'MonserratBold', sans-serif;  
+    font-family: 'MontserratBold';
+    font-size: map-get($hs,  h5m);
+    @media screen and (min-width: 800px){
+     font-size: map-get($hs,  h4m);
+}
 };
 
 a{
@@ -98,10 +106,34 @@ a{
 
 i{
     color: map-get(map-get($color, basicos), GrisClaro);
-    font-size: 3rem;
-      @media screen and (min-width: 1200px){
-        font-size: $hreme;
-        }
+    font-size: 3.2rem;
+    @media screen and (min-width: 800px){
+        font-size: 2.4rem;
+    }
+     
 }
+
+
+
+
+// CSS DE SERVICIOS ////////////
+
+/* HEADER */
+
+
+
+/* CONTENIDO */
+
+.estudios, .presupuestos, .proyectos, .direcciones, .coordinacion{
+    
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+/* FOOTER */
+
+
+
 
 

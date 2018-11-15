@@ -2,16 +2,14 @@
 =            $FORMULARIOS           =
 =============================================*/
 
-
-.h2form {
-    font-family: 'MonserratBold',
-        sans-serif;
+.h2form
+{
+    font-family: 'MonserratBold',sans-serif;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     color: map-get(map-get($color, basicos), GrisOscuro);
 }
-
 .contactform 
 {
     display: grid;
@@ -21,11 +19,6 @@
     font-family: 'MonserratBold',sans-serif;
     color : map-get(map-get($color, basicos), GrisOscuro);
 
-     @media screen and (min-width: 800px) {
-           padding: 15%;
-     }
-   
-
 }
 
 .h2form ,
@@ -34,8 +27,6 @@
 .telefono ,
 .servicios
 {
-        color : map-get(map-get($color, basicos), GrisOscuro);
-
     grid-column: 1 / 4;
 }
 
@@ -104,7 +95,6 @@
     width: 155px;
     font-weight: bold;
     font-size: 18px;
-    justify-self: center;
 }
 
 input[type=text],
@@ -123,5 +113,4 @@ textarea
 .iconoEmail
 {
   color: map-get(map-get($color, basicos), GrisOscuro);
-  
 }

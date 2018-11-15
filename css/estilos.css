@@ -134,12 +134,12 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 @font-face {
   font-family: 'MontserratRegular';
-  src: local("MontserratRegular"), url(../fonts/MonserratRegular.woff) format(woff);
+  src: url(../fonts/MontserratRegular.woff);
 }
 
 @font-face {
   font-family: 'MontserratBold';
-  src: local("MontserratBold"), url(../fonts/MonserratBold.woff) format(woff);
+  src: url(../fonts/MontserratBold.woff);
 }
 
 /*=====  Fin de Tipología  ======*/
@@ -148,23 +148,36 @@ Y8    8P 88ooo88 88oobY'    88    88ooo88 88oooY' 88      88ooooo `8bo.
 =============================================*/
 /*=====  Fin de Colores de Marca  ======*/
 html {
-  font-family: 'MonserratRegular', sans-serif;
+  font-family: 'MontserratRegular';
   font-size: 16px;
   color: #444444;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   html {
     font-size: 18px;
   }
 }
 
+::after {
+  font-size: 18px;
+  font-family: 'MontserratRegular';
+  padding-left: 12px;
+}
+
 header {
-  font-family: 'MonserratBold', sans-serif;
+  font-family: 'MontserratBold';
 }
 
 footer {
-  font-family: 'MonserratBold', sans-serif;
+  font-family: 'MontserratBold';
+  font-size: 16px;
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    font-size: 18px;
+  }
 }
 
 a {
@@ -174,15 +187,23 @@ a {
 
 i {
   color: #ebebeb;
-  font-size: 3rem;
+  font-size: 3.2rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   i {
-    font-size: 18px;
+    font-size: 2.4rem;
   }
 }
 
+/* HEADER */
+/* CONTENIDO */
+.estudios, .presupuestos, .proyectos, .direcciones, .coordinacion {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* FOOTER */
 /*----------  TIPOGRAFIA  ----------*/
 /*=============================================
 =            $Tipografia            =
@@ -214,9 +235,27 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 =            $PLACEHOLDERS        =
 =============================================*/
 /*----------  LINKS  ----------*/
-/*=============================================
-=            $ENLACES           =
-=============================================*/
+/* ----------------------------------- */
+/* $BOTONES */
+/* ----------------------------------- */
+/* HEADER */
+/* CONTENIDO */
+.estudios__figcaption--b, .presupuestos__figcaption--b, .proyectos__figcaption--b,
+.direcciones__figcaption--b, .coordinacion__figcaption--b {
+  border-radius: 1.5em;
+  float: right;
+}
+
+/* FOOTER */
+/* ----------------------------------- */
+/* $ENLACES */
+/* ----------------------------------- */
+/* HEADER */
+/* CONTENIDO */
+/* FOOTER */
+/* ----------------------------------- */
+/* $MENUS SCSS */
+/* ----------------------------------- */
 .menu {
   height: 65px;
 }
@@ -588,31 +627,103 @@ textarea {
 =            $GRIDS         =
 =============================================*/
 /*=============================================
-=            $LAYOUTS         =
+<<<<<<< HEAD
+=            $LAYOUTS=
 =============================================*/
-.pie {
+.servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left calc(50% - 136px);
+  -ms-flex-pack: left calc(50% - 136px);
+  justify-content: left calc(50% - 136px);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-width: 20em;
+  max-height: 127em;
+  /* Media Queries */
+}
+
+.servicios .estudios, .servicios .proyectos, .servicios .coordinacion {
+  background-color: tomato;
+  padding: .3em 1em;
+}
+
+.servicios .presupuestos, .servicios .direccion {
+  background-color: grey;
+  padding: 5px;
+}
+
+.servicios .estudios, .servicios .presupuestos, .servicios .proyectos, .servicios .direcciones, .servicios .coordinacion {
+  font-family: "MontserratRegular",sans-serif;
+  text-align: center;
+}
+
+.servicios .estudios__figcaption--t, .servicios .presupuestos__figcaption--t, .servicios .proyectos__figcaption--t,
+.servicios .direcciones__figcaption--t, .servicios .coordinacion__figcaption--t {
+  font-size: 1.313em;
+  padding: .5em 1em;
+  text-align: center;
+}
+
+.servicios .estudios__figcaption--p, .servicios .presupuestos__figcaption--p, .servicios .proyectos__figcaption--p,
+.servicios .direcciones__figcaption--p, .servicios .coordinacion__figcaption--p {
+  font-size: .5em;
+  padding: .3em 1em;
+  text-align: justify;
+}
+
+.servicios .estudios__figcaption--b, .servicios .presupuestos__figcaption--b, .servicios .proyectos__figcaption--b,
+.servicios .direcciones__figcaption--b, .servicios .coordinacion__figcaption--b {
+  font-size: 1em;
+  padding: .3em 1em;
+  text-align: center;
+}
+
+@media screen and (min-width: 320px) {
+  .servicios #servicios {
+    background-color: lightseagreen;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .servicios #servicios {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .servicios #servicios {
+    background-color: lightyellow;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
+.servicios .pie {
   background: #444444;
   color: #ebebeb;
-  height: 250px;
+  height: 270px;
   display: grid;
-  grid-template-rows: 150px 50px 50px;
+  grid-template-rows: 150px 70px 50px;
   grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (min-width: 800px) {
-  .pie {
-    grid-template-rows: 100px 200px 50px 50px;
+  .servicios .pie {
+    grid-template-rows: 100px 200px 60px 50px;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 400px;
+    height: 410px;
   }
 }
 
-.pie__logo {
+.servicios .pie__logo {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  .pie__logo {
+  .servicios .pie__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -625,18 +736,21 @@ textarea {
     grid-row: 1/2;
     grid-column: 1/4;
   }
-  .pie__logo img {
+  .servicios .pie__logo img {
     width: 90px;
     height: 90px;
   }
+  .servicios .pie__logo span {
+    font-size: 30px;
+  }
 }
 
-.pie__menu {
+.servicios .pie__menu {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  .pie__menu {
+  .servicios .pie__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -651,18 +765,19 @@ textarea {
     justify-content: space-around;
     grid-row: 2/3;
     grid-column: 1/2;
+    border-right: 1px #ebebeb solid;
   }
-  .pie__menu__banderas img {
-    width: 50px;
-    height: 40px;
+  .servicios .pie__menu__banderas img {
+    width: 35px;
+    height: 25px;
   }
 }
 
-.pie__social {
+.servicios .pie__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 130px;
   height: 90%;
   margin: auto;
   -webkit-box-orient: vertical;
@@ -673,7 +788,13 @@ textarea {
   justify-content: space-around;
 }
 
-.pie__social__icons1 {
+@media screen and (min-width: 800px) {
+  .servicios .pie__social {
+    width: 70%;
+  }
+}
+
+.servicios .pie__social__icons1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -682,7 +803,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__social__icons1 {
+  .servicios .pie__social__icons1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -690,13 +811,38 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .servicios .pie__social__icons1 .twitter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+  .servicios .pie__social__icons1 .twitter::after {
+    content: "Twitter ";
+  }
+  .servicios .pie__social__icons1 .facebook {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .servicios .pie__social__icons1 .facebook::after {
+    content: "Facebook ";
+  }
 }
 
-.pie__social__icons2 {
+.servicios .pie__social__icons2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,7 +851,7 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__social__icons2 {
+  .servicios .pie__social__icons2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -713,13 +859,38 @@ textarea {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .servicios .pie__social__icons2 .linkedin {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
   }
+  .servicios .pie__social__icons2 .linkedin::after {
+    content: "Linkedin ";
+  }
+  .servicios .pie__social__icons2 .instagram {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .servicios .pie__social__icons2 .instagram::after {
+    content: "Instagram ";
+  }
 }
 
-.pie__terms {
+.servicios .pie__terms {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -730,7 +901,6 @@ textarea {
   width: 50%;
   height: 90%;
   margin: auto;
-  flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: space-around;
@@ -738,7 +908,28 @@ textarea {
   align-items: space-around;
 }
 
-.pie__contacto {
+@media screen and (min-width: 800px) {
+  .servicios .pie__terms {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    border: 1px #ebebeb solid;
+    width: 100%;
+  }
+}
+
+.servicios .pie__contacto {
   grid-row: 2/3;
   grid-column: 1/3;
   display: -webkit-box;
@@ -753,14 +944,10 @@ textarea {
 }
 
 @media screen and (min-width: 800px) {
-  .pie__contacto {
+  .servicios .pie__contacto {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -768,10 +955,26 @@ textarea {
     justify-content: space-around;
     grid-row: 2/3;
     grid-column: 2/3;
+    border: 0px;
+    border-right: 1px #ebebeb solid;
   }
 }
 
-.pie__copy {
+.servicios .pie__contacto span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.servicios .pie__contacto i {
+  padding-right: 8px;
+  font-size: 2rem;
+}
+
+.servicios .pie__copy {
   grid-row: 3/4;
   grid-column: 1/3;
   display: -webkit-box;
@@ -784,10 +987,52 @@ textarea {
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .servicios .pie__copy {
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
+}
+
 /*----------  Imágenes  ----------*/
 /*=============================================
-=            $Imagenes                       =
+=            $IMAGENES           =
 =============================================*/
+.estudios__img, .proyectos__img, .coordinacion__img {
+  position: relative;
+  float: left;
+  background-color: #444444;
+  padding: 1em;
+}
+
+.presupuestos__img, .direcciones__img {
+  position: relative;
+  float: right;
+  background-color: #444444;
+  padding: 1em;
+}
+
+/* Media Queries */
+@media screen and (min-width: 320px) {
+  #servicios {
+    background-color: lightseagreen;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  #servicios {
+    background-color: lightblue;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #servicios {
+    background-color: lightyellow;
+    font-style: normal;
+    font-weight: bold;
+  }
+}
+
 .formacion img {
   border-radius: 50%;
 }
@@ -802,7 +1047,7 @@ textarea {
 @media screen and (min-width: 800px) {
   .section__centrado__fotos {
     grid-column-gap: 50px;
-    grid-row-gap: 80px;
+    grid-row-gap: 60px;
   }
 }
 
@@ -820,7 +1065,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -829,9 +1075,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__estudiosTecnicos__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -843,7 +1090,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -852,9 +1100,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__presupuesto__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -866,7 +1115,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -875,9 +1125,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__proyectos__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -889,7 +1140,8 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0;
 }
 
 @media screen and (max-width: 402px) {
@@ -898,9 +1150,10 @@ textarea {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .section__centrado__fotos .section__centrado__fotos__DireccionDeObras__fig__texto {
     font-size: 28px;
+    padding: 15px 0;
   }
 }
 
@@ -956,11 +1209,19 @@ textarea {
   color: #444444;
   font-size: 18px;
   text-align: center;
-  font-weight: 550;
+  font-family: 'MontserratBold';
+  padding: 10px 0 50px 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 402px) {
+  .section__centrado__fotos__coordincionYSeguridad__texto {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 800px) {
   .section__centrado__fotos__coordincionYSeguridad__texto {
     font-size: 28px;
+    padding: 1px 0 70px 0;
   }
 }
