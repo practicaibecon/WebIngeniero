@@ -1,9 +1,11 @@
 /*=============================================
 =            $FORMULARIOS           =
 =============================================*/
-
 .contactform
 {
+
+
+
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-row-gap: 20px;
@@ -11,6 +13,13 @@
       font-family: 'MonserratBold', sans-serif;
       color: map-get(map-get($color, basicos), GrisOscuro);
       justify-self: center;
+
+      @media screen and (min-width: 100px) {
+        width: 80%;
+        padding: 10%;
+        //background-image: url("https://i2.wp.com/www.organicweb.com.au/wp-content/uploads/2016/07/Gary-transparent-285x324.png?zoom=2&resize=285%2C324&quality=96&strip=all&ssl=1");
+        background-repeat:no-repeat;
+      }
 
       &__h2form,
       &__nombre,
@@ -23,7 +32,7 @@
 
       &__h2form
       {
-        grid-column: 2 / 3;
+        grid-column: 1 / 4;
         font-family: 'MonserratBold', sans-serif;
         font-size: 24px;
         font-weight: bold;
@@ -118,6 +127,5 @@
   ::selection { background: black;
   height: 30px;
   }
-
 }
 
