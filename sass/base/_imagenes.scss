@@ -1,110 +1,34 @@
 /*=============================================
 =            $IMAGENES           =
 =============================================*/
+//Tamaños imagenes para la pagina sobreMi  
+.sectSobreMi__formacion {
+    // margin: 5%;
 
+    &__fig__img {
+        img{
+        //  margin-top: 30px;
+            @media screen and (min-width: 800px){
+                padding-right: 70px;
+                 width: 150em;             
+            }
+        }              
+    }
+}
 
-
-
-// <!-- Por defecto, baja resolución de imagen para Smartphone -->
-// <source srcset='img/smartphone/@1x/proyectos.jpg, img/smartphone/@2x/proyectos@2x.jpg' media='(min-width:0px) and (max-width:767px)'>
-
-// <!-- Alta resolución para Escritorio -->
-// <source srcset='img/desktop/@1x/proyectos.jpg, img/desktop/@2x/proyectos@2x.jpg' media='(min-width:1366px)'>      
-
-// <!-- Imagen de respaldo en caso que no se admita el elemento picture -->
-// <img src='img/smartphone/@1x/proyectos.jpg' alt='proyectos'>
-
-
-
-// Según este orden:
-
-// 1.-estudios tecnicos
-// 2.-presupuestos
-// 3.-proyectos
-// 4.-direccion de obra
-// 5.-coordinacion y seguridad
-
-// He agrupado en (impares):
-
-// 1.-estudios tecnicos
-// 3.-proyectos
-// 5.-coordinacion y seguridad
-
-// He agrupado y (pares):
-
-// 2.-presupuestos
-// 4.-direccion de obra
-
-
-
-
-
-
-
-
-
-.estudios__img,.proyectos__img,.coordinacion__img{
-   
-    position:relative;
-    float:left;
-   
-   //Titulos, fondo header y fondo footer, letras encima del body
-    background-color:#444444;
-
-
-    padding:1em;
+.sectSobreMi__exp {
     
- }
- 
- 
- .presupuestos__img,.direcciones__img,{
-    
-    position:relative;
-    float:right;
-   
-    background-color:grayscale($color: #444444);
-  
- 
-    padding:1em;
-    
- }
+    &__fig__img{
+        img{
 
- 
-
-
-/* Media Queries */
-
-@media screen and (min-width: 320px){
-
-    #servicios {
-        background-color: lightseagreen;
+            @media screen and (min-width: 800px){      
+                padding-left: 60px;  
+                width: 150em;             
+            }
+        }  
     }
 }
 
-
-@media screen and (min-width: 640px){
-    #servicios {
-        background-color: lightblue;
-    }
-}
-
-@media screen and (min-width: 960px){
-    #servicios {
-        background-color: lightyellow;
-        font-style: normal;
-        font-weight: bold;
-    }
-}
-
-
-
-
-.formacion {
-    img {
-        // Necesito imagen que sea cuadrada para que quede bien
-        border-radius: 50%;
-    }
-}
 
 .section__centrado__fotos {
     display: grid;
@@ -135,12 +59,17 @@
                 color: map-get(map-get($color, basicos), GrisOscuro);
                 font-size: map-get($hs, h3m);
                 text-align: center;
-                font-weight: 550;
+                font-family: 'MontserratBold', sans-serif; 
+                padding: 10px 0;
+
+
             @media screen and (max-width: 402px){
                     font-size: 15px;
             }
-            @media screen and (min-width: 1200px){
+            @media screen and (min-width: 800px){
                 font-size: map-get($hs, h3e);
+                
+
             }
 
             }
@@ -208,9 +137,10 @@
                 color: map-get(map-get($color, basicos), GrisOscuro);
                 font-size: map-get($hs, h3m);
                 text-align: center;
-                font-weight: 550;
+                font-family: 'MontserratBold', sans-serif; 
+                padding: 10px 0;
 
-                @media screen and (min-width: 1200px){
+                @media screen and (min-width: 800px){
                     font-size: map-get($hs, h3e);
                 }
                                

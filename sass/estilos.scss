@@ -11,12 +11,13 @@
 /*----------  VARIABLES  ----------*/
 @import "lib/variables"; //Importamos el contenido del archivo, por eso solo ponemos en nombre. 
 
-/*----------  TIPOGRAFIA  ----------*/
-@import "base/tipografia";  
 
 /*----------  LIB  ----------*/
 @import "lib/mixins";  
 @import "lib/placeholders";  
+
+/*----------  TIPOGRAFIA  ----------*/
+@import "base/tipografia"; 
 
 /*----------  LINKS  ----------*/
 
