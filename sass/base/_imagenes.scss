@@ -32,18 +32,19 @@
 
 .section__centrado__fotos {
     display: grid;
-
-    grid-template-columns: 1fr 1fr; //((3, 1fr) es el modo rápido.
+    grid-template-columns: 1fr 1fr; 
     grid-column-gap: 10px;
     grid-row-gap: 20px;
 
-    @media screen and (min-width: 800px) {
-        grid-column-gap: 50px;
-        grid-row-gap: 80px;
-    }
-        @media screen and (min-width: 702px) {
+    @media screen and (min-width: 702px) {
         padding-top: 50px;
     }
+
+    @media screen and (min-width: 800px) {
+        grid-column-gap: 50px;
+        grid-row-gap: 40px;
+    }
+      
 
 
     @each $servicio in estudiosTecnicos,
@@ -68,7 +69,6 @@
             }
             @media screen and (min-width: 800px){
                 font-size: map-get($hs, h3e);
-                
 
             }
 
@@ -138,10 +138,11 @@
                 font-size: map-get($hs, h3m);
                 text-align: center;
                 font-family: 'MontserratBold', sans-serif; 
-                padding: 10px 0;
+                padding: 10px 0 30px;
 
                 @media screen and (min-width: 800px){
                     font-size: map-get($hs, h3e);
+                    padding-bottom: 50px;
                 }
                                
             }

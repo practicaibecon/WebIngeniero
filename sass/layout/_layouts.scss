@@ -2,6 +2,71 @@
 =            $LAYOUTS         =
 =============================================*/
 
+/*=============================================
+=            Código Servicios Mati            =
+=============================================*/
+  
+.servicios{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__centrado{
+        max-width: 90%;
+        margin: 20px auto;
+
+        @each $servicio in estudios, presupuestos, proyectos, direccion, coordinacion {
+
+            &__#{$servicio}{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                // max-width: 330px;
+
+                @media screen and (min-width: 800px) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                // width: 800px;
+               
+                }
+
+                &__img{
+                    @media screen and (min-width: 800px) {
+                        width: 40%;
+                       
+                    } 
+                }
+
+                &__figcaption{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                     align-items: center;
+
+                    &__t{
+                        font-family: 'MontserratBold', sans-serif;
+                        padding: 10px 0;
+                    }
+
+                    &__p{
+                        width: 60%;
+                        text-align: justify;
+                    }
+
+                }
+            }
+            
+        }
+
+    }
+}
+
+
+
+
 .pie {
     //@include flexBox(center, center, row);
     // @include pad-centrar(90%);
