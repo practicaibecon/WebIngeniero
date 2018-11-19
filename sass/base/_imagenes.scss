@@ -82,7 +82,7 @@
 
 
         &__fig {
-            width: 100%;
+
             height: 300px;
             background-position: center;
             background-repeat: no-repeat;
@@ -90,37 +90,21 @@
 
             @media only screen and (min-width: 320px) {
                 //Pixel Ratio 1
-                background-image: url('../img/smartphone/@1x/coordincionYSeguridad.jpg');
+                background-image: url('../img/desktop/@1x/coordincionYSeguridad_Inicio.jpg');
 
                 @media only screen and (-webkit-pixel-ratio: 2),
                     only screen and (-moz-device-pixel-ratio:2),
                     only screen and (-ms-device-pixel-ratio:2) {
                     .section__centrado__fotos__coordincionYSeguridad__fig {
-                        background-image: url('../img/smartphone/@2x/coordincionYSeguridad@2x.jpg');
+                        background-image: url('../img/desktop/@2x/coordincionYSeguridad_Inicio.jpg');
                     }
                 }
-
-                //Pixel Ratio 3
-                @media only screen and (-webkit-pixel-ratio: 3),
-                only screen and (-moz-device-pixel-ratio:3),
-                only screen and (-ms--device-pixel-ratio:3) {
-                    & {
-                        background-image: url('../img/smartphone/@3x/coordincionYSeguridad@2x.jpg');
-                    }
-                }
-
             }
 
             @media only screen and (min-width: 801px) {
                 height: 500px;
-                @media only screen and (-webkit-device-pixel-ratio: 1),
-                    only screen and (-moz-pixel-ratio:1),
-                    only screen and (-ms-pixel-ratio:1) {
-                    .section__centrado__fotos__coordincionYSeguridad__fig {
-                        background-image: url('../img/desktop/@1x/coordincionYSeguridad_Inicio.jpg');
-                    }
-                }
-
+                background-image: url('../img/desktop/@1x/coordincionYSeguridad_Inicio.jpg');
+                
 
                 @media only screen and (-webkit-pixel-ratio: 2),
                 only screen and (-moz-pixel-ratio:2),

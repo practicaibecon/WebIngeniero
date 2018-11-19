@@ -842,30 +842,36 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 =            $BANNER          =
 =============================================*/
 .section__fondo {
-  width: 100%;
   height: 200px;
   background-image: url("../img/smartphone/@2x/banner@2x.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* Fondo para Pixel Ratio 3.   */
 }
 
-@media only screen and (pixel-ratio: 3) {
+@media only screen and (min-width: 320px) {
   .section__fondo {
-    background-image: url("../img/smartphone/@3x/banner@3x.jpg");
+    height: 300px;
+    background-image: url("../img/smartphone/@2x/banner@2x.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 320px) and (-webkit-pixel-ratio: 2), only screen and (min-width: 320px) and (-moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (-ms--device-pixel-ratio: 2) {
   .section__fondo {
-    height: 700px;
+    background-image: url("../img/smartphone/@2x/banner@2x.jpg");
   }
 }
 
-@media only screen and (min-width: 1200px) and (pixel-ratio: 2) {
+@media only screen and (min-width: 801px) {
   .section__fondo {
-    background-image: url("img/desktop/@2x/banner@2x.jpg");
+    height: 500px;
+    background-image: url("../img/desktop/@1x/banner.jpg");
+  }
+}
+
+@media only screen and (min-width: 801px) and (-webkit-pixel-ratio: 2), only screen and (min-width: 801px) and (-moz-device-pixel-ratio: 2), only screen and (min-width: 801px) and (-ms--device-pixel-ratio: 2) {
+  .section__fondo {
+    background-image: url("../img/desktop/@2x/banner@2x.jpg");
   }
 }
 
@@ -1646,7 +1652,6 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 }
 
 .section__centrado__fotos__coordincionYSeguridad__fig {
-  width: 100%;
   height: 300px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1655,30 +1660,19 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 
 @media only screen and (min-width: 320px) {
   .section__centrado__fotos__coordincionYSeguridad__fig {
-    background-image: url("../img/smartphone/@1x/coordincionYSeguridad.jpg");
+    background-image: url("../img/desktop/@1x/coordincionYSeguridad_Inicio.jpg");
   }
 }
 
 @media only screen and (min-width: 320px) and (-webkit-pixel-ratio: 2), only screen and (min-width: 320px) and (-moz-device-pixel-ratio: 2), only screen and (min-width: 320px) and (-ms-device-pixel-ratio: 2) {
   .section__centrado__fotos__coordincionYSeguridad__fig .section__centrado__fotos__coordincionYSeguridad__fig {
-    background-image: url("../img/smartphone/@2x/coordincionYSeguridad@2x.jpg");
-  }
-}
-
-@media only screen and (min-width: 320px) and (-webkit-pixel-ratio: 3), only screen and (min-width: 320px) and (-moz-device-pixel-ratio: 3), only screen and (min-width: 320px) and (-ms--device-pixel-ratio: 3) {
-  .section__centrado__fotos__coordincionYSeguridad__fig {
-    background-image: url("../img/smartphone/@3x/coordincionYSeguridad@2x.jpg");
+    background-image: url("../img/desktop/@2x/coordincionYSeguridad_Inicio.jpg");
   }
 }
 
 @media only screen and (min-width: 801px) {
   .section__centrado__fotos__coordincionYSeguridad__fig {
     height: 500px;
-  }
-}
-
-@media only screen and (min-width: 801px) and (-webkit-device-pixel-ratio: 1), only screen and (min-width: 801px) and (-moz-pixel-ratio: 1), only screen and (min-width: 801px) and (-ms-pixel-ratio: 1) {
-  .section__centrado__fotos__coordincionYSeguridad__fig .section__centrado__fotos__coordincionYSeguridad__fig {
     background-image: url("../img/desktop/@1x/coordincionYSeguridad_Inicio.jpg");
   }
 }
