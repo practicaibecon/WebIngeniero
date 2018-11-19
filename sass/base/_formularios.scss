@@ -4,30 +4,64 @@
 .contactform
 {
 
-
-
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: 1fr 300px 1fr;
+              //repeat(3, 1fr);
       grid-row-gap: 20px;
       padding: 3%;
       font-family: 'MonserratBold', sans-serif;
       color: map-get(map-get($color, basicos), GrisOscuro);
       justify-self: center;
 
-      @media screen and (min-width: 100px) {
-        width: 80%;
-        padding: 10%;
-        //background-image: url("https://i2.wp.com/www.organicweb.com.au/wp-content/uploads/2016/07/Gary-transparent-285x324.png?zoom=2&resize=285%2C324&quality=96&strip=all&ssl=1");
+      @media screen and (min-width: 800px) {
+        background-image: url("../icons/envelope-regular.svg");
+        //grid-template-columns: 300px 350px 300px;
+        grid-template-columns: repeat(3,1fr);
+        background-size: 700px;
         background-repeat:no-repeat;
+        background-position: center;
       }
+      &__origen
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        &__particular {
+          grid-column: 1 / 2;
+          grid-row: 6;
+          display: flex;
+          align-items: center;
+          @media screen and (min-width: 800px) {
+            grid-column: 2 / 3;
+
+          }
+
+        }
+
+        &__empresa {
+          grid-column: 3 / 4;
+          grid-row: 6;
+          display: flex;
+          align-items: center;
+          @media screen and (min-width: 800px) {
+            grid-column: 2 / 3;
+          }
+        }
+
+      }
       &__h2form,
       &__nombre,
       &__email,
       &__telefono,
-      &__servicios
+      &__servicios,
+      &__origen
       {
-        grid-column: 1 / 4;
+        grid-column: 2 / 3;
+        @media screen and (min-width: 800px) {
+          grid-column: 2 / 3;
+
+        }
       }
 
       &__h2form
@@ -39,20 +73,10 @@
         text-align: center;
         color: map-get(map-get($color, basicos), GrisOscuro);
       }
-      &__particular {
-        grid-column: 1 / 2;
-        grid-row: 6;
-        justify-self: center;
-      }
 
-      &__empresa {
-        grid-column: 3 / 4;
-        grid-row: 6;
-        justify-self: center;
-      }
 
       &__comentarios {
-        grid-column: 1/ 4;
+        grid-column: 2/ 3;
         grid-row: 7;
         color: map-get(map-get($color, basicos), GrisOscuro);
 
@@ -66,12 +90,9 @@
       &__servicios {
         height: 29px;
         overflow: hidden;
-        border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
+    //    border: 1px solid map-get(map-get($color, basicos), GrisOscuro);
         color: map-get(map-get($color, basicos), GrisOscuro);
-        border-radius: 4px;
         font-size: 14px;
-
-
       }
 
       &__servicios select {
@@ -80,7 +101,6 @@
         height: 29px;
         padding: 5px;
         color: map-get(map-get($color, basicos), GrisOscuro);
-        border-radius: 4px;
 
       }
 
@@ -101,6 +121,9 @@
         font-weight: bold;
         font-size: 18px;
         justify-self: center;
+        display: flex;
+        align-items: center; // Y
+        justify-content: center; //X
       }
 
       input,
@@ -113,10 +136,18 @@
         box-sizing: border-box;
         resize: vertical;
         color: map-get(map-get($color, basicos), GrisOscuro);
+        @media screen and (min-width: 800px) {
+          width: 100%;
+
+        }
       }
 
       &__iconoEmail {
         color: map-get(map-get($color, basicos), GrisOscuro);
+        font-size: 2rem;
+        @media screen and (min-width: 800px) {
+         font-size: 1.7rem;
+        }
       }
 
   ::placeholder
