@@ -7,18 +7,12 @@
         window.onload = function () {
 
             var ln = x = window.navigator.language || navigator.browserLanguage;
+            //  alert (ln);
 
-           // alert (ln);
-            console.log(ln);
-            if (ln == 'es-ES')
-            {
-                break;
-            }
-            else
-            {
-                window.location.href = 'contacto_es.html'; //si esta en inglés va a ingles
-            }
+            if (ln == 'ca-CAx') {
+                window.location.href = 'contacto.html'; //si esta en inglés va a ingles
 
+            }
         }
     </script>
 
@@ -87,14 +81,14 @@
             <a class='menu__encabezado__desplegable__a' href='servicios.html'>
                 Serveis
             </a>
-            <a class='menu__encabezado__desplegable__a' href='contacto_es.html'>
+            <a class='menu__encabezado__desplegable__a' href='contacto.html'>
                 Contactar
             </a>
             <div class='menu__encabezado__desplegable__banderas' href="#">
-                <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                <a class='menu__encabezado__desplegable__banderas__a' href='contacto.html'>
                     <img src="icons/cat.svg" alt="cat">
                 </a>
-                <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                <a class='menu__encabezado__desplegable__banderas__a' href='contacto_es.html'>
                     <img src="icons/esp.svg" alt="esp">
                 </a>
 
@@ -106,7 +100,7 @@
 <section>
     <form class="contactform">
         <div class="contactform__h2form">
-            <h2 class="contactform__h2form">SOLICITA TU PRESUPUESTO</h2>
+            <h2>SOLICITA TU PRESUPUESTO</h2>
         </div>
         <div class="contactform__nombre">
             <input name="nombre" type="text" placeholder="* Nombre">
