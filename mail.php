@@ -5,10 +5,22 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+
+foreach ($_POST as $key => $value) {
+    echo "Field ".htmlspecialchars($key)." is ".htmlspecialchars($value)."<br>";
+}
+
+
 $servername = "localhost";
 $username = "root";
 $password = "t00r";
 $dbname = "llorens";
+
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$telefono = $_POST['telefono'];
+$condicion = $_POST['condicion'];
+$comments=$_POST['comments'];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -31,12 +43,12 @@ $sql="INSERT INTO `llorens`.`contacto` (\n".
 ")\n".
 "VALUES\n".
 "	(\n".
-"		'javier martinez',\n".
-"		'javierdotnet@gmail.com',\n".
-"		'618349816',\n".
-"		'particular',\n".
+"		'" . $nombre . "',\n".
+"		'" . $email . "',\n".
+"		'" . $telefono . "',\n".
+"		'" . $condicion . "',\n".
 "		'prueba',\n".
-"	'kdlaslsaasdsadasdasdsadasdasdsadsad' \n".
+"	'" . $comments . "' \n".
 "	);";
 
 if ($conn->query($sql) === TRUE)
