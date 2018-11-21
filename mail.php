@@ -41,7 +41,7 @@ $sql="INSERT INTO `llorens`.`contacto` (\n".
 
 if ($conn->query($sql) === TRUE)
 {
-    echo "New record created successfully";
+    echo "New record created successfully " + $sql;
 }
 else
     {
