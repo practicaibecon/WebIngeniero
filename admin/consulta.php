@@ -12,7 +12,7 @@ if($link === false)
 }
 
 // Attempt select query execution
-$sql = "SELECT * FROM consulta";
+$sql = "SELECT * FROM contacto";
 if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
         echo "<table>";
