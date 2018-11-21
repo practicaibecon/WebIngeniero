@@ -37,11 +37,14 @@ $sql="INSERT INTO `llorens`.`contacto` (\n".
 "		'particular',\n".
 "		'prueba',\n".
 "	'kdlaslsaasdsadasdasdsadasdasdsadsad' \n".
-"	);"
+"	);";
 
-if ($conn->query($sql) === TRUE) {
+if ($conn->query($sql) === TRUE)
+{
     echo "New record created successfully";
-} else {
+}
+else
+    {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
