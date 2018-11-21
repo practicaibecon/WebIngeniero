@@ -408,7 +408,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   height: 65px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu {
     height: 100px;
   }
@@ -448,7 +448,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   flex-direction: row;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__logo {
     padding: 0 0 0 20px;
   }
@@ -459,7 +459,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   height: 65px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__logo img {
     width: 90px;
     height: 90px;
@@ -472,7 +472,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   padding-left: 3px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__logo span {
     font-size: 30px;
     padding-left: 10px;
@@ -483,7 +483,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__inputlabel {
     display: none;
     height: 0px;
@@ -498,7 +498,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   right: 20px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__desplegable {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -520,7 +520,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   border: 1px #444444 solid;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__desplegable__a {
     color: #ebebeb;
     border: 0px;
@@ -550,7 +550,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   height: 65px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__desplegable__banderas {
     border: 0px;
     -webkit-box-orient: vertical;
@@ -566,7 +566,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   width: 50px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 800px) {
   .menu__encabezado__desplegable__banderas__a img {
     height: 25px;
     width: 35px;
@@ -936,6 +936,10 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   }
 }
 
+.servicios__centrado__estudios__img {
+  padding-top: 15px;
+}
+
 @media screen and (min-width: 800px) {
   .servicios__centrado__estudios__img {
     width: 40%;
@@ -958,14 +962,25 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .servicios__centrado__estudios__figcaption {
+    width: 55%;
+  }
+}
+
 .servicios__centrado__estudios__figcaption__t {
   font-family: 'MontserratBold', sans-serif;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .servicios__centrado__estudios__figcaption__p {
-  width: 60%;
   text-align: justify;
+  padding-bottom: 15px;
+}
+
+.servicios__centrado__estudios__figcaption__b {
+  padding: 8px;
+  font-family: 'MontserratBold', sans-serif;
 }
 
 .servicios__centrado__presupuestos {
@@ -999,6 +1014,10 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   }
 }
 
+.servicios__centrado__presupuestos__img {
+  padding-top: 15px;
+}
+
 @media screen and (min-width: 800px) {
   .servicios__centrado__presupuestos__img {
     width: 40%;
@@ -1021,14 +1040,25 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .servicios__centrado__presupuestos__figcaption {
+    width: 55%;
+  }
+}
+
 .servicios__centrado__presupuestos__figcaption__t {
   font-family: 'MontserratBold', sans-serif;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .servicios__centrado__presupuestos__figcaption__p {
-  width: 60%;
   text-align: justify;
+  padding-bottom: 15px;
+}
+
+.servicios__centrado__presupuestos__figcaption__b {
+  padding: 8px;
+  font-family: 'MontserratBold', sans-serif;
 }
 
 .servicios__centrado__proyectos {
@@ -1062,6 +1092,10 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   }
 }
 
+.servicios__centrado__proyectos__img {
+  padding-top: 15px;
+}
+
 @media screen and (min-width: 800px) {
   .servicios__centrado__proyectos__img {
     width: 40%;
@@ -1084,14 +1118,25 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .servicios__centrado__proyectos__figcaption {
+    width: 55%;
+  }
+}
+
 .servicios__centrado__proyectos__figcaption__t {
   font-family: 'MontserratBold', sans-serif;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .servicios__centrado__proyectos__figcaption__p {
-  width: 60%;
   text-align: justify;
+  padding-bottom: 15px;
+}
+
+.servicios__centrado__proyectos__figcaption__b {
+  padding: 8px;
+  font-family: 'MontserratBold', sans-serif;
 }
 
 .servicios__centrado__direccion {
@@ -1125,6 +1170,10 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   }
 }
 
+.servicios__centrado__direccion__img {
+  padding-top: 15px;
+}
+
 @media screen and (min-width: 800px) {
   .servicios__centrado__direccion__img {
     width: 40%;
@@ -1147,14 +1196,25 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .servicios__centrado__direccion__figcaption {
+    width: 55%;
+  }
+}
+
 .servicios__centrado__direccion__figcaption__t {
   font-family: 'MontserratBold', sans-serif;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .servicios__centrado__direccion__figcaption__p {
-  width: 60%;
   text-align: justify;
+  padding-bottom: 15px;
+}
+
+.servicios__centrado__direccion__figcaption__b {
+  padding: 8px;
+  font-family: 'MontserratBold', sans-serif;
 }
 
 .servicios__centrado__coordinacion {
@@ -1188,6 +1248,10 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   }
 }
 
+.servicios__centrado__coordinacion__img {
+  padding-top: 15px;
+}
+
 @media screen and (min-width: 800px) {
   .servicios__centrado__coordinacion__img {
     width: 40%;
@@ -1210,14 +1274,43 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   align-items: center;
 }
 
+@media screen and (min-width: 800px) {
+  .servicios__centrado__coordinacion__figcaption {
+    width: 55%;
+  }
+}
+
 .servicios__centrado__coordinacion__figcaption__t {
   font-family: 'MontserratBold', sans-serif;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
 .servicios__centrado__coordinacion__figcaption__p {
-  width: 60%;
   text-align: justify;
+  padding-bottom: 15px;
+}
+
+.servicios__centrado__coordinacion__figcaption__b {
+  padding: 8px;
+  font-family: 'MontserratBold', sans-serif;
+}
+
+@media screen and (min-width: 800px) {
+  .servicios__centrado__presupuestos {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .servicios__centrado__direccion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
 }
 
 .pie {
@@ -1454,6 +1547,10 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
   justify-content: space-around;
   -webkit-box-align: center;
@@ -1486,6 +1583,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 15px;
 }
 
 .pie__contacto i {
