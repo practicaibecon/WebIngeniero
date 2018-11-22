@@ -10,7 +10,6 @@
 
             if (ln == 'es') {
                 window.location.href = 'sobremi_es.html'; //si esta en inglés va a ingles
-
             }
         }
     </script>
@@ -19,13 +18,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
     <!-- HTML Meta Tags -->
-    <title>Qui sóc</title>
-    <meta name="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <title>Sobre mi</title>
+    <meta name="description" content="Ingeniero en Mallorca">
     <!--  la descripcion de arriba se puede repetir en otros SEO  -->
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Qui sóc">
-    <meta itemprop="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <meta itemprop="description" content="Ingeniero en Mallorca">
     <meta itemprop="image" content="http://www.sobreMi.es">
     <!-- las imagenes no son obligatorias, pero se recomienda poner una foto que representa el negocio -->
 
@@ -33,13 +32,13 @@
     <meta property="og:url" content="http://www.sobreMi.es">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Qui sóc">
-    <meta property="og:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <meta property="og:description" content="Ingeniero en Mallorca">
     <meta property="og:image" content="http://www.sobreMi.es">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Qui sóc">
-    <meta name="twitter:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <meta name="twitter:description" content="Ingeniero en Mallorca">
     <meta name="twitter:image" content="http://www.sobreMi.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
@@ -85,11 +84,11 @@
                 <a class='menu__encabezado__desplegable__a' href='contacto_es.html'>
                     Contactar
                 </a>
-                <div class='menu__encabezado__desplegable__banderas' href="#">
-                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                <div class='menu__encabezado__desplegable__banderas'>
+                    <a class='menu__encabezado__desplegable__banderas__a' href='sobremi.html'>
                         <img src="icons/cat.svg" alt="cat">
                     </a>
-                    <a class='menu__encabezado__desplegable__banderas__a' href='#'>
+                    <a class='menu__encabezado__desplegable__banderas__a'>
                         <img src="icons/esp.svg" alt="esp">
                     </a>
 
@@ -103,7 +102,6 @@
         Bloque Contenido
     -->
     <section class="sectSobreMi">
-        
         <figure class="sectSobreMi__formacion">
             <picture class='sectSobreMi__formacion__fig__img'>
                 <!-- Para moviles -->
@@ -127,16 +125,17 @@
             </figcaption>
         </figure>        
         <!-- FALTA AÑADIR LA IMAGEN QUE EL CLIENTE DESEE -->
-        <picture class='sectSobreMi__exp__fig__img'>
-            <!-- Para moviles -->
-            <source srcset='img/desktop/@1x/llorençtrabajando.jpg x1, img/desktop/@1x/llorençtrabajando.jpg x2'
-                media='(min-width:0px) and (max-width:800px)'>
-
-            <!-- Para escritorio-->
-            <source srcset='img/desktop/@1x/llorençtrabajando.jpg x1, img/desktop/@1x/llorençtrabajando.jpg x2' media='(min-width:801px)'>
-            <!-- Imagen de respaldo. -->
-            <img src='img/desktop/@1x/llorençtrabajando.jpg' alt='llorenç bisquerra'>
-        </picture>             
+        <figure class="sectSobreMi__exp">
+            <picture class='sectSobreMi__exp__fig__img'>
+                <!-- Para moviles -->
+                <source srcset='img/desktop/@1x/llorençtrabajando.jpg x1, img/desktop/@1x/llorençtrabajando.jpg x2'
+                    media='(min-width:0px) and (max-width:800px)'>
+    
+                <!-- Para escritorio-->
+                <source srcset='img/desktop/@1x/llorençtrabajando.jpg x1, img/desktop/@1x/llorençtrabajando.jpg x2' media='(min-width:801px)'>
+                <!-- Imagen de respaldo. -->
+                <img src='img/desktop/@1x/llorençtrabajando.jpg' alt='llorenç bisquerra'>
+            </picture>            
             <figcaption class='sectSobreMi__exp__fig__text'>
                 <h2>EXPERIENCIA PROFESIONAL</h2>
                 Con una extensa y variada experiencia, 
@@ -150,7 +149,6 @@
             </figcaption>
         </figure>
     </section>
-
     <!-- 
         Bloque Footer         
     -->
