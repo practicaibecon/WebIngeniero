@@ -313,7 +313,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-
+        font-size: map-get($hs, h5m);
         @media screen and (min-width: 800px) {
             grid-row: 4/5;
             grid-column: 1/4;
