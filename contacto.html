@@ -116,14 +116,14 @@
   </div>
     </div>
   <div class="contactform__servicios">
-      <select name="consulta">
-        <option value ="selecciona" selected>Selecciona la teva consulta</option>
+      <select name="consulta" required>
+        <option value ="" selected>Selecciona la teva consulta</option>
         <option value="presupuesto">Pressupost</option>
         <option value="otros">Altres</option>
       </select>
   </div>
   <div class="contactform__comentarios">
-    <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escriu la teva consulta"></textarea>
+    <textarea name="comments" id="comments" maxlength="500" cols="30" rows="5" class="txtcomentarios" placeholder="Escriu la teva consulta" required></textarea>
   </div>
   <button class="contactform__botonconfirmar">
       <i class="contactform__iconoEmail fas fa-envelope fa-xs"></i>&nbsp;Enviar</button>
