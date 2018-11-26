@@ -1363,10 +1363,11 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   .pie__logo img {
     width: 90px;
     height: 90px;
-    padding-right: 1%;
+    padding-left: 20px;
   }
   .pie__logo span {
     font-size: 30px;
+    padding: 20px;
   }
 }
 

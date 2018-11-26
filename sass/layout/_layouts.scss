@@ -135,12 +135,13 @@
 
             & img {
                 width: 90px;
-                height: 90px;
-                padding-right: 1%;
+                height: 90px; 
+                padding-left: 20px;
             }
 
             & span {
                 font-size: map-get($hs, h1e);
+                padding: 20px;
             }
         }
     }
@@ -190,7 +191,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items:
-                    flex-start;
+                flex-start;
                 justify-content: center;
 
                 .twitter {
@@ -280,7 +281,6 @@
         align-items: center;
         border: 1px map-get(map-get($color, basicos), GrisClaro) solid;
 
-
         @media screen and (min-width: 800px) {
             display: flex;
             align-items: center;
@@ -288,17 +288,13 @@
             grid-row: 2/3;
             grid-column: 2/3;
             border: 0px;
-            border-right: 1px map-get(map-get($color, basicos), GrisClaro) solid;
-
-           
-
+            border-right: 1px map-get(map-get($color, basicos), GrisClaro) solid;          
         }
 
         & span {
             display: flex;
             align-items: center;
             padding: 15px;
-
         }
 
         & i {
