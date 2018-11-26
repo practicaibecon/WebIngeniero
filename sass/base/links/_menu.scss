@@ -7,7 +7,7 @@
 
     height: 65px;
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 800px) {
         height: 100px;
     }
 
@@ -25,7 +25,7 @@
 
             @include flex-box;
 
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 800px) {
                 padding: 0 0 0 20px;
             }
 
@@ -33,7 +33,7 @@
                 width: 65px;
                 height: 65px;
 
-                @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 800px) {
                     width: 90px;
                     height: 90px;
 
@@ -45,7 +45,7 @@
                 color: map-get(map-get($color, basicos), GrisClaro);
                 padding-left: 3px;
 
-                @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 800px) {
                     font-size: map-get($hs, h1e);
                     padding-left: 10px;
                 }
@@ -58,7 +58,7 @@
         }
 
         &__inputlabel {
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 800px) {
                 display: none;
                 height: 0px;
                 width: 0px;
@@ -71,7 +71,7 @@
             top: 65px;
             right: 20px;
 
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 800px) {
                 display: flex;
                 top: 0;
                 right: 0;
@@ -89,7 +89,7 @@
                 border: 1px map-get(map-get($color, basicos), GrisOscuro) solid;
 
 
-                @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 800px) {
                     color: map-get(map-get($color, basicos), GrisClaro);
                     border: 0px;
                     padding: 0;
@@ -111,7 +111,7 @@
                 border: 1px map-get(map-get($color, basicos), GrisOscuro) solid;
                 height: 65px;
 
-                @media screen and (min-width: 1200px) {
+                @media screen and (min-width: 800px) {
                     border: 0px;
                     flex-direction: column;
                     height: 80px;
@@ -121,7 +121,7 @@
                     height: 40px;
                     width: 50px;
 
-                    @media screen and (min-width: 1200px) {
+                    @media screen and (min-width: 800px) {
                         height: 25px;
                         width: 35px;
                     }

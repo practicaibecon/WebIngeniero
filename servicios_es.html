@@ -1,49 +1,278 @@
 <!DOCTYPE html>
 <!-- cambio idioma español:es -->
-<html lang="es">
+<html lang="ca">
 
 <head>
- 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- SEO -->
     <!-- HTML Meta Tags -->
     <title>Servicios</title>
-    <meta name="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
+    <meta name="description" content="LLORENÇ BISQUERRA un despacho profesional de ingeniería civil y consultoría técnica de obras, tanto civiles como de edificación cuyos principales valores son: Compromiso. Eficiencia y Transparencia.">
     <!--  la descripcion de arriba se puede repetir en otros SEO  -->
 
     <!-- Google / Search Engine Tags -->
     <meta itemprop="name" content="Servicios">
-    <meta itemprop="description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
-    <meta itemprop="image" content="http://www.flightwithmati.es">
+    <meta itemprop="description" content="LLORENÇ BISQUERRA un despacho profesional de ingeniería civil y consultoría técnica de obras, tanto civiles como de edificación cuyos principales valores son: Compromiso. Eficiencia y Transparencia.">
+    <meta itemprop="image" content="http://www.servicios.es">
     <!-- las imagenes no son obligatorias, pero se recomienda poner una foto que representa el negocio -->
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="http://www.flightwithmati.es">
+    <meta property="og:url" content="http://www.servicios.es">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Servicios">
-    <meta property="og:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
-    <meta property="og:image" content="http://www.flightwithmati.es">
+    <meta property="og:description" content="LLORENÇ BISQUERRA un despacho profesional de ingeniería civil y consultoría técnica de obras, tanto civiles como de edificación cuyos principales valores son: Compromiso. Eficiencia y Transparencia.">
+    <meta property="og:image" content="http://www.servicios.es">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Servicios">
-    <meta name="twitter:description" content="Organiza tus vaciones sin sorpresas. Buscador de hoteles, vuelos y transfers al mejor precio.">
-    <meta name="twitter:image" content="http://www.flightwithmati.es">
+    <meta name="twitter:description" content="LLORENÇ BISQUERRA un despacho profesional de ingeniería civil y consultoría técnica de obras, tanto civiles como de edificación cuyos principales valores son: Compromiso. Eficiencia y Transparencia.">
+    <meta name="twitter:image" content="http://www.servicios.es">
 
     <!-- Enlace a biblioteca a iconos tipograficos : https://fontawesome.com/ , donde hay iconos y tipografias -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 
-    
+
     <!-- nuestros estilos de CSS -->
     <link rel="stylesheet" href="css/estilos.css">
 
     <!-- <link rel="stylesheet" href="css/guiadeestilos.css"> -->
 
 </head>
+
 <body>
+    <header class="menu">
+
+        <nav class="menu__encabezado">
+
+            <a href="index.html" class="menu__encabezado__logo">
+
+                <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+                <span>
+                    Llorenç Bisquerra
+                </span>
+
+            </a>
+
+            <!-- Menú movil -->
+
+            <input id=activar type='checkbox'>
+            <label class='menu__encabezado__inputlabel' for='activar'>
+                <i class='menu__icono fas fa-bars'></i>
+            </label>
+            <div class='menu__encabezado__desplegable'>
+
+                <a class='menu__encabezado__desplegable__a' href='sobremi_es.html'>
+                    Sobre mí
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='servicios_es.html'>
+                    Servicios
+                </a>
+                <a class='menu__encabezado__desplegable__a' href='contacto_es.html'>
+                    Contactar
+                </a>
+                <div class='menu__encabezado__desplegable__banderas'>
+                    <a class='menu__encabezado__desplegable__banderas__a' href='servicios.html'>
+                        <img src="icons/cat.svg" alt="cat">
+                    </a>
+                    <a class='menu__encabezado__desplegable__banderas__a'>
+                        <img src="icons/esp.svg" alt="esp">
+                    </a>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- INICIO DEL CUERPO DE CONTENIDO -->
+    <!-- article: Estudis Técnics -->
+
+    <section class="servicios">
+        <article class="servicios__centrado">
+            <figure id="estudios" class='servicios__centrado__estudios'>
+                <picture class='servicios__centrado__estudios__img'>
+                    <!-- Para moviles -->
+                    <source srcset='img/smartphone/@1x/estudiosTecnicos.jpg 1x, img/smartphone/@2x/estudiosTecnicos@2x.jpg 2x,img/smartphone/@2x/estudiosTecnicos@2x.jpg 3x'
+                        media='(min-width:0px) and (max-width:799px)'>
+                    <!-- Para escritorio-->
+                    <source srcset='img/desktop/@1x/estudiosTecnicos.jpg 1x,img/desktop/@2x/estudiosTecnicos@2x.jpg 2x'
+                        media='(min-width:801px)'>
+                    <!-- Imagen de respaldo. -->
+                    <img src='img/smartphone/estudiosTecnicos.jpg' alt="Estudis Tècnics">
+                </picture>
+                <figcaption class="servicios__centrado__estudios__figcaption">
+                    <h2 class="servicios__centrado__estudios__figcaption__t">ESTUDIOS TÉCNICOS</h2>
+
+                    <p class="servicios__centrado__estudios__figcaption__p">Con una extensa y variada experiencia, y habiendo trabajado en todos los ámbitos del sector técnico de la construcción, como son la elaboración de Licitaciones, Jefe de Obra, Jefe de Servicios, elaboración de presupuestos de obra civil, redactor de Estudios Técnicos, Proyectista, Director de Obra y Coordinador de Seguridad y Salud, en LLORENÇ BISQUERRA estamos preparados para realizar cualquier trabajo técnico que se nos encargue, pudiendo ofrecer en todo momento una garantía de buena práctica, correcta elaboración y calidad durante su realización.
+                        <p>
+
+                            <a href="contacto_es.html">
+                                <button class="servicios__centrado__coordinacion__figcaption__b">
+                                    PRESUPUESTO</button>
+                                </a>
+                </figcaption>
+            </figure>
 
 
+            <figure id="presupuestos" class='servicios__centrado__presupuestos'>
+                <picture class='servicios__centrado__presupuestos__img'>
+                    <!-- Para moviles -->
+                    <source srcset='img/smartphone/@1x/presupuesto.jpg 1x, img/smartphone/@2x/presupuesto@2x.jpg 2x,img/smartphone/@3x/presupuesto@3x.jpg 3x'
+                        media='(min-width:0px) and (max-width:799px)'>
+                    <!-- Para escritorio-->
+                    <source srcset='img/desktop/@1x/presupuesto.jpg 1x,img/desktop/@2x/presupuesto@2x.jpg 2x' media='(min-width:800px)'>
+                    <!-- Imagen de respaldo. -->
+                    <img src='img/smartphone/presupuesto.jpg' alt="pressupost">
+                </picture>
+                <figcaption class="servicios__centrado__estudios__figcaption">
+                    <h2 class="servicios__centrado__presupuestos__figcaption__t">PRESUPUESTOS</h2>
+
+                    <p class="servicios__centrado__presupuestos__figcaption__p">Elaboración de presupuestos de edificación u obra civil para la Administración Pública, empresas contratistas, subcontratistas, particulares, etc. Incluye el estudio de las partidas requeridas para los trabajos a valorar, así como las mediciones necesarias para su correcta ejecución y finalización, y la justificación de los precios presentados. Los presupuestos realizados servirán para tener una noción del coste real de los trabajos solicitados, para la previsión y/o reserva de presupuesto por parte de la Administración o para la su posterior ejecución de manera directa en el caso de empresas contratistas y particulares.
+                        <p>
+
+                            <a href="contacto_es.html">
+                                <button class="servicios__centrado__coordinacion__figcaption__b">
+                                    PRESUPUESTO</button>
+                                </a>
+                </figcaption>
+            </figure>
+
+            <figure id="proyectos" class='servicios__centrado__proyectos'>
+                <picture class='servicios__centrado__proyectos__img'>
+                    <!-- Para moviles -->
+                    <source srcset='img/smartphone/@1x/proyectos.jpg 1x, img/smartphone/@2x/proyectos@2x.jpg 2x,img/smartphone/@3x/proyectos@3x.jpg 3x'
+                        media='(min-width:0px) and (max-width:799px)'>
+                    <!-- Para escritorio-->
+                    <source srcset='img/desktop/@1x/proyectos.jpg 1x,img/desktop/@2x/proyectos@2x.jpg 2x' media='(min-width:800px)'>
+                    <!-- Imagen de respaldo. -->
+                    <img src='img/smartphone/proyectos.jpg' alt="Projectes ">
+                </picture>
+                <figcaption class="servicios__centrado__estudios__figcaption">
+                    <h2 class="servicios__centrado__proyectos__figcaption__t">PROYECTOS</h2>
+
+                    <p class="servicios__centrado__proyectos__figcaption__p">Estudios, análisis previos y redacción de todo tipo de anteproyectos y/o proyectos de obra civil. Incluye todos los trabajos necesarios para la entrega en el momento acordado del proyecto visado y listo para su licitación o ejecución, como son el estudio de campo, el replanteo topográfico inicial, su estudio para permitir la elección de la mejor opción y el desarrollo y redacción del proyecto completo a partir de la solución elegida.
+                        <p>
+                            <a href="contacto_es.html">
+                                <button class="servicios__centrado__coordinacion__figcaption__b">
+                                    PRESUPUESTO</button>
+                                </a>
+                </figcaption>
+            </figure>
+
+
+            <figure id="direccion" class='servicios__centrado__direccion'>
+                <picture class='servicios__centrado__direccion__img'>
+                    <!-- Para moviles -->
+                    <source srcset='img/smartphone/@1x/DireccionDeObras.jpg 1x, img/smartphone/@2x/DireccionDeObras@2x.jpg 2x,img/smartphone/@3x/DireccionDeObras@3x.jpg 3x'
+                        media='(min-width:0px) and (max-width:799px)'>
+                    <!-- Para escritorio-->
+                    <source srcset='img/desktop/@1x/DireccionDeObras.jpg 1x,img/desktop/@2x/DireccionDeObras@2x.jpg 2x'
+                        media='(min-width:800px)'>
+                    <!-- Imagen de respaldo. -->
+                    <img src='img/smartphone/DireccionDeObras.jpg' alt="Direcció d'Obras">
+                </picture>
+                <figcaption class="servicios__centrado__estudios__figcaption">
+                    <h2 class="servicios__centrado__direccion__figcaption__t">DIRECCIÓN DE OBRA</h2>
+
+                    <p class="servicios__centrado__direccion__figcaption__p">Trabajo consistente en asumir la función técnica de dirigir la ejecución de la obra y de controlar cualitativa y cuantitativamente la construcción de la misma. Encargado de dirigir el desarrollo de la obra en los aspectos técnicos, estéticos, urbanísticos y medioambientales, de conformidad con el proyecto que la define, la licencia de obras y demás autorizaciones preceptivas y las condiciones del contrato, con el objeto de asegurar su adecuación al fin propuesto y proyectado.
+                        <p>
+
+                            <a href="contacto_es.html">
+                                <button class="servicios__centrado__coordinacion__figcaption__b">
+                                    PRESUPUESTO</button>
+                                </a>
+                </figcaption>
+            </figure>
+
+            <figure class='servicios__centrado__coordinacion' id="coordinacion">
+                <picture class='servicios__centrado__coordinacion__img'>
+                    <!-- Para moviles -->
+                    <source srcset='img/smartphone/@1x/coordincionYSeguridad.jpg 1x, img/smartphone/@2x/coordincionYSeguridad@2x.jpg 2x,img/smartphone/@3x/coordincionYSeguridad@3x.jpg 3x'
+                        media='(min-width:0px) and (max-width:799px)'>
+                    <!-- Para escritorio-->
+                    <source srcset='img/desktop/@1x/coordincionYSeguridad.jpg 1x,img/desktop/@2x/coordincionYSeguridad@2x.jpg 2x'
+                        media='(min-width:800px)'>
+                    <!-- Imagen de respaldo. -->
+                    <img src='img/smartphone/coordincionYSeguridad.jpg' alt="Coordinació i seguritat">
+                </picture>
+                <figcaption class="servicios__centrado__estudios__figcaption">
+                    <h2 class="servicios__centrado__coordinacion__figcaption__t">COORDINACIÓN DE SEGURIDAD Y SALUD</h2>
+
+                    <p class="servicios__centrado__coordinacion__figcaption__p">Coordinación de Seguridad y Salud en cualquier obra civil, tanto durante la elaboración del proyecto de obra como durante la ejecución de la misma, prestando, en ambos casos, un servicio integral que incluye el asesoramiento técnico y jurídico que se precise en cada caso (estudio de Seguridad y Salud, Plan de Seguridad y Salud, labor del Coordinador...). También se incluye en este cargo la redacción de Guías Metodológicas y Manuales que orienten y definan los criterios de gestión preventiva de Administraciones Públicas y entidades gestoras.
+                        <p>
+
+                            <a href="contacto_es.html">
+                                <button class="servicios__centrado__coordinacion__figcaption__b">
+                                    PRESUPUESTO</button>
+                                </a>
+                </figcaption>
+            </figure>
+
+        </article>
+
+    </section>
 </body>
-</html>
+    <footer class="pie">
+        <a href="index_es.html" class="pie__logo">
+            <img src='icons/LlorençBisquerra.svg' alt="LlorençBisquerra">
+            <span>
+                Llorenç Bisquerra
+            </span>
+
+        </a>
+        <div class="pie__menu">
+            <a class='pie__menu__a' href='sobremi_es.html'>
+                Sobre mi
+
+            </a>
+            <a class='pie__menu__a' href='servicios_es.html'>
+                Servicios
+            </a>
+            <a class='pie__menu__a' href='contacto_es.html'>
+                Contactar
+            </a>
+            <div class='pie__menu__banderas'>
+                <a class='pie__menu__banderas__a' href='servicios.html'>
+                    <img src="icons/cat.svg" alt="cat">
+                </a>
+                <a class='pie__menu__banderas__a'>
+                    <img src="icons/esp.svg" alt="esp">
+                </a>
+
+            </div>
+        </div>
+        
+
+        <div class="pie__social">
+           
+            <div class="pie__social__icons1">
+                <a class="twitter" href="https://twitter.com/LlorenBisquerr1"> <i class="fab fa-twitter-square"></i></a>
+                <a class="facebook" href="https://www.facebook.com/Lloren%C3%A7-Bisquerra-Cantallops-209343503301246/?modal=admin_todo_tour"><i class="fab fa-facebook-square"></i></a>
+            
+            </div>
+            <div class="pie__social__icons2">
+                <a class="linkedin" href="https://es.linkedin.com/in/lloren%C3%A7-bisquerra-cantallops-372983174"><i class="fab fa-linkedin"></i></a>
+                <a class="instagram" href="https://www.instagram.com/llorencbisquerracantallops/?hl=es"> <i class="fab fa-instagram"></i></a>
+            </div>
+            <!-- </div> -->
+        </div>
+
+        <div class="pie__terms">
+            <a href=""><h4>Términos</h4></a>
+            <a href=""><h4>Cookies</h4></a>
+            <a href=""><h4>Privacidad</h4></a>
+                 
+        </div>
+        </div>
+        <div class="pie__contacto">
+            <span> <i class="fas fa-envelope"></i>
+                info@llorençbisquerra.cat</span>
+            <span> <i class="fab fa-whatsapp"></i> Telèfon</span>
+        </div>
+        <h4 class="pie__copy">Copyright 2018</h4>
+    </footer>
+</body>
