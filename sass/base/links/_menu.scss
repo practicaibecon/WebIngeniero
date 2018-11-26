@@ -156,7 +156,7 @@
             text-align: justify;
             padding-top: 30px;
             line-height: 20px;
-
+            line-height: 1.5rem;
             @media screen and (min-width: 700px) {
                 padding-top: 50px;
             }
@@ -172,7 +172,7 @@
             padding-right: 5%;
             display: none;
             text-align: justify;
-            line-height: 20px;
+            line-height: 1.5rem;
            
             @media screen and (min-width: 700px) {
                 display: block;
@@ -188,7 +188,7 @@
         &__parrafo3 {
             display: none;
             text-align: justify;
-            line-height: 10rem;
+            line-height: 1.5rem;
            
             @media screen and (min-width: 700px) {
                 display: block;
