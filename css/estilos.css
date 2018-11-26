@@ -241,7 +241,6 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 1400px;
 }
 
 @media screen and (min-width: 500px) {
@@ -370,18 +369,6 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   }
 }
 
-/* & figcaption{
-        & h2{
-            font-size: map-get($hs, h2m);
-    
-            @media screen and (min-width: 800px){
-                margin-bottom: 5%;
-                font-size: map-get($hs, h3e);
-            }
-        }
-        text-align: justify;
-    }
-}*/
 /*----------  LINKS  ----------*/
 /* ----------------------------------- */
 /* $BOTONES */
@@ -618,6 +605,8 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 }
 
 .section__centrado__parrafo2 {
+  padding-left: 5%;
+  padding-right: 5%;
   display: none;
   text-align: justify;
   line-height: 20px;
@@ -630,6 +619,23 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
 }
 
 .section__centrado__parrafo2__li {
+  color: #e1a605;
+  font-weight: 550;
+}
+
+.section__centrado__parrafo3 {
+  display: none;
+  text-align: justify;
+  line-height: 50rem;
+}
+
+@media screen and (min-width: 700px) {
+  .section__centrado__parrafo3 {
+    display: block;
+  }
+}
+
+.section__centrado__parrafo3__li {
   color: #e1a605;
   font-weight: 550;
 }
@@ -919,6 +925,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -997,6 +1004,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -1075,6 +1083,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -1153,6 +1162,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -1231,6 +1241,7 @@ YP  YP  YP Y888888P YP    YP Y888888P VP   V8P
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  line-height: 2rem;
 }
 
 @media screen and (min-width: 800px) {

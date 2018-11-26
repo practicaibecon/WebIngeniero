@@ -6,8 +6,8 @@
 
     @include pad-centrar(80%);
     @include flex-box(space-around, center, column);
-    height: 1400px;
-
+    
+    
     @media screen and (min-width: 500px) {
         height: 1200px;
     };
@@ -97,15 +97,3 @@
         }
     }
 }
-    /* & figcaption{
-        & h2{
-            font-size: map-get($hs, h2m);
-    
-            @media screen and (min-width: 800px){
-                margin-bottom: 5%;
-                font-size: map-get($hs, h3e);
-            }
-        }
-        text-align: justify;
-    }
-}*/

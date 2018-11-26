@@ -168,9 +168,27 @@
         }
 
         &__parrafo2 {
+            padding-left: 5%;
+            padding-right: 5%;
             display: none;
             text-align: justify;
             line-height: 20px;
+           
+            @media screen and (min-width: 700px) {
+                display: block;
+            }
+
+
+            &__li {
+                color: map-get(map-get($color, basicos), Naranja);
+                font-weight: 550;
+            }
+        }
+
+        &__parrafo3 {
+            display: none;
+            text-align: justify;
+            line-height: 10rem;
            
             @media screen and (min-width: 700px) {
                 display: block;
